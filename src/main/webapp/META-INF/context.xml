@@ -1,0 +1,11 @@
+<Context>
+
+    <Resource name="jdbc/DBforProject"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="root" password="8520"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              connectionProperties="useUnicode=yes;characterEncoding=utf8;"
+              url="jdbc:mysql://localhost:3306/DBforProject"/>
+
+</Context>
