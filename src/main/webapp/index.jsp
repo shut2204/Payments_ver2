@@ -1,13 +1,36 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-    <title>JSP - Hello World</title>
+    <meta charset="utf-8">
+    <title>Payments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        <%@include file="/css/style1.css"%>
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Payments</label>
+    <ul>
+        <li><a class="active" href="index.jsp">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <c:if test="${sessionScope.get('login') != null }">
+            <li><a href="Cabinet.jsp">Cabinet</a></li>
+        </c:if>
+        <c:if test="${sessionScope.get('login') == null }">
+            <li><a href="login.jsp">Register or login</a></li>
+        </c:if>
+    </ul>
+</nav>
+<section></section>
 </body>
 </html>
