@@ -1,0 +1,3 @@
+2022-08-16 20-20-57 DEBUG [http-nio-8080-exec-7] Command starts
+2022-08-16 20-20-58 INFO  [http-nio-8080-exec-7] Customer com.my.db.entity.Customer@344ca29b logged as user
+2022-08-16 20-20-58 DEBUG [http-nio-8080-exec-7] Command finished

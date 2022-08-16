@@ -1,5 +1,9 @@
 package com.my.db;
 
+import com.my.exception.DBException;
+import com.my.exception.Messages;
+import org.apache.log4j.Logger;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -11,9 +15,11 @@ import java.sql.Statement;
 
 public class DBManager {
 
+    private static final Logger LOG = Logger.getLogger(DBManager.class);
+
     private static DBManager instance;
 
-    public static synchronized DBManager getInstance() {
+    public static synchronized DBManager getInstance() throws DBException {
         if (instance == null){
             instance = new DBManager();
         }
@@ -22,23 +28,26 @@ public class DBManager {
 
     private DataSource ds;
 
-    private DBManager(){
+    private DBManager() throws DBException {
         try {
             Context initContext = new InitialContext();
             Context envContext = (Context) initContext.lookup("java:/comp/env/");
             ds = (DataSource) envContext.lookup("jdbc/DBforProject");
+            LOG.trace("Data source ==> " + ds);
         } catch (NamingException e) {
-            throw new RuntimeException(e);
+            LOG.error(Messages.ERR_CANNOT_OBTAIN_DATA_SOURCE, e);
+            throw new DBException(Messages.ERR_CANNOT_OBTAIN_DATA_SOURCE,e);
         }
     }
 
-    public Connection getConnection(){
+    public Connection getConnection() throws DBException {
         Connection con = null;
 
         try {
             con = ds.getConnection();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            LOG.error(Messages.ERR_CANNOT_OBTAIN_CONNECTION, e);
+            throw new DBException(Messages.ERR_CANNOT_OBTAIN_CONNECTION, e);
         }
 
         return con;
@@ -73,7 +82,7 @@ public class DBManager {
             try {
                 stmt.close();
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                LOG.error(Messages.ERR_CANNOT_CLOSE_STATEMENT, e);
             }
         }
     }
@@ -88,7 +97,7 @@ public class DBManager {
             try {
                 rs.close();
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                LOG.error(Messages.ERR_CANNOT_CLOSE_RESULTSET, e);
             }
         }
     }
@@ -104,20 +113,5 @@ public class DBManager {
         close(rs);
         close(stmt);
         close(con);
-    }
-
-    /**
-     * Rollbacks a connection.
-     *
-     * @param con Connection to be rollbacked.
-     */
-    public void rollback(Connection con) {
-        if (con != null) {
-            try {
-                con.rollback();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-        }
     }
 }

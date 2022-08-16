@@ -1,6 +1,9 @@
 package com.my.db;
 
 import com.my.db.entity.Customer;
+import com.my.exception.DBException;
+import com.my.exception.Messages;
+import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +12,7 @@ import java.sql.SQLException;
 
 public class CustomerDAO {
 
+    private static final Logger LOG = Logger.getLogger(CustomerDAO.class);
     // //////////////////////////////////////////////////////////
     // SQL queries
     // //////////////////////////////////////////////////////////
@@ -26,7 +30,7 @@ public class CustomerDAO {
 
     private final DBManager dbManager;
 
-    public CustomerDAO(){
+    public CustomerDAO() throws DBException {
         this.dbManager = DBManager.getInstance();
     }
 
@@ -34,7 +38,7 @@ public class CustomerDAO {
         this.dbManager = dbManager;
     }
 
-    public Customer findUserByLogin(String login) {
+    public Customer findUserByLogin(String login) throws DBException {
         Customer customer = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -48,7 +52,8 @@ public class CustomerDAO {
                 customer = extractUser(rs);
             }
         } catch (SQLException ex) {
-            System.out.println("ne wishlo findbyuserlogin");
+            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
+            throw new DBException(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
