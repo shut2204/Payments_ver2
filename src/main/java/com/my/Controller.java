@@ -16,7 +16,7 @@ public class Controller extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+        process(req,resp);
     }
 
     @Override
@@ -31,7 +31,6 @@ public class Controller extends HttpServlet {
         // extract command name from the request
         String commandName = request.getParameter("command");
 
-        System.out.println(commandName);
         // obtain command object by its name
         Command command = CommandContainer.get(commandName);
 

@@ -51,14 +51,15 @@ public class CustomerDAO {
             if (rs.next()) {
                 customer = extractUser(rs);
             }
+            con.commit();
         } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            throw new DBException(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
+            ex.printStackTrace();
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
         return customer;
-
     }
 
     private Customer extractUser(ResultSet rs) throws SQLException {
@@ -70,5 +71,62 @@ public class CustomerDAO {
         user.setLast_name(rs.getString("last_name"));
         user.setRole(rs.getString("role"));
         return user;
+    }
+
+    public boolean addCustomer(Customer customer) throws DBException {
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+        boolean flag = false;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("INSERT INTO Customers(phone_number, " +
+                    "first_name, last_name, login," +
+                    " password_customer, role) VALUES (?,?,?,?,?,?)");
+            pstmt.setString(1, customer.getPhone_number());
+            pstmt.setString(2, customer.getFirst_name());
+            pstmt.setString(3, customer.getLast_name());
+            pstmt.setString(4, customer.getLogin());
+            pstmt.setString(5, customer.getPassword_customer());
+            pstmt.setString(6, customer.getRole());
+
+            pstmt.executeUpdate();
+            con.commit();
+
+            flag = true;
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_CREATE_USER, ex);
+            throw new DBException(Messages.ERR_CANNOT_CREATE_USER, ex);
+        } finally {
+            DBManager.getInstance().close(con, pstmt, rs);
+        }
+
+        return flag;
+    }
+
+    public int findUserIDByLogin(String login) throws DBException {
+        int id = -1;
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            stmt = con.prepareStatement("select idcustomer from Customers where login = ?");
+            stmt.setString(1, login);
+            rs = stmt.executeQuery();
+            if (rs.next()) {
+                id = rs.getInt("idcustomer");
+            }
+            con.commit();
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
+            ex.printStackTrace();
+        } finally {
+            DBManager.getInstance().close(con, stmt, rs);
+        }
+        return id;
     }
 }

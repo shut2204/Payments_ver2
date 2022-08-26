@@ -2,16 +2,25 @@ package com.my.db.entity;
 
 public class Card {
 
-    private int idcard;
+    private long idcard;
     private int idcustomer;
     private int balance;
     private String name_card;
-
-    public int getIdcard() {
+    public String getNumber_card() {
+        String number_card = String.valueOf(idcard);
+        return   number_card.substring(0,4)
+               + " "
+               + number_card.substring(4,8)
+               + " "
+               + number_card.substring(8,12)
+               + " "
+               + number_card.substring(12);
+    }
+    public long getIdcard() {
         return idcard;
     }
 
-    public void setIdcard(int idcard) {
+    public void setIdcard(long idcard) {
         this.idcard = idcard;
     }
 
