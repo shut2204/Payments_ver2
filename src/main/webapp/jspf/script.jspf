@@ -1,0 +1,79 @@
+<script>
+    let popup = document.getElementById('mypopup'),
+        popupToggle = document.getElementById('myBtn'),
+        popupClose = document.getElementById('closeOne');
+
+    popupToggle.onclick = function () {
+        popupToggle.style.display = "none";
+        popup.style.display = "block";
+    };
+
+    popupClose.onclick = function () {
+        popup.style.display = "none";
+        popupToggle.style.display = "block";
+    };
+
+    window.onclick = function (e) {
+        if(e.target == popup){
+            popup.style.display = "none";
+            popupToggle.style.display = "block";
+        }
+    }
+
+
+    let flag = false;
+    allvalues = document.getElementsByClassName('obertka');
+    allpopup = document.getElementsByClassName('popup1');
+    allclose = document.getElementsByClassName('close');
+    alladdmaoney = document.getElementsByClassName('addMoney');
+
+    <c:forEach var="card" items="${sessionScope.get('cards')}">
+
+    ${num = num+1}
+    fon${num} = document.getElementById('obertka${num}'),
+        popup${num} = document.getElementById('mypopup${num}'),
+        popupToggle${num} = document.getElementById('myBtn${num}');
+    popupClose${num} = document.getElementById('close${num}');
+
+    popupToggle${num}.onclick = function () {
+        if (flag === false){
+            console.log("if")
+            fon${num}.style.display = "none";
+            popupToggle${num}.style.display = "none";
+            popup${num}.style.display = "block";
+            popupClose${num}.style.display = "block";
+            flag = true;
+        }else {
+            console.log("begin else")
+            Array.prototype.forEach.call(allvalues, child => {
+                child.style.display = "block";
+            });
+            Array.prototype.forEach.call(allpopup, child => {
+                child.style.display = "none";
+            });
+            Array.prototype.forEach.call(allclose, child => {
+                child.style.display = "none";
+            });
+            Array.prototype.forEach.call(alladdmaoney, child => {
+                child.style.display = "block";
+            });
+
+            console.log("begin fun")
+            fon${num}.style.display = "none";
+            popupToggle${num}.style.display = "none";
+            popup${num}.style.display = "block";
+            popupClose${num}.style.display = "block";
+            flag = true;
+        }
+    };
+
+    popupClose${num}.onclick = function () {
+        flag = false;
+        popup${num}.style.display = "none";
+        fon${num}.style.display = "block";
+        popupToggle${num}.style.display = "block";
+    };
+
+
+    </c:forEach>
+</script>

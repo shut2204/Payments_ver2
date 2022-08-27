@@ -38,7 +38,6 @@ public class LoginCommand extends Command{
             throws AppException {
         LOG.debug("Command starts");
         HttpSession session = request.getSession();
-
         String forward = PATH.PAGE_LOGIN;
 
         String login = request.getParameter("login");
@@ -48,7 +47,7 @@ public class LoginCommand extends Command{
         LOG.trace("Request parametr: password --> " + password);
 
         if (login == null || password == null || login.isEmpty() || password.isEmpty()){
-            request.setAttribute("error", "data entered incorrectly");
+            session.setAttribute("errorLogin", "data entered incorrectly");
             return forward;
         }
 
@@ -56,7 +55,7 @@ public class LoginCommand extends Command{
         LOG.trace("Found in DB: user --> " + customer);
 
         if (customer == null || !password.equals(customer.getPassword_customer())){
-            request.setAttribute("error", "Password is wrong");
+            session.setAttribute("errorLogin", "Password is wrong");
             return forward;
         }
 
@@ -64,6 +63,7 @@ public class LoginCommand extends Command{
             forward = PATH.PAGE_CABINET_USER;
         }
 
+        session.setAttribute("errorLogin", "");
         session.setAttribute("customer", customer);
         LOG.trace("Set the session attribute: customer --> " + customer);
         session.setAttribute("login", login);

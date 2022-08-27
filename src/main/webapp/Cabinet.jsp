@@ -21,29 +21,32 @@
 </head>
 
 <body>
-<nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
-    <label class="logo">Payments</label>
-    <ul>
-        <li><a href="index.jsp">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a class="active" href="controller?command=logout">Logout</a></li>
-    </ul>
-</nav>
+
+<%@ include file="/jspf/nav.jspf"%>
+
 
 <section>
-    <span class="large">Your Cards:</span>
-    <p>${error}</p>
+    <p style="color: red">${error}<p/>
     <div class="parent">
         <c:if test="${sessionScope.get('cards') != null }">
             <c:set var="num" scope="session" value="${sessionScope.get('cards').size()}"/>
             <c:forEach var="card" items="${sessionScope.get('cards')}">
                     <div class="card">
                         <div class="obertka" id="obertka${num}">
+                            <form action="controller">
+                                <c:if test="${card.getStatus() == 'unlock'}">
+                                    <input type="hidden" name="command" value="blockCard">
+                                    <input type="hidden" name="idCard" value=${card.getIdcard()}>
+                                    <input type="submit" class="blockCard" value="BLOCK">
+                                </c:if>
+                                <c:if test="${card.getStatus() == 'block'}">
+                                    <h1 class="blockedCard">BLOCKED</h1>
+                                    <input type="hidden" name="command" value="sendRequest">
+                                    <input type="hidden" name="idCard" value=${card.getIdcard()}>
+                                    <input type="submit" class="requestCard" value="REQUEST">
+                                </c:if>
+                            </form>
+
                             <h3 class="bank">Payments</h3>
                             <img src="img/chip.png" class="chip" />
                             <img src="img/contactless-indicator.png" class="indicator" />
@@ -53,7 +56,9 @@
                                     ${card.getName_card()}
                             </h5>
                             <h5 class="valid"><span class="balance">Balance</span>
-                                <button id="myBtn${num}" class="addMoney">+ Add money</button>
+                                <c:if test="${card.getStatus() == 'unlock'}">
+                                    <button id="myBtn${num}" class="addMoney">+ Add money</button>
+                                </c:if>
                                 <br />${card.getBalance()}</h5>
                             <img src="img/visa.png" class="logo1" />
                         </div>
@@ -62,13 +67,10 @@
                             <div class="popup-content1">
                                 <span class="close" id="close${num}">&times;</span>
                                 <form class="form" action="controller" method="post">
-                                    <input type="hidden" name="command" value="addNewCard">
-                                    <p class="par" >${card.getNumber_card()}</p>
-                                    <select class="sel" name="type" required="required">
-                                        <option value="">Choose...</option>
-                                        <option value="1">Personal</option>
-                                        <option value="2">Special</option>
-                                    </select>
+                                    <p class="par" >How many</p>
+                                    <input name="idCard" value="${card.getIdcard()}" type="hidden">
+                                    <input type="text" class="sel" name="money">
+                                    <input type="hidden" name="command" value="addMoneyOnCard">
                                     <div class="Button">
                                         <input class="button-29" role="button" type="submit" value="Submit">
                                     </div>
@@ -84,7 +86,7 @@
             <button id="myBtn" class="addNewCardClass">+ Add new Card</button>
             <div class="popup" id="mypopup">
                 <div class="popup-content">
-                    <span class="close">&times;</span>
+                    <span class="close" id="closeOne">&times;</span>
                     <form class="form" action="controller" method="post">
                         <input type="hidden" name="command" value="addNewCard">
                         <p class="par" >Choose type</p>
@@ -104,64 +106,7 @@
 
     </div>
 </section>
-<script src="script/script.js"></script>
-<script>
-    let flag = false;
-    allvalues = document.getElementsByClassName('obertka');
-    allpopup = document.getElementsByClassName('popup1');
-    allclose = document.getElementsByClassName('close');
-    alladdmaoney = document.getElementsByClassName('addMoney');
 
-    <c:forEach var="card" items="${sessionScope.get('cards')}">
-
-        ${num = num+1}
-        fon${num} = document.getElementById('obertka${num}'),
-        popup${num} = document.getElementById('mypopup${num}'),
-        popupToggle${num} = document.getElementById('myBtn${num}');
-        popupClose${num} = document.getElementById('close${num}');
-
-        popupToggle${num}.onclick = function () {
-            if (flag === false){
-                console.log("if")
-                fon${num}.style.display = "none";
-                popupToggle${num}.style.display = "none";
-                popup${num}.style.display = "block";
-                popupClose${num}.style.display = "block";
-                flag = true;
-            }else {
-                console.log("begin else")
-                Array.prototype.forEach.call(allvalues, child => {
-                    child.style.display = "block";
-                });
-                Array.prototype.forEach.call(allpopup, child => {
-                    child.style.display = "none";
-                });
-                Array.prototype.forEach.call(allclose, child => {
-                    child.style.display = "none";
-                });
-                Array.prototype.forEach.call(alladdmaoney, child => {
-                    child.style.display = "block";
-                });
-
-                console.log("begin fun")
-                fon${num}.style.display = "none";
-                popupToggle${num}.style.display = "none";
-                popup${num}.style.display = "block";
-                popupClose${num}.style.display = "block";
-                flag = true;
-            }
-        };
-
-        popupClose${num}.onclick = function () {
-            flag = false;
-            popup${num}.style.display = "none";
-            fon${num}.style.display = "block";
-            popupToggle${num}.style.display = "block";
-        };
-
-
-    </c:forEach>
-</script>
-
+<%@ include file="/jspf/script.jspf"%>
 </body>
 </html>

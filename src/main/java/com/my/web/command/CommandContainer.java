@@ -18,6 +18,9 @@ public class CommandContainer {
         commands.put("registration" , new RegistrationCommand());
         commands.put("logout" , new LogoutCommand());
         commands.put("addNewCard", new AddCardCommand());
+        commands.put("addMoneyOnCard" , new AddMoneyOnCard());
+        commands.put("transferMoney", new TransferMoneyCommand());
+        commands.put("blockCard", new BlockCommand());
     }
 
     public static Command get(String commandName) {

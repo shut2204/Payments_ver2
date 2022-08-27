@@ -6,6 +6,17 @@ public class Card {
     private int idcustomer;
     private int balance;
     private String name_card;
+
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public String getNumber_card() {
         String number_card = String.valueOf(idcard);
         return   number_card.substring(0,4)

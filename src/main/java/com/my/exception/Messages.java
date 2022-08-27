@@ -4,6 +4,9 @@ public class Messages {
 
     public static final String ERR_CANNOT_ADD_CARD = "Cannot add card";
     public static final String ERR_CANNOT_MAKE_ROLLBACK = "Cannot create rollback";
+    public static final String ERR_CANNOT_UP_BALANCE = "Sorry but cannot up balance";
+    public static final String ERR_CANNOT_TRANSFER_MONEY = "Cant transfer money";
+    public static final String ERR_CANNOT_BLOCK_CARD = "Cannot block card by this id";
 
     private Messages(){
         //no op

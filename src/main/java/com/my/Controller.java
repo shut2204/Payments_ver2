@@ -16,16 +16,16 @@ public class Controller extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        process(req,resp);
+        req.getRequestDispatcher(process(req,resp)).forward(req,resp);
+
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        process(req,resp);
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        resp.sendRedirect(process(req,resp));
     }
 
-    private void process(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ServletException {
+    private String process(HttpServletRequest request, HttpServletResponse response) {
 
 
         // extract command name from the request
@@ -42,7 +42,6 @@ public class Controller extends HttpServlet {
             throw new RuntimeException(e);
         }
         // go to forward
-        request.getRequestDispatcher(forward).forward(request, response);
-
+        return forward;
     }
 }

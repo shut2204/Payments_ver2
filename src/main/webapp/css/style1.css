@@ -100,7 +100,23 @@ section{
 }
 
 
-
+.card1 {
+    width: 506px;
+    height: 319px;
+    position: relative;
+    background: radial-gradient(
+            140% 140% at 0% 0%,
+            rgba(255, 255, 255, 0.4) 0%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    border-top: 1px solid #eeeded70;
+    border-left: 1px solid #eeeded70;
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    margin-right: 90px;
+}
 
 .card {
     width: 506px;
@@ -118,6 +134,15 @@ section{
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
     z-index: 1;
     transition: all 0.8s ease 0s;
+}
+
+.blockedCard{
+    position: absolute;
+    color: red;
+    transform: rotate(-35deg);
+    font-size: 83px;
+    bottom: 127px;
+    left: 48px;
 }
 
 .card:hover{
@@ -160,6 +185,20 @@ section{
     position: absolute;
     bottom: 100px;
     left: 30px;
+}
+
+.numberCard2{
+    font-size: 36px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 100px;
+    left: 19px;
+    background: content-box;
+    border: none;
+    color: white;
+    border-bottom: 4px solid chartreuse;
+    outline: none;
+
 }
 
 .card-holder {
@@ -209,7 +248,7 @@ section{
 
     flex-wrap: wrap;
 
-    justify-content: flex-start;
+    justify-content: center;
 
     padding: 20px;
 }
@@ -298,6 +337,12 @@ section{
     text-align: center;
 }
 
+.card1 .button-29{
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+}
+
 .par{
     font-size: xxx-large;
     margin-top: 10%;
@@ -308,6 +353,59 @@ section{
 
 select::-ms-expand {
     display: none;
+}
+
+.requestCard{
+    border: 2px solid lime;
+    position: absolute;
+    font-size: 14px;
+    top: 28px;
+    left: 36px;
+    border-radius: 7px;
+    height: 28px;
+    width: 72px;
+    background: transparent;
+    color: lime;
+    cursor: pointer;
+}
+
+.blockCard{
+    border: 2px solid red;
+    position: absolute;
+    font-size: 14px;
+    top: 28px;
+    left: 36px;
+    border-radius: 7px;
+    height: 28px;
+    width: 69px;
+    background: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+.howmuch{
+    outline: none;
+    background: content-box;
+    border: none;
+    color: white;
+    border-bottom: 4px solid chartreuse;
+    width: 100px;
+    font-size: large;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.option{
+    background: transparent;
+}
+
+.sel1{
+    position: absolute;
+    bottom: 92px;
+    width: 90%;
+    color: chartreuse;
+    left: 25px;
+    font-size: 30px;
 }
 
 

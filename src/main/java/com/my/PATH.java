@@ -7,4 +7,5 @@ public class PATH {
 
     public static final String PAGE_REGISTRATION_USER = "registration.jsp";
     public static final String PAGE_CABINET_USER = "Cabinet.jsp";
+    public static final String TRANSFER_PAGE = "Transfers.jsp";
 }
