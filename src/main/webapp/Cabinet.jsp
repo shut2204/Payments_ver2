@@ -33,7 +33,7 @@
             <c:forEach var="card" items="${sessionScope.get('cards')}">
                     <div class="card">
                         <div class="obertka" id="obertka${num}">
-                            <form action="controller">
+                            <form action="controller" method="post">
                                 <c:if test="${card.getStatus() == 'unlock'}">
                                     <input type="hidden" name="command" value="blockCard">
                                     <input type="hidden" name="idCard" value=${card.getIdcard()}>

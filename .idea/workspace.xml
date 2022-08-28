@@ -9,29 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="add a function add balance(front part)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AddCardCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/LogoutCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/RegistrationCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/script/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Payments_ver2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Payments_ver2_war_exploded.xml" afterDir="false" />
+    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 1.0">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/PaymentCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/exception/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/exception/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Transfers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Transfers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jspf/nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jspf/nav.jspf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +42,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/css/style1.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -78,6 +78,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -194,7 +195,8 @@
       <workItem from="1661436615007" duration="10176000" />
       <workItem from="1661500832032" duration="504000" />
       <workItem from="1661511347081" duration="20000" />
-      <workItem from="1661511380656" duration="960000" />
+      <workItem from="1661511380656" duration="41955000" />
+      <workItem from="1661708647264" duration="5997000" />
     </task>
     <task id="LOCAL-00001" summary="new start">
       <created>1660456863478</created>
@@ -245,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661024221483</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add a function add balance(front part)">
+      <created>1661512494653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661512494653</updated>
+    </task>
+    <task id="LOCAL-00009" summary="release 1.0">
+      <created>1661629135431</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661629135431</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +285,8 @@
     <MESSAGE value="add logger, and create my exception" />
     <MESSAGE value="add registration function and get all cards on Cabinet.jsp" />
     <MESSAGE value="add a function add card, and autocommit false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a function add card, and autocommit false" />
+    <MESSAGE value="add a function add balance(front part)" />
+    <MESSAGE value="release 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 1.0" />
   </component>
 </project>

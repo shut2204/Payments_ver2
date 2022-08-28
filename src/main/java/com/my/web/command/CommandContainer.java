@@ -21,6 +21,8 @@ public class CommandContainer {
         commands.put("addMoneyOnCard" , new AddMoneyOnCard());
         commands.put("transferMoney", new TransferMoneyCommand());
         commands.put("blockCard", new BlockCommand());
+        commands.put("prepare", new PreparePaymentCommand());
+        commands.put("pagesOfPayments", new PagesOfPayments());
     }
 
     public static Command get(String commandName) {

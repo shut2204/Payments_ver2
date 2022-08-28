@@ -87,6 +87,8 @@ public class CardDAO {
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+        }finally {
+            DBManager.getInstance().close(con, pstmt, null);
         }
 
         return cards;

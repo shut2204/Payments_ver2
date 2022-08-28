@@ -2,7 +2,9 @@ package com.my.web.command;
 
 import com.my.PATH;
 import com.my.db.CardDAO;
+import com.my.db.PaymentDAO;
 import com.my.db.entity.Card;
+import com.my.db.entity.Payment;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
@@ -16,10 +18,12 @@ import java.util.List;
 public class PreparePaymentCommand extends Command{
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
+    private static PaymentDAO paymentDAO;
     private static CardDAO cardDAO;
 
     public PreparePaymentCommand() {
         try {
+            paymentDAO = new PaymentDAO();
             cardDAO = new CardDAO();
         } catch (DBException e) {
             LOG.error(e);
@@ -53,18 +57,26 @@ public class PreparePaymentCommand extends Command{
             return forward;
         }
 
-        boolean b = cardDAO.transferMoney(request.getParameter("type1"), request.getParameter("numberCard2"), money);
+
+        Payment payment = new Payment();
+        payment.setId_card(String.valueOf(card1.getIdcard()));
+        payment.setAmount(Integer.parseInt(money));
+        payment.setTo_card(String.valueOf(card2.getIdcard()));
+        payment.setIdcustomer(card1.getIdcustomer());
+        payment.setIdcustomer2(card2.getIdcustomer());
+
+        boolean b = paymentDAO.prepare(payment);
 
         LOG.debug(b);
 
         if (b){
-            LOG.debug("transfer was successful");
-            List<Card> cards = cardDAO.getAllByLogin((String) session.getAttribute("login"));
-            session.setAttribute("cards", cards);
-            LOG.info("Get cards and set user Cards -> " + cards);
+            session.setAttribute("errorPrepare", "");
+            session.setAttribute("infoPrepare", "Your payment was successful prepare");
+            LOG.debug("payment was prepare successful");
         }else {
             LOG.error(Messages.ERR_CANNOT_TRANSFER_MONEY);
-            session.setAttribute("error", "Transfer fail, try again");
+            session.setAttribute("infoPrepare", "");
+            session.setAttribute("errorPrepare", "Error prepare your payment, try again");
         }
 
         LOG.debug("Command end");

@@ -7,7 +7,7 @@
     <ul>
         <li><a href="index.jsp">Home</a></li>
         <c:if test="${sessionScope.get('login') != null }">
-            <li><a href="#">Payments</a></li>
+            <li><a href="controller?command=pagesOfPayments">Payments</a></li>
             <li><a href="Transfers.jsp">Transfers</a></li>
             <li><a href="Cabinet.jsp">Cabinet</a></li>
             <li><a href="controller?command=logout">Logout</a></li>

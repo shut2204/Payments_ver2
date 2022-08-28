@@ -1875,3 +1875,652 @@ Caused by: java.lang.InterruptedException
 2022-08-27 22-13-30 DEBUG [http-nio-8080-exec-177] Command finished
 2022-08-27 22-13-42 DEBUG [http-nio-8080-exec-175] Command starts Transfer
 2022-08-27 22-13-58 DEBUG [http-nio-8080-exec-172] Command starts Transfer
+2022-08-28 10-10-22 DEBUG [http-nio-8080-exec-10] Command starts
+2022-08-28 10-10-23 INFO  [http-nio-8080-exec-10] Get cards and set user Cards -> [com.my.db.entity.Card@5411a470, com.my.db.entity.Card@3baf0c6, com.my.db.entity.Card@19863921, com.my.db.entity.Card@6314ea3d, com.my.db.entity.Card@3a7ff00b, com.my.db.entity.Card@6e170b42, com.my.db.entity.Card@46f07890]
+2022-08-28 10-10-23 INFO  [http-nio-8080-exec-10] Customer com.my.db.entity.Customer@56c0f83 logged as user
+2022-08-28 10-10-23 DEBUG [http-nio-8080-exec-10] Command finished
+2022-08-28 10-10-55 DEBUG [http-nio-8080-exec-7] Command starts Prepare
+2022-08-28 10-11-04 DEBUG [http-nio-8080-exec-8] Command starts Prepare
+2022-08-28 10-11-16 DEBUG [http-nio-8080-exec-9] Command starts Prepare
+2022-08-28 10-11-16 DEBUG [http-nio-8080-exec-9] true
+2022-08-28 10-11-16 DEBUG [http-nio-8080-exec-9] payment was prepare successful
+2022-08-28 10-11-16 INFO  [http-nio-8080-exec-9] Get all payments and set user payments -> [com.my.db.entity.Payment@595fd915]
+2022-08-28 10-11-16 DEBUG [http-nio-8080-exec-9] Command end
+2022-08-28 19-54-29 DEBUG [http-nio-8080-exec-6] Command starts
+2022-08-28 19-54-30 INFO  [http-nio-8080-exec-6] Get cards and set user Cards -> [com.my.db.entity.Card@3406951a, com.my.db.entity.Card@277585b5, com.my.db.entity.Card@7af61fa1, com.my.db.entity.Card@3c0d4572, com.my.db.entity.Card@3c23b9ac, com.my.db.entity.Card@3770cbb0, com.my.db.entity.Card@7d31d1e8]
+2022-08-28 19-54-30 INFO  [http-nio-8080-exec-6] Customer com.my.db.entity.Customer@78412246 logged as user
+2022-08-28 19-54-30 DEBUG [http-nio-8080-exec-6] Command finished
+2022-08-28 20-26-26 DEBUG [http-nio-8080-exec-8] Command starts
+2022-08-28 20-26-26 INFO  [http-nio-8080-exec-8] Get cards and set user Cards -> [com.my.db.entity.Card@43db96a3, com.my.db.entity.Card@31b87a87, com.my.db.entity.Card@62b87a7e, com.my.db.entity.Card@2a5e19e3, com.my.db.entity.Card@35affc85, com.my.db.entity.Card@4731c4f5, com.my.db.entity.Card@66fb2de7]
+2022-08-28 20-26-26 INFO  [http-nio-8080-exec-8] Customer com.my.db.entity.Customer@173ca5aa logged as user
+2022-08-28 20-26-26 DEBUG [http-nio-8080-exec-8] Command finished
+2022-08-28 20-26-53 DEBUG [http-nio-8080-exec-3] Command starts Prepare
+2022-08-28 20-26-53 DEBUG [http-nio-8080-exec-3] true
+2022-08-28 20-26-53 DEBUG [http-nio-8080-exec-3] payment was prepare successful
+2022-08-28 20-26-53 INFO  [http-nio-8080-exec-3] Get all payments and set user payments -> [com.my.db.entity.Payment@23e489bb, com.my.db.entity.Payment@11afeef0]
+2022-08-28 20-26-53 DEBUG [http-nio-8080-exec-3] Command end
+2022-08-28 20-27-00 DEBUG [http-nio-8080-exec-4] Command starts Prepare
+2022-08-28 20-27-01 DEBUG [http-nio-8080-exec-4] true
+2022-08-28 20-27-01 DEBUG [http-nio-8080-exec-4] payment was prepare successful
+2022-08-28 20-27-01 INFO  [http-nio-8080-exec-4] Get all payments and set user payments -> [com.my.db.entity.Payment@10e4ad9d, com.my.db.entity.Payment@1950df52, com.my.db.entity.Payment@142ca9bd]
+2022-08-28 20-27-01 DEBUG [http-nio-8080-exec-4] Command end
+2022-08-28 20-27-07 DEBUG [http-nio-8080-exec-5] Command starts Prepare
+2022-08-28 20-27-07 DEBUG [http-nio-8080-exec-5] true
+2022-08-28 20-27-07 DEBUG [http-nio-8080-exec-5] payment was prepare successful
+2022-08-28 20-27-07 INFO  [http-nio-8080-exec-5] Get all payments and set user payments -> [com.my.db.entity.Payment@11d5d985, com.my.db.entity.Payment@2175865, com.my.db.entity.Payment@681b4935, com.my.db.entity.Payment@2b7be3a8]
+2022-08-28 20-27-07 DEBUG [http-nio-8080-exec-5] Command end
+2022-08-28 20-27-13 DEBUG [http-nio-8080-exec-7] Command starts Prepare
+2022-08-28 20-27-13 DEBUG [http-nio-8080-exec-7] true
+2022-08-28 20-27-13 DEBUG [http-nio-8080-exec-7] payment was prepare successful
+2022-08-28 20-27-13 INFO  [http-nio-8080-exec-7] Get all payments and set user payments -> [com.my.db.entity.Payment@69f36391, com.my.db.entity.Payment@45a2b84f, com.my.db.entity.Payment@6255d673, com.my.db.entity.Payment@6f00b8f2, com.my.db.entity.Payment@1d9db168]
+2022-08-28 20-27-13 DEBUG [http-nio-8080-exec-7] Command end
+2022-08-28 20-27-18 DEBUG [http-nio-8080-exec-8] Command starts Prepare
+2022-08-28 20-27-18 DEBUG [http-nio-8080-exec-8] true
+2022-08-28 20-27-18 DEBUG [http-nio-8080-exec-8] payment was prepare successful
+2022-08-28 20-27-18 INFO  [http-nio-8080-exec-8] Get all payments and set user payments -> [com.my.db.entity.Payment@394214ee, com.my.db.entity.Payment@46c42b0a, com.my.db.entity.Payment@b8d7add, com.my.db.entity.Payment@253c4752, com.my.db.entity.Payment@c70d27f, com.my.db.entity.Payment@6b0b3480]
+2022-08-28 20-27-18 DEBUG [http-nio-8080-exec-8] Command end
+2022-08-28 20-27-31 DEBUG [http-nio-8080-exec-9] Command starts Prepare
+2022-08-28 20-27-32 DEBUG [http-nio-8080-exec-9] true
+2022-08-28 20-27-32 DEBUG [http-nio-8080-exec-9] payment was prepare successful
+2022-08-28 20-27-32 INFO  [http-nio-8080-exec-9] Get all payments and set user payments -> [com.my.db.entity.Payment@66c02c7e, com.my.db.entity.Payment@30411c93, com.my.db.entity.Payment@a2fe377, com.my.db.entity.Payment@2cc7c768, com.my.db.entity.Payment@4b83bd52, com.my.db.entity.Payment@739e8535, com.my.db.entity.Payment@65fe46a]
+2022-08-28 20-27-32 DEBUG [http-nio-8080-exec-9] Command end
+2022-08-28 20-27-38 DEBUG [http-nio-8080-exec-10] Command starts Prepare
+2022-08-28 20-27-38 DEBUG [http-nio-8080-exec-10] true
+2022-08-28 20-27-38 DEBUG [http-nio-8080-exec-10] payment was prepare successful
+2022-08-28 20-27-38 INFO  [http-nio-8080-exec-10] Get all payments and set user payments -> [com.my.db.entity.Payment@759714fd, com.my.db.entity.Payment@51f7f34a, com.my.db.entity.Payment@2398c8b7, com.my.db.entity.Payment@2e2e47c3, com.my.db.entity.Payment@63538e07, com.my.db.entity.Payment@dd04c84, com.my.db.entity.Payment@6868f0f9, com.my.db.entity.Payment@3424a268]
+2022-08-28 20-27-38 DEBUG [http-nio-8080-exec-10] Command end
+2022-08-28 20-41-28 DEBUG [http-nio-8080-exec-3] LogoutCommand starts
+2022-08-28 20-41-28 DEBUG [http-nio-8080-exec-3] LogoutCommand finished
+2022-08-28 20-41-55 DEBUG [http-nio-8080-exec-1] Command starts
+2022-08-28 20-41-55 INFO  [http-nio-8080-exec-1] Get cards and set user Cards -> [com.my.db.entity.Card@d49dd0d, com.my.db.entity.Card@647baa7f, com.my.db.entity.Card@7d1656bf, com.my.db.entity.Card@52d94d47, com.my.db.entity.Card@11bb53a4, com.my.db.entity.Card@282a3bbe, com.my.db.entity.Card@67c633aa]
+2022-08-28 20-41-55 INFO  [http-nio-8080-exec-1] Customer com.my.db.entity.Customer@dc2d226 logged as user
+2022-08-28 20-41-55 DEBUG [http-nio-8080-exec-1] Command finished
+2022-08-28 20-46-42 DEBUG [http-nio-8080-exec-8] Command starts
+2022-08-28 20-46-43 INFO  [http-nio-8080-exec-8] Get cards and set user Cards -> [com.my.db.entity.Card@7ef8f45b, com.my.db.entity.Card@cdc8c4b, com.my.db.entity.Card@33bc4489, com.my.db.entity.Card@65f14a8, com.my.db.entity.Card@3fbc7214, com.my.db.entity.Card@576a1f7c, com.my.db.entity.Card@6a38114]
+2022-08-28 20-46-43 INFO  [http-nio-8080-exec-8] Customer com.my.db.entity.Customer@52d20afa logged as user
+2022-08-28 20-46-43 DEBUG [http-nio-8080-exec-8] Command finished
+2022-08-28 21-13-44 DEBUG [http-nio-8080-exec-6] Command starts
+2022-08-28 21-13-45 INFO  [http-nio-8080-exec-6] Get cards and set user Cards -> [com.my.db.entity.Card@3dba46ae, com.my.db.entity.Card@ad2e3f1, com.my.db.entity.Card@388dd943, com.my.db.entity.Card@5c0fc173, com.my.db.entity.Card@336f736a, com.my.db.entity.Card@2ebfc39d, com.my.db.entity.Card@78ae50c8]
+2022-08-28 21-13-45 INFO  [http-nio-8080-exec-6] Customer com.my.db.entity.Customer@219a739e logged as user
+2022-08-28 21-13-45 DEBUG [http-nio-8080-exec-6] Command finished
+2022-08-28 21-20-52 DEBUG [http-nio-8080-exec-6] Command starts
+2022-08-28 21-20-52 INFO  [http-nio-8080-exec-6] Get cards and set user Cards -> [com.my.db.entity.Card@7ed13182, com.my.db.entity.Card@e6aa4c7, com.my.db.entity.Card@42c4777, com.my.db.entity.Card@4d89b2bf, com.my.db.entity.Card@3aa3d7ad, com.my.db.entity.Card@613410a2, com.my.db.entity.Card@7c5f40c]
+2022-08-28 21-20-52 INFO  [http-nio-8080-exec-6] Customer com.my.db.entity.Customer@19c7d787 logged as user
+2022-08-28 21-20-52 DEBUG [http-nio-8080-exec-6] Command finished
+2022-08-28 21-22-05 DEBUG [http-nio-8080-exec-9] LogoutCommand starts
+2022-08-28 21-22-05 DEBUG [http-nio-8080-exec-9] LogoutCommand finished
+2022-08-28 21-22-07 DEBUG [http-nio-8080-exec-10] Command starts
+2022-08-28 21-22-08 INFO  [http-nio-8080-exec-10] Get cards and set user Cards -> [com.my.db.entity.Card@4d08e39d, com.my.db.entity.Card@3174908f, com.my.db.entity.Card@7836d91c, com.my.db.entity.Card@239d8b78, com.my.db.entity.Card@2903909d, com.my.db.entity.Card@3ce69dda, com.my.db.entity.Card@72d64d63]
+2022-08-28 21-22-08 INFO  [http-nio-8080-exec-10] Customer com.my.db.entity.Customer@4916a2d9 logged as user
+2022-08-28 21-22-08 DEBUG [http-nio-8080-exec-10] Command finished
+2022-08-28 21-22-10 DEBUG [http-nio-8080-exec-4] Command starts PaymentPagesCommand
+2022-08-28 21-22-10 DEBUG [http-nio-8080-exec-4] Command end
+2022-08-28 21-22-14 DEBUG [http-nio-8080-exec-6] Command starts PaymentPagesCommand
+2022-08-28 21-22-14 DEBUG [http-nio-8080-exec-6] Command end
+2022-08-28 21-47-34 DEBUG [http-nio-8080-exec-19] LogoutCommand starts
+2022-08-28 21-47-34 DEBUG [http-nio-8080-exec-19] LogoutCommand finished
+2022-08-28 21-47-35 DEBUG [http-nio-8080-exec-11] Command starts
+2022-08-28 21-47-36 INFO  [http-nio-8080-exec-11] Get cards and set user Cards -> [com.my.db.entity.Card@34ba8106, com.my.db.entity.Card@43e1d836, com.my.db.entity.Card@2d419a00, com.my.db.entity.Card@7056e3ba, com.my.db.entity.Card@1084ee07, com.my.db.entity.Card@5d69a449, com.my.db.entity.Card@7cd9b47e]
+2022-08-28 21-47-36 INFO  [http-nio-8080-exec-11] Customer com.my.db.entity.Customer@653243c4 logged as user
+2022-08-28 21-47-36 DEBUG [http-nio-8080-exec-11] Command finished
+2022-08-28 21-47-38 DEBUG [http-nio-8080-exec-15] Command starts PaymentPagesCommand
+2022-08-28 21-47-38 ERROR [http-nio-8080-exec-15] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0' , 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:62)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 21-47-38 DEBUG [http-nio-8080-exec-15] Command end
+2022-08-28 21-49-21 DEBUG [http-nio-8080-exec-14] Command starts PaymentPagesCommand
+2022-08-28 21-49-21 ERROR [http-nio-8080-exec-14] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:62)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 21-49-21 DEBUG [http-nio-8080-exec-14] Command end
+2022-08-28 21-49-49 DEBUG [http-nio-8080-exec-26] Command starts
+2022-08-28 21-49-50 INFO  [http-nio-8080-exec-26] Get cards and set user Cards -> [com.my.db.entity.Card@710bb5cb, com.my.db.entity.Card@6cf9f9c3, com.my.db.entity.Card@202e6c1f, com.my.db.entity.Card@78e0ff69, com.my.db.entity.Card@54e9b853, com.my.db.entity.Card@77fd74ec, com.my.db.entity.Card@2460b098]
+2022-08-28 21-49-50 INFO  [http-nio-8080-exec-26] Customer com.my.db.entity.Customer@5031d94 logged as user
+2022-08-28 21-49-50 DEBUG [http-nio-8080-exec-26] Command finished
+2022-08-28 21-49-56 DEBUG [http-nio-8080-exec-22] Command starts PaymentPagesCommand
+2022-08-28 21-49-56 ERROR [http-nio-8080-exec-22] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:62)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 21-49-56 DEBUG [http-nio-8080-exec-22] Command end
+2022-08-28 21-52-02 DEBUG [http-nio-8080-exec-35] LogoutCommand starts
+2022-08-28 21-52-02 DEBUG [http-nio-8080-exec-35] LogoutCommand finished
+2022-08-28 21-52-03 DEBUG [http-nio-8080-exec-32] Command starts
+2022-08-28 21-52-04 INFO  [http-nio-8080-exec-32] Get cards and set user Cards -> [com.my.db.entity.Card@67177d07, com.my.db.entity.Card@5a48f9bf, com.my.db.entity.Card@432c55e8, com.my.db.entity.Card@579f8179, com.my.db.entity.Card@bbc31c8, com.my.db.entity.Card@16a4a401, com.my.db.entity.Card@37063028]
+2022-08-28 21-52-04 INFO  [http-nio-8080-exec-32] Customer com.my.db.entity.Customer@22b3ea30 logged as user
+2022-08-28 21-52-04 DEBUG [http-nio-8080-exec-32] Command finished
+2022-08-28 21-52-09 DEBUG [http-nio-8080-exec-30] Command starts PaymentPagesCommand
+2022-08-28 21-52-09 DEBUG [http-nio-8080-exec-30] 44
+2022-08-28 21-52-09 DEBUG [http-nio-8080-exec-30] 0
+2022-08-28 21-52-09 ERROR [http-nio-8080-exec-30] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 21-52-09 DEBUG [http-nio-8080-exec-30] Command end
+2022-08-28 21-53-33 DEBUG [http-nio-8080-exec-36] LogoutCommand starts
+2022-08-28 21-53-33 DEBUG [http-nio-8080-exec-36] LogoutCommand finished
+2022-08-28 21-53-34 DEBUG [http-nio-8080-exec-39] Command starts
+2022-08-28 21-53-34 INFO  [http-nio-8080-exec-39] Get cards and set user Cards -> [com.my.db.entity.Card@4d5458d1, com.my.db.entity.Card@7a8fedac, com.my.db.entity.Card@3e9c0191, com.my.db.entity.Card@69c2ce44, com.my.db.entity.Card@63f817d, com.my.db.entity.Card@3d8ee9b, com.my.db.entity.Card@5d96f7f8]
+2022-08-28 21-53-34 INFO  [http-nio-8080-exec-39] Customer com.my.db.entity.Customer@54ac7817 logged as user
+2022-08-28 21-53-34 DEBUG [http-nio-8080-exec-39] Command finished
+2022-08-28 21-53-37 DEBUG [http-nio-8080-exec-42] Command starts PaymentPagesCommand
+2022-08-28 21-53-37 DEBUG [http-nio-8080-exec-42] 44
+2022-08-28 21-53-37 DEBUG [http-nio-8080-exec-42] 0
+2022-08-28 21-53-37 ERROR [http-nio-8080-exec-42] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', '5'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:70)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 21-53-37 DEBUG [http-nio-8080-exec-42] Command end
+2022-08-28 21-54-47 DEBUG [http-nio-8080-exec-48] LogoutCommand starts
+2022-08-28 21-54-47 DEBUG [http-nio-8080-exec-48] LogoutCommand finished
+2022-08-28 21-54-49 DEBUG [http-nio-8080-exec-47] Command starts
+2022-08-28 21-54-49 INFO  [http-nio-8080-exec-47] Get cards and set user Cards -> [com.my.db.entity.Card@410e2880, com.my.db.entity.Card@52f375e2, com.my.db.entity.Card@3f9ed82, com.my.db.entity.Card@24fb8864, com.my.db.entity.Card@1401fe53, com.my.db.entity.Card@5d14c554, com.my.db.entity.Card@11cda689]
+2022-08-28 21-54-49 INFO  [http-nio-8080-exec-47] Customer com.my.db.entity.Customer@1cb1ebe8 logged as user
+2022-08-28 21-54-49 DEBUG [http-nio-8080-exec-47] Command finished
+2022-08-28 21-54-50 DEBUG [http-nio-8080-exec-51] Command starts PaymentPagesCommand
+2022-08-28 21-54-50 DEBUG [http-nio-8080-exec-51] 44
+2022-08-28 21-54-50 DEBUG [http-nio-8080-exec-51] 0
+2022-08-28 21-54-50 ERROR [http-nio-8080-exec-51] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 21-54-50 DEBUG [http-nio-8080-exec-51] Command end
+2022-08-28 22-03-57 DEBUG [http-nio-8080-exec-53] LogoutCommand starts
+2022-08-28 22-03-57 DEBUG [http-nio-8080-exec-53] LogoutCommand finished
+2022-08-28 22-04-00 DEBUG [http-nio-8080-exec-56] Command starts
+2022-08-28 22-04-01 INFO  [http-nio-8080-exec-56] Get cards and set user Cards -> [com.my.db.entity.Card@5ef8b190, com.my.db.entity.Card@15a619a1, com.my.db.entity.Card@12324d93, com.my.db.entity.Card@43bf34fe, com.my.db.entity.Card@58507928, com.my.db.entity.Card@7d9e1892, com.my.db.entity.Card@7d409c67]
+2022-08-28 22-04-01 INFO  [http-nio-8080-exec-56] Customer com.my.db.entity.Customer@5423f6d8 logged as user
+2022-08-28 22-04-01 DEBUG [http-nio-8080-exec-56] Command finished
+2022-08-28 22-04-05 DEBUG [http-nio-8080-exec-52] Command starts PaymentPagesCommand
+2022-08-28 22-04-05 DEBUG [http-nio-8080-exec-52] 44
+2022-08-28 22-04-05 DEBUG [http-nio-8080-exec-52] 0
+2022-08-28 22-04-05 ERROR [http-nio-8080-exec-52] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 22-04-05 DEBUG [http-nio-8080-exec-52] Command end
+2022-08-28 22-05-18 DEBUG [http-nio-8080-exec-68] LogoutCommand starts
+2022-08-28 22-05-18 DEBUG [http-nio-8080-exec-68] LogoutCommand finished
+2022-08-28 22-05-20 DEBUG [http-nio-8080-exec-64] Command starts
+2022-08-28 22-05-20 INFO  [http-nio-8080-exec-64] Get cards and set user Cards -> [com.my.db.entity.Card@5b14ef, com.my.db.entity.Card@40578c14, com.my.db.entity.Card@6eb974d, com.my.db.entity.Card@2c1c316a, com.my.db.entity.Card@74b8b46a, com.my.db.entity.Card@873b1c5, com.my.db.entity.Card@52f81e79]
+2022-08-28 22-05-20 INFO  [http-nio-8080-exec-64] Customer com.my.db.entity.Customer@fe9e4b4 logged as user
+2022-08-28 22-05-20 DEBUG [http-nio-8080-exec-64] Command finished
+2022-08-28 22-05-22 DEBUG [http-nio-8080-exec-67] Command starts PaymentPagesCommand
+2022-08-28 22-05-22 DEBUG [http-nio-8080-exec-67] 44
+2022-08-28 22-05-22 DEBUG [http-nio-8080-exec-67] 0
+2022-08-28 22-05-22 ERROR [http-nio-8080-exec-67] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', '5'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:70)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 22-05-22 DEBUG [http-nio-8080-exec-67] Command end
+2022-08-28 22-07-31 DEBUG [http-nio-8080-exec-72] LogoutCommand starts
+2022-08-28 22-07-31 DEBUG [http-nio-8080-exec-72] LogoutCommand finished
+2022-08-28 22-07-33 DEBUG [http-nio-8080-exec-76] Command starts
+2022-08-28 22-07-33 INFO  [http-nio-8080-exec-76] Get cards and set user Cards -> [com.my.db.entity.Card@2fa81f7d, com.my.db.entity.Card@61f0ef86, com.my.db.entity.Card@57cd06d0, com.my.db.entity.Card@45d782c1, com.my.db.entity.Card@2aeb3ef1, com.my.db.entity.Card@4c8178f5, com.my.db.entity.Card@73c50c33]
+2022-08-28 22-07-33 INFO  [http-nio-8080-exec-76] Customer com.my.db.entity.Customer@2498bed logged as user
+2022-08-28 22-07-33 DEBUG [http-nio-8080-exec-76] Command finished
+2022-08-28 22-07-35 DEBUG [http-nio-8080-exec-63] Command starts PaymentPagesCommand
+2022-08-28 22-07-35 DEBUG [http-nio-8080-exec-63] 44
+2022-08-28 22-07-35 DEBUG [http-nio-8080-exec-63] 0
+2022-08-28 22-07-35 DEBUG [http-nio-8080-exec-63] Command end
+2022-08-28 22-08-25 DEBUG [http-nio-8080-exec-75] LogoutCommand starts
+2022-08-28 22-08-25 DEBUG [http-nio-8080-exec-75] LogoutCommand finished
+2022-08-28 22-08-27 DEBUG [http-nio-8080-exec-74] Command starts
+2022-08-28 22-08-27 INFO  [http-nio-8080-exec-74] Get cards and set user Cards -> [com.my.db.entity.Card@df873e7, com.my.db.entity.Card@49e7dce, com.my.db.entity.Card@6a329fe8, com.my.db.entity.Card@33e259fc, com.my.db.entity.Card@7dcb732c, com.my.db.entity.Card@a4c0156, com.my.db.entity.Card@747f0228]
+2022-08-28 22-08-27 INFO  [http-nio-8080-exec-74] Customer com.my.db.entity.Customer@6fecc066 logged as user
+2022-08-28 22-08-27 DEBUG [http-nio-8080-exec-74] Command finished
+2022-08-28 22-08-29 DEBUG [http-nio-8080-exec-73] Command starts PaymentPagesCommand
+2022-08-28 22-08-29 DEBUG [http-nio-8080-exec-73] 44
+2022-08-28 22-08-29 DEBUG [http-nio-8080-exec-73] 0
+2022-08-28 22-08-29 DEBUG [http-nio-8080-exec-73] Command end
+2022-08-28 22-09-00 DEBUG [http-nio-8080-exec-83] LogoutCommand starts
+2022-08-28 22-09-00 DEBUG [http-nio-8080-exec-83] LogoutCommand finished
+2022-08-28 22-09-01 DEBUG [http-nio-8080-exec-82] Command starts
+2022-08-28 22-09-02 INFO  [http-nio-8080-exec-82] Get cards and set user Cards -> [com.my.db.entity.Card@1bba1896, com.my.db.entity.Card@5f2384bf, com.my.db.entity.Card@1cef45c0, com.my.db.entity.Card@2015b4d, com.my.db.entity.Card@49b48d33, com.my.db.entity.Card@af1eec6, com.my.db.entity.Card@6cd67b1d]
+2022-08-28 22-09-02 INFO  [http-nio-8080-exec-82] Customer com.my.db.entity.Customer@29cda21c logged as user
+2022-08-28 22-09-02 DEBUG [http-nio-8080-exec-82] Command finished
+2022-08-28 22-09-03 DEBUG [http-nio-8080-exec-86] Command starts PaymentPagesCommand
+2022-08-28 22-09-03 DEBUG [http-nio-8080-exec-86] 44
+2022-08-28 22-09-03 DEBUG [http-nio-8080-exec-86] 0
+2022-08-28 22-09-03 ERROR [http-nio-8080-exec-86] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0', 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:70)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 22-09-03 DEBUG [http-nio-8080-exec-86] Command end
+2022-08-28 22-09-34 DEBUG [http-nio-8080-exec-91] LogoutCommand starts
+2022-08-28 22-09-34 DEBUG [http-nio-8080-exec-91] LogoutCommand finished
+2022-08-28 22-09-36 DEBUG [http-nio-8080-exec-89] Command starts
+2022-08-28 22-09-36 INFO  [http-nio-8080-exec-89] Get cards and set user Cards -> [com.my.db.entity.Card@3db7fec4, com.my.db.entity.Card@355b4529, com.my.db.entity.Card@698730c2, com.my.db.entity.Card@489fee28, com.my.db.entity.Card@4a5c6821, com.my.db.entity.Card@25411e4e, com.my.db.entity.Card@75903b04]
+2022-08-28 22-09-36 INFO  [http-nio-8080-exec-89] Customer com.my.db.entity.Customer@e60c083 logged as user
+2022-08-28 22-09-36 DEBUG [http-nio-8080-exec-89] Command finished
+2022-08-28 22-09-38 DEBUG [http-nio-8080-exec-88] Command starts PaymentPagesCommand
+2022-08-28 22-09-38 DEBUG [http-nio-8080-exec-88] 44
+2022-08-28 22-09-38 DEBUG [http-nio-8080-exec-88] 0
+2022-08-28 22-09-38 DEBUG [http-nio-8080-exec-88] Command end
+2022-08-28 22-10-44 DEBUG [http-nio-8080-exec-95] LogoutCommand starts
+2022-08-28 22-10-44 DEBUG [http-nio-8080-exec-95] LogoutCommand finished
+2022-08-28 22-10-46 DEBUG [http-nio-8080-exec-94] Command starts
+2022-08-28 22-10-46 INFO  [http-nio-8080-exec-94] Get cards and set user Cards -> [com.my.db.entity.Card@e7002f0, com.my.db.entity.Card@5fc94494, com.my.db.entity.Card@4de208db, com.my.db.entity.Card@4a2e71ca, com.my.db.entity.Card@44478dfd, com.my.db.entity.Card@51bf9c05, com.my.db.entity.Card@c46f239]
+2022-08-28 22-10-46 INFO  [http-nio-8080-exec-94] Customer com.my.db.entity.Customer@75d49795 logged as user
+2022-08-28 22-10-46 DEBUG [http-nio-8080-exec-94] Command finished
+2022-08-28 22-10-48 DEBUG [http-nio-8080-exec-79] Command starts PaymentPagesCommand
+2022-08-28 22-10-48 DEBUG [http-nio-8080-exec-79] 44
+2022-08-28 22-10-48 DEBUG [http-nio-8080-exec-79] 0
+2022-08-28 22-10-48 DEBUG [http-nio-8080-exec-79] Command end
+2022-08-28 22-17-41 DEBUG [http-nio-8080-exec-98] LogoutCommand starts
+2022-08-28 22-17-41 DEBUG [http-nio-8080-exec-98] LogoutCommand finished
+2022-08-28 22-17-43 DEBUG [http-nio-8080-exec-102] Command starts
+2022-08-28 22-17-44 INFO  [http-nio-8080-exec-102] Get cards and set user Cards -> [com.my.db.entity.Card@738b3733, com.my.db.entity.Card@36045322, com.my.db.entity.Card@48eb9e6a, com.my.db.entity.Card@5baecb8e, com.my.db.entity.Card@71b65d67, com.my.db.entity.Card@65bf8d30, com.my.db.entity.Card@71334723]
+2022-08-28 22-17-44 INFO  [http-nio-8080-exec-102] Customer com.my.db.entity.Customer@4482040 logged as user
+2022-08-28 22-17-44 DEBUG [http-nio-8080-exec-102] Command finished
+2022-08-28 22-17-46 DEBUG [http-nio-8080-exec-105] Command starts PaymentPagesCommand
+2022-08-28 22-17-46 DEBUG [http-nio-8080-exec-105] 44
+2022-08-28 22-17-46 DEBUG [http-nio-8080-exec-105] 0
+2022-08-28 22-17-46 DEBUG [http-nio-8080-exec-105] Command end
+2022-08-28 22-18-53 DEBUG [http-nio-8080-exec-101] Command starts PaymentPagesCommand
+2022-08-28 22-18-53 DEBUG [http-nio-8080-exec-101] -1
+2022-08-28 22-18-53 DEBUG [http-nio-8080-exec-101] 0
+2022-08-28 22-18-53 DEBUG [http-nio-8080-exec-101] Command end
+2022-08-28 22-18-57 DEBUG [http-nio-8080-exec-110] LogoutCommand starts
+2022-08-28 22-18-57 DEBUG [http-nio-8080-exec-110] LogoutCommand finished
+2022-08-28 22-18-59 DEBUG [http-nio-8080-exec-111] Command starts
+2022-08-28 22-18-59 INFO  [http-nio-8080-exec-111] Get cards and set user Cards -> [com.my.db.entity.Card@576599b5, com.my.db.entity.Card@2ece6a4f, com.my.db.entity.Card@666266f, com.my.db.entity.Card@13d8c993, com.my.db.entity.Card@688b426c, com.my.db.entity.Card@35cac120, com.my.db.entity.Card@228dca8]
+2022-08-28 22-18-59 INFO  [http-nio-8080-exec-111] Customer com.my.db.entity.Customer@234b532d logged as user
+2022-08-28 22-18-59 DEBUG [http-nio-8080-exec-111] Command finished
+2022-08-28 22-19-00 DEBUG [http-nio-8080-exec-109] Command starts PaymentPagesCommand
+2022-08-28 22-19-00 DEBUG [http-nio-8080-exec-109] 44
+2022-08-28 22-19-00 DEBUG [http-nio-8080-exec-109] 0
+2022-08-28 22-19-00 DEBUG [http-nio-8080-exec-109] Command end
+2022-08-28 22-22-27 DEBUG [http-nio-8080-exec-115] Command starts PaymentPagesCommand
+2022-08-28 22-22-27 DEBUG [http-nio-8080-exec-115] 0
+2022-08-28 22-22-27 DEBUG [http-nio-8080-exec-115] -1
+2022-08-28 22-22-27 DEBUG [http-nio-8080-exec-115] 0
+2022-08-28 22-22-27 DEBUG [http-nio-8080-exec-115] Command end
+2022-08-28 22-22-31 DEBUG [http-nio-8080-exec-122] Command starts
+2022-08-28 22-22-31 INFO  [http-nio-8080-exec-122] Get cards and set user Cards -> [com.my.db.entity.Card@34a8715c, com.my.db.entity.Card@5fb7d13d, com.my.db.entity.Card@65c80b01, com.my.db.entity.Card@5239b3c7, com.my.db.entity.Card@25ec0a4d, com.my.db.entity.Card@44b319f4, com.my.db.entity.Card@61869260]
+2022-08-28 22-22-31 INFO  [http-nio-8080-exec-122] Customer com.my.db.entity.Customer@40e57236 logged as user
+2022-08-28 22-22-31 DEBUG [http-nio-8080-exec-122] Command finished
+2022-08-28 22-22-33 DEBUG [http-nio-8080-exec-119] Command starts PaymentPagesCommand
+2022-08-28 22-22-33 DEBUG [http-nio-8080-exec-119] 2
+2022-08-28 22-22-33 DEBUG [http-nio-8080-exec-119] 44
+2022-08-28 22-22-33 DEBUG [http-nio-8080-exec-119] 0
+2022-08-28 22-22-33 DEBUG [http-nio-8080-exec-119] Command end
+2022-08-28 22-24-28 DEBUG [http-nio-8080-exec-125] LogoutCommand starts
+2022-08-28 22-24-28 DEBUG [http-nio-8080-exec-125] LogoutCommand finished
+2022-08-28 22-24-30 DEBUG [http-nio-8080-exec-130] Command starts
+2022-08-28 22-24-30 INFO  [http-nio-8080-exec-130] Get cards and set user Cards -> [com.my.db.entity.Card@4cf0099f, com.my.db.entity.Card@67b048a, com.my.db.entity.Card@775293c7, com.my.db.entity.Card@80c9408, com.my.db.entity.Card@44fcd867, com.my.db.entity.Card@1afddb26, com.my.db.entity.Card@79d2bf15]
+2022-08-28 22-24-30 INFO  [http-nio-8080-exec-130] Customer com.my.db.entity.Customer@13eb255e logged as user
+2022-08-28 22-24-30 DEBUG [http-nio-8080-exec-130] Command finished
+2022-08-28 22-24-32 DEBUG [http-nio-8080-exec-126] Command starts PaymentPagesCommand
+2022-08-28 22-24-32 DEBUG [http-nio-8080-exec-126] 2
+2022-08-28 22-24-32 DEBUG [http-nio-8080-exec-126] 44
+2022-08-28 22-24-32 DEBUG [http-nio-8080-exec-126] 0
+2022-08-28 22-24-32 DEBUG [http-nio-8080-exec-126] Command end
+2022-08-28 22-24-42 DEBUG [http-nio-8080-exec-103] Command starts PaymentPagesCommand
+2022-08-28 22-24-43 DEBUG [http-nio-8080-exec-103] 2
+2022-08-28 22-24-43 DEBUG [http-nio-8080-exec-103] 44
+2022-08-28 22-24-43 DEBUG [http-nio-8080-exec-103] 10
+2022-08-28 22-24-43 DEBUG [http-nio-8080-exec-103] Command end
+2022-08-28 22-25-19 DEBUG [http-nio-8080-exec-134] LogoutCommand starts
+2022-08-28 22-25-19 DEBUG [http-nio-8080-exec-134] LogoutCommand finished
+2022-08-28 22-25-21 DEBUG [http-nio-8080-exec-128] Command starts
+2022-08-28 22-25-21 INFO  [http-nio-8080-exec-128] Get cards and set user Cards -> [com.my.db.entity.Card@9331ff4, com.my.db.entity.Card@25a73563, com.my.db.entity.Card@349a621d, com.my.db.entity.Card@3121cfe0, com.my.db.entity.Card@20fcba8f, com.my.db.entity.Card@3c6c9fde, com.my.db.entity.Card@5b8188c4]
+2022-08-28 22-25-21 INFO  [http-nio-8080-exec-128] Customer com.my.db.entity.Customer@24211332 logged as user
+2022-08-28 22-25-21 DEBUG [http-nio-8080-exec-128] Command finished
+2022-08-28 22-25-23 DEBUG [http-nio-8080-exec-132] Command starts PaymentPagesCommand
+2022-08-28 22-25-23 DEBUG [http-nio-8080-exec-132] 2
+2022-08-28 22-25-23 DEBUG [http-nio-8080-exec-132] 44
+2022-08-28 22-25-23 DEBUG [http-nio-8080-exec-132] 0
+2022-08-28 22-25-23 DEBUG [http-nio-8080-exec-132] Command end
+2022-08-28 22-25-26 DEBUG [http-nio-8080-exec-123] Command starts PaymentPagesCommand
+2022-08-28 22-25-26 DEBUG [http-nio-8080-exec-123] 2
+2022-08-28 22-25-26 DEBUG [http-nio-8080-exec-123] 44
+2022-08-28 22-25-26 DEBUG [http-nio-8080-exec-123] -15
+2022-08-28 22-25-26 ERROR [http-nio-8080-exec-123] Cannot get all cards by this login
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-15, 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:121)
+	at com.my.db.PaymentDAO.getAllById(PaymentDAO.java:69)
+	at com.my.web.command.PagesOfPayments.execute(PagesOfPayments.java:64)
+	at com.my.Controller.process(Controller.java:40)
+	at com.my.Controller.doGet(Controller.java:19)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-28 22-25-26 DEBUG [http-nio-8080-exec-123] Command end
+2022-08-28 22-26-46 DEBUG [http-nio-8080-exec-142] LogoutCommand starts
+2022-08-28 22-26-46 DEBUG [http-nio-8080-exec-142] LogoutCommand finished
+2022-08-28 22-26-48 DEBUG [http-nio-8080-exec-143] Command starts
+2022-08-28 22-26-48 INFO  [http-nio-8080-exec-143] Get cards and set user Cards -> [com.my.db.entity.Card@21b157a2, com.my.db.entity.Card@2fd9ed56, com.my.db.entity.Card@34ca69aa, com.my.db.entity.Card@29426340, com.my.db.entity.Card@2652d8d, com.my.db.entity.Card@62b6c3ca, com.my.db.entity.Card@556710f]
+2022-08-28 22-26-48 INFO  [http-nio-8080-exec-143] Customer com.my.db.entity.Customer@3aa6980a logged as user
+2022-08-28 22-26-48 DEBUG [http-nio-8080-exec-143] Command finished
+2022-08-28 22-26-51 DEBUG [http-nio-8080-exec-140] Command starts PaymentPagesCommand
+2022-08-28 22-26-51 DEBUG [http-nio-8080-exec-140] 2
+2022-08-28 22-26-51 DEBUG [http-nio-8080-exec-140] 44
+2022-08-28 22-26-51 DEBUG [http-nio-8080-exec-140] 0
+2022-08-28 22-26-51 DEBUG [http-nio-8080-exec-140] Command end
+2022-08-28 22-26-55 DEBUG [http-nio-8080-exec-137] Command starts PaymentPagesCommand
+2022-08-28 22-26-55 DEBUG [http-nio-8080-exec-137] 2
+2022-08-28 22-26-55 DEBUG [http-nio-8080-exec-137] 44
+2022-08-28 22-26-55 DEBUG [http-nio-8080-exec-137] 5
+2022-08-28 22-26-55 DEBUG [http-nio-8080-exec-137] Command end
+2022-08-28 22-27-00 DEBUG [http-nio-8080-exec-139] Command starts PaymentPagesCommand
+2022-08-28 22-27-00 DEBUG [http-nio-8080-exec-139] 2
+2022-08-28 22-27-00 DEBUG [http-nio-8080-exec-139] 44
+2022-08-28 22-27-00 DEBUG [http-nio-8080-exec-139] 0
+2022-08-28 22-27-00 DEBUG [http-nio-8080-exec-139] Command end

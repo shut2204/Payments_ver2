@@ -23,9 +23,10 @@
 <body>
     <%@ include file="/jspf/nav.jspf"%>
     <section>
-        <h1 style="color: red; text-align: center" >${errorTransfer}</h1>
+        <h1 style="color: red; text-align: center" >${errorPrepare}</h1>
+        <h1 style="color: lime; text-align: center">${infoPrepare}</h1>
         <div class="parent">
-            <form class="parent" action="controller">
+            <form class="parent" action="controller" method="post">
             <div class="card1">
                     <h3 class="bank">Payments</h3>
                     <img src="img/chip.png" class="chip" />
@@ -44,7 +45,7 @@
                     <h3 class="bank">Payments</h3>
                     <img src="img/chip.png" class="chip" />
                     <img src="img/contactless-indicator.png" class="indicator" />
-                        <input type="hidden" name="command" value="transferMoney">
+                        <input type="hidden" name="command" value="prepare">
                         <input class="numberCard2" required name="numberCard2">
                         <h5 class="card-holder">
                             <span style="font-size: large">How many</span><br />

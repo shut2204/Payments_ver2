@@ -3,8 +3,10 @@ package com.my.web.command;
 import com.my.PATH;
 import com.my.db.CardDAO;
 import com.my.db.CustomerDAO;
+import com.my.db.PaymentDAO;
 import com.my.db.entity.Card;
 import com.my.db.entity.Customer;
+import com.my.db.entity.Payment;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import org.apache.log4j.Logger;
@@ -19,9 +21,11 @@ public class LoginCommand extends Command{
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
     private static CustomerDAO customerDAO;
+    private static PaymentDAO paymentDAO;
 
     public LoginCommand() {
         try {
+            paymentDAO = new PaymentDAO();
             customerDAO = new CustomerDAO();
         } catch (DBException e) {
             LOG.error(e);
