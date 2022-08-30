@@ -136,6 +136,44 @@ section{
     transition: all 0.8s ease 0s;
 }
 
+.wrapTable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.tablePages{
+    color: lime;
+    text-align: center;
+    font-size: x-large;
+}
+
+.tablePages a{
+    color: gold;
+}
+.table{
+    width: 80%;
+    font-family: sans-serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #3c4fe0;
+    color: white;
+    border: 16px solid #9A50DC;
+    border-radius: 20px;
+}
+
+th{
+    font-size: 18px;
+    padding: 10px;
+}
+
+td{
+    background: #B44BD3;
+    padding: 10px;
+}
+
 .blockedCard{
     position: absolute;
     color: red;

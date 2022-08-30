@@ -9,4 +9,7 @@ public class PATH {
     public static final String PAGE_CABINET_USER = "Cabinet.jsp";
     public static final String TRANSFER_PAGE = "Transfers.jsp";
     public static final String PAGE_PAYMENTS = "PaymentsPage.jsp";
+    public static final String PAGE_ADMIN = "controller?command=pagesOfCustomers";
+    public static final String PAGE_CABINET_ADMIN = "CabinetAdmin.jsp";
+    public static final String PAGE_CARDS_USER = "CardsUser.jsp";
 }

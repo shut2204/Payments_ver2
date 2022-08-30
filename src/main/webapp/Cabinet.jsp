@@ -26,7 +26,9 @@
 
 
 <section>
-    <p style="color: red">${error}<p/>
+    <h1 style="color: red; text-align: center">${error}<p/>
+    <h1 style="color: lime; text-align: center">${infoRequest}<p/>
+    <h1 style="color: red; text-align: center">${errorRequest}<p/>
     <div class="parent">
         <c:if test="${sessionScope.get('cards') != null }">
             <c:set var="num" scope="session" value="${sessionScope.get('cards').size()}"/>
@@ -39,6 +41,7 @@
                                     <input type="hidden" name="idCard" value=${card.getIdcard()}>
                                     <input type="submit" class="blockCard" value="BLOCK">
                                 </c:if>
+
                                 <c:if test="${card.getStatus() == 'block'}">
                                     <h1 class="blockedCard">BLOCKED</h1>
                                     <input type="hidden" name="command" value="sendRequest">

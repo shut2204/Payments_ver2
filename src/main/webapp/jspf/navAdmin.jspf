@@ -1,0 +1,20 @@
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Payments</label>
+    <ul>
+        <li><a href="index.jsp">Home</a></li>
+        <c:if test="${sessionScope.get('login') != null }">
+            <li><a href="controller?command=pagesOfPayments">Payments</a></li>
+            <li><a href="controller?command=pagesOfCustomers">Cabinet</a></li>
+            <li><a href="controller?command=logout">Logout</a></li>
+        </c:if>
+        <c:if test="${sessionScope.get('login') == null }">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="login.jsp">Register or login</a></li>
+        </c:if>
+    </ul>
+</nav>

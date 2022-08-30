@@ -93,6 +93,44 @@ public class PaymentDAO {
         return payments;
     }
 
+    public List<Payment> getAll(int page) throws DBException {
+        ArrayList<Payment> payments = new ArrayList<>();
+        PreparedStatement pstmt = null;
+        ResultSet rs;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("SELECT * FROM Payments_customer limit ?, 5;");
+
+            pstmt.setInt(1, page);
+            rs = pstmt.executeQuery();
+
+            while (rs.next()){
+                Payment payment = new Payment();
+
+                payment.setId_payment(rs.getInt("id_payment"));
+                payment.setId_card(rs.getString("id_card"));
+                payment.setAmount(rs.getInt("amount"));
+                payment.setDate_of_payment(rs.getString("date_of_payment"));
+                payment.setTo_card(rs.getString("to_card"));
+                payment.setIdcustomer(rs.getInt("idcustomer"));
+                payment.setIdcustomer2(rs.getInt("idcustomer2"));
+                payment.setStatus(rs.getString("status"));
+
+                payments.add(payment);
+            }
+            con.commit();
+        } catch (SQLException e) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+        }finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return payments;
+    }
+
     public int countOfPaymentsById(String id) throws DBException{
         int count = 0;
         PreparedStatement pstmt = null;
@@ -120,4 +158,32 @@ public class PaymentDAO {
 
         return count;
     }
+
+    public int countOfPayments() throws DBException{
+        int count = 0;
+        PreparedStatement pstmt = null;
+        ResultSet rs;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("SELECT COUNT(*) FROM Payments_customer");
+
+            rs = pstmt.executeQuery();
+
+            while (rs.next()){
+                count = rs.getInt(1);
+            }
+            con.commit();
+        } catch (SQLException e) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+        }finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return count;
+    }
+
+
 }

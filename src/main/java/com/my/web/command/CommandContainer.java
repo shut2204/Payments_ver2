@@ -23,6 +23,9 @@ public class CommandContainer {
         commands.put("blockCard", new BlockCommand());
         commands.put("prepare", new PreparePaymentCommand());
         commands.put("pagesOfPayments", new PagesOfPayments());
+        commands.put("sendRequest", new requestCardCommand());
+        commands.put("pagesOfCustomers", new PagesOfCustomers());
+        commands.put("showCardsOfCustomer", new showCardsUser());
     }
 
     public static Command get(String commandName) {

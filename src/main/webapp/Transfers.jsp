@@ -51,12 +51,12 @@
                             <span style="font-size: large">How many</span><br />
                             <input class="howmuch" required type="text" name="howmany">
                         </h5>
-                        <button class="button-29">Prepare</button>
+                    <button class="button-29">Prepare</button>
 
                     <img src="img/visa.png" class="logo1" />
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
 </body>
 </html>

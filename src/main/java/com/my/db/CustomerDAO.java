@@ -9,6 +9,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerDAO {
 
@@ -128,5 +130,113 @@ public class CustomerDAO {
             DBManager.getInstance().close(con, stmt, rs);
         }
         return id;
+    }
+
+    public boolean sendRequest(String idcustomer, String idcard) throws DBException {
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+        boolean flag = false;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("INSERT INTO requests(idcustomer, idcard) VALUES (?, ?)");
+
+            pstmt.setString(1, idcustomer);
+            pstmt.setString(2, idcard);
+
+            pstmt.executeUpdate();
+            con.commit();
+
+            flag = true;
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_CREATE_USER, ex);
+        } finally {
+            DBManager.getInstance().close(con, pstmt, rs);
+        }
+
+        return flag;
+    }
+
+    public boolean isExistRequest(String idcard) throws DBException {
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+        boolean flag = false;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("SELECT * from requests where idcard = ?");
+
+            pstmt.setString(1, idcard);
+
+            rs = pstmt.executeQuery();
+
+            con.commit();
+
+            flag = rs.next();
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_CREATE_USER, ex);
+        } finally {
+            DBManager.getInstance().close(con, pstmt, rs);
+        }
+
+        return flag;
+    }
+
+    public List<Customer> getAll(int currentPage) throws DBException {
+        List<Customer> customers = new ArrayList<>();
+        Customer customer = new Customer();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("select * from Customers where role = ? limit ?, 5");
+            pstmt.setString(1, "user");
+            pstmt.setInt(2, currentPage);
+
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                customer = extractUser(rs);
+
+                customers.add(customer);
+            }
+            con.commit();
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
+            ex.printStackTrace();
+        } finally {
+            DBManager.getInstance().close(con, pstmt, rs);
+        }
+        return customers;
+    }
+
+    public int countAll() throws DBException {
+        int count = 0;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("select count(*) from Customers where role = ?");
+            pstmt.setString(1, "user");
+
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                count = rs.getInt(1);
+            }
+            con.commit();
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
+            ex.printStackTrace();
+        } finally {
+            DBManager.getInstance().close(con, pstmt, rs);
+        }
+        return count;
     }
 }

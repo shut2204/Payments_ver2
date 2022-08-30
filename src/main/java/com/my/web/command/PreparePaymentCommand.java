@@ -13,7 +13,6 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.util.List;
 
 public class PreparePaymentCommand extends Command{
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
@@ -51,6 +50,10 @@ public class PreparePaymentCommand extends Command{
 
         Card card1 = cardDAO.cardById(request.getParameter("type1"));
         Card card2 = cardDAO.cardById(request.getParameter("numberCard2"));
+        if(card2 == null){
+            session.setAttribute("errorPrepare", "this card does not exist");
+            return forward;
+        }
 
         if (card1.getStatus().equals("block") || card2.getStatus().equals("block")){
             session.setAttribute("errorPrepare", "Sorry but one of the card is blocked");

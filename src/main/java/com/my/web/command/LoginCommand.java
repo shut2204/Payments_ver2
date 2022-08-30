@@ -65,6 +65,13 @@ public class LoginCommand extends Command{
 
         if (customer.getRole().equals("user")){
             forward = PATH.PAGE_CABINET_USER;
+            CardDAO cardDAO = new CardDAO();
+
+            List<Card> cards = cardDAO.getAllByLogin(login);
+            session.setAttribute("cards", cards);
+            LOG.info("Get cards and set user Cards -> " + cards);
+        }else {
+            forward = PATH.PAGE_ADMIN;
         }
 
         session.setAttribute("errorLogin", "");
@@ -72,11 +79,7 @@ public class LoginCommand extends Command{
         LOG.trace("Set the session attribute: customer --> " + customer);
         session.setAttribute("login", login);
         LOG.trace("Set the session attribute: login --> " + login);
-        CardDAO cardDAO = new CardDAO();
 
-        List<Card> cards = cardDAO.getAllByLogin(login);
-        session.setAttribute("cards", cards);
-        LOG.info("Get cards and set user Cards -> " + cards);
 
         LOG.info("Customer " + customer + " logged as " + customer.getRole().toLowerCase());
 

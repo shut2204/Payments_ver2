@@ -148,11 +148,12 @@ public class CardDAO {
         return flag;
     }
 
-    public boolean transferMoney(String idCard1, String idCard2, String money) throws DBException {
+    public boolean transferMoney(String idCard1, String idCard2, String money, String idpayment) throws DBException {
         boolean flag = false;
 
         PreparedStatement pstmt;
         PreparedStatement pstmt1;
+        PreparedStatement pstmt2;
         Connection con = null;
 
         try {
@@ -174,6 +175,13 @@ public class CardDAO {
             int i1 = pstmt1.executeUpdate();
             pstmt1.close();
             LOG.debug(i1 + "pstmt1");
+
+            pstmt2 = con.prepareStatement("UPDATE Payments_customer SET status = 'sent' WHERE id_payment = ? ");
+            pstmt2.setString(1, idpayment);
+
+            int i3 = pstmt2.executeUpdate();
+            pstmt1.close();
+            LOG.debug(i3 + "pstmt2");
 
             con.commit();
             LOG.debug("use ok with transfer");
