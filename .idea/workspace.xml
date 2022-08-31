@@ -9,32 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 1.0 - pagination ver1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/tags/emptyTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfCustomers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/requestCardCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/showCardsUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CabinetAdmin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/my-tags.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" afterDir="false" />
+    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.0 - admin panel">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/db/RequestDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfRequsts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/PagesOfRequests.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/TransferMoneyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/TransferMoneyCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Transfers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Transfers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +195,8 @@
       <workItem from="1661511347081" duration="20000" />
       <workItem from="1661511380656" duration="41955000" />
       <workItem from="1661708647264" duration="29824000" />
-      <workItem from="1661873490615" duration="6538000" />
+      <workItem from="1661873490615" duration="8698000" />
+      <workItem from="1661933707251" duration="3546000" />
     </task>
     <task id="LOCAL-00001" summary="new start">
       <created>1660456863478</created>
@@ -281,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661714875636</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="release 2.0 - admin panel">
+      <created>1661881824062</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661881824062</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +302,7 @@
     <MESSAGE value="add a function add balance(front part)" />
     <MESSAGE value="release 1.0" />
     <MESSAGE value="release 1.0 - pagination ver1" />
-    <option name="LAST_COMMIT_MESSAGE" value="release 1.0 - pagination ver1" />
+    <MESSAGE value="release 2.0 - admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 2.0 - admin panel" />
   </component>
 </project>

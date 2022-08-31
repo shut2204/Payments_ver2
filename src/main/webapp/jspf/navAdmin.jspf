@@ -9,6 +9,7 @@
         <c:if test="${sessionScope.get('login') != null }">
             <li><a href="controller?command=pagesOfPayments">Payments</a></li>
             <li><a href="controller?command=pagesOfCustomers">Cabinet</a></li>
+            <li><a href="controller?command=pagesOfRequests">Requests</a></li>
             <li><a href="controller?command=logout">Logout</a></li>
         </c:if>
         <c:if test="${sessionScope.get('login') == null }">

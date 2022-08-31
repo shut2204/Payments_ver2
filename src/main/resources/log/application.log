@@ -10763,3 +10763,175 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '123456789012
 2022-08-30 20-49-43 DEBUG [http-nio-8080-exec-109] cards size -> 1
 2022-08-30 20-49-43 DEBUG [http-nio-8080-exec-109] show cards successful
 2022-08-30 20-49-43 DEBUG [http-nio-8080-exec-109] Command end
+2022-08-30 21-03-57 DEBUG [http-nio-8080-exec-117] LogoutCommand starts
+2022-08-30 21-03-57 DEBUG [http-nio-8080-exec-117] LogoutCommand finished
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-120] Command starts
+2022-08-30 21-03-59 INFO  [http-nio-8080-exec-120] Customer com.my.db.entity.Customer@7573eb49 logged as admin
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-120] Command finished
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-114] Command starts CustomerPagesCommand
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-114] 35 count of customers
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-114] 7 pagesAll
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-114] 7 pagesAll
+2022-08-30 21-03-59 DEBUG [http-nio-8080-exec-114] Command end
+2022-08-30 21-04-02 DEBUG [http-nio-8080-exec-115] Command starts CustomerPagesCommand
+2022-08-30 21-04-02 DEBUG [http-nio-8080-exec-115] 35 count of customers
+2022-08-30 21-04-02 DEBUG [http-nio-8080-exec-115] 7 pagesAll
+2022-08-30 21-04-02 DEBUG [http-nio-8080-exec-115] 7 pagesAll
+2022-08-30 21-04-02 DEBUG [http-nio-8080-exec-115] Command end
+2022-08-30 21-04-04 DEBUG [http-nio-8080-exec-119] Command starts showCardUser
+2022-08-30 21-04-04 DEBUG [http-nio-8080-exec-119] cards size -> 9
+2022-08-30 21-04-04 DEBUG [http-nio-8080-exec-119] show cards successful
+2022-08-30 21-04-04 DEBUG [http-nio-8080-exec-119] Command end
+2022-08-30 21-04-12 DEBUG [http-nio-8080-exec-118] Command starts CustomerPagesCommand
+2022-08-30 21-04-12 DEBUG [http-nio-8080-exec-118] 35 count of customers
+2022-08-30 21-04-12 DEBUG [http-nio-8080-exec-118] 7 pagesAll
+2022-08-30 21-04-12 DEBUG [http-nio-8080-exec-118] 7 pagesAll
+2022-08-30 21-04-12 DEBUG [http-nio-8080-exec-118] Command end
+2022-08-30 21-04-14 DEBUG [http-nio-8080-exec-113] Command starts showCardUser
+2022-08-30 21-04-14 DEBUG [http-nio-8080-exec-113] cards size -> 1
+2022-08-30 21-04-14 DEBUG [http-nio-8080-exec-113] show cards successful
+2022-08-30 21-04-14 DEBUG [http-nio-8080-exec-113] Command end
+2022-08-30 21-08-28 DEBUG [http-nio-8080-exec-131] LogoutCommand starts
+2022-08-30 21-08-28 DEBUG [http-nio-8080-exec-131] LogoutCommand finished
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-127] Command starts
+2022-08-30 21-08-30 INFO  [http-nio-8080-exec-127] Customer com.my.db.entity.Customer@35863f9f logged as admin
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-127] Command finished
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-124] Command starts CustomerPagesCommand
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-124] 35 count of customers
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-124] 7 pagesAll
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-124] 7 pagesAll
+2022-08-30 21-08-30 DEBUG [http-nio-8080-exec-124] Command end
+2022-08-30 21-08-32 DEBUG [http-nio-8080-exec-125] Command starts CustomerPagesCommand
+2022-08-30 21-08-32 DEBUG [http-nio-8080-exec-125] 35 count of customers
+2022-08-30 21-08-32 DEBUG [http-nio-8080-exec-125] 7 pagesAll
+2022-08-30 21-08-32 DEBUG [http-nio-8080-exec-125] 7 pagesAll
+2022-08-30 21-08-32 DEBUG [http-nio-8080-exec-125] Command end
+2022-08-30 21-08-39 DEBUG [http-nio-8080-exec-126] Command starts showCardUser
+2022-08-30 21-08-39 DEBUG [http-nio-8080-exec-126] cards size -> 9
+2022-08-30 21-08-39 DEBUG [http-nio-8080-exec-126] show cards successful
+2022-08-30 21-08-39 DEBUG [http-nio-8080-exec-126] Command end
+2022-08-30 21-08-49 DEBUG [http-nio-8080-exec-132] Command starts showCardUser
+2022-08-30 21-08-49 DEBUG [http-nio-8080-exec-132] cards size -> 1
+2022-08-30 21-08-49 DEBUG [http-nio-8080-exec-132] show cards successful
+2022-08-30 21-08-49 DEBUG [http-nio-8080-exec-132] Command end
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-2] Command starts
+2022-08-31 11-42-32 INFO  [http-nio-8080-exec-2] Customer com.my.db.entity.Customer@7af341a2 logged as admin
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-2] Command finished
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-3] Command starts CustomerPagesCommand
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-3] 35 count of customers
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-3] 7 pagesAll
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-3] 7 pagesAll
+2022-08-31 11-42-32 DEBUG [http-nio-8080-exec-3] Command end
+2022-08-31 12-04-03 DEBUG [http-nio-8080-exec-5] Command starts
+2022-08-31 12-04-04 INFO  [http-nio-8080-exec-5] Customer com.my.db.entity.Customer@778a1763 logged as admin
+2022-08-31 12-04-04 DEBUG [http-nio-8080-exec-5] Command finished
+2022-08-31 12-04-04 DEBUG [http-nio-8080-exec-6] Command starts CustomerPagesCommand
+2022-08-31 12-04-04 DEBUG [http-nio-8080-exec-6] 35 count of customers
+2022-08-31 12-04-04 DEBUG [http-nio-8080-exec-6] 7 pagesAll
+2022-08-31 12-04-04 DEBUG [http-nio-8080-exec-6] 7 pagesAll
+2022-08-31 12-04-04 DEBUG [http-nio-8080-exec-6] Command end
+2022-08-31 12-05-28 DEBUG [http-nio-8080-exec-9] Command starts
+2022-08-31 12-05-29 INFO  [http-nio-8080-exec-9] Customer com.my.db.entity.Customer@6a44f130 logged as admin
+2022-08-31 12-05-29 DEBUG [http-nio-8080-exec-9] Command finished
+2022-08-31 12-05-29 DEBUG [http-nio-8080-exec-4] Command starts CustomerPagesCommand
+2022-08-31 12-05-29 DEBUG [http-nio-8080-exec-4] 35 count of customers
+2022-08-31 12-05-29 DEBUG [http-nio-8080-exec-4] 7 pagesAll
+2022-08-31 12-05-29 DEBUG [http-nio-8080-exec-4] 7 pagesAll
+2022-08-31 12-05-29 DEBUG [http-nio-8080-exec-4] Command end
+2022-08-31 12-05-31 DEBUG [http-nio-8080-exec-1] Command starts RequestPagesCommand
+2022-08-31 12-05-31 DEBUG [http-nio-8080-exec-1] 5 count of customers
+2022-08-31 12-05-31 DEBUG [http-nio-8080-exec-1] 1 pagesAll
+2022-08-31 12-05-31 DEBUG [http-nio-8080-exec-1] 1 pagesAll
+2022-08-31 12-05-31 DEBUG [http-nio-8080-exec-1] Command end
+2022-08-31 12-05-41 DEBUG [http-nio-8080-exec-3] Command starts CustomerPagesCommand
+2022-08-31 12-05-41 DEBUG [http-nio-8080-exec-3] 35 count of customers
+2022-08-31 12-05-41 DEBUG [http-nio-8080-exec-3] 7 pagesAll
+2022-08-31 12-05-41 DEBUG [http-nio-8080-exec-3] 7 pagesAll
+2022-08-31 12-05-41 DEBUG [http-nio-8080-exec-3] Command end
+2022-08-31 12-05-45 DEBUG [http-nio-8080-exec-5] Command starts RequestPagesCommand
+2022-08-31 12-05-45 DEBUG [http-nio-8080-exec-5] 5 count of customers
+2022-08-31 12-05-45 DEBUG [http-nio-8080-exec-5] 1 pagesAll
+2022-08-31 12-05-45 DEBUG [http-nio-8080-exec-5] 1 pagesAll
+2022-08-31 12-05-45 DEBUG [http-nio-8080-exec-5] Command end
+2022-08-31 12-06-52 DEBUG [http-nio-8080-exec-17] LogoutCommand starts
+2022-08-31 12-06-52 DEBUG [http-nio-8080-exec-17] LogoutCommand finished
+2022-08-31 12-06-53 DEBUG [http-nio-8080-exec-16] Command starts
+2022-08-31 12-06-54 INFO  [http-nio-8080-exec-16] Customer com.my.db.entity.Customer@658af233 logged as admin
+2022-08-31 12-06-54 DEBUG [http-nio-8080-exec-16] Command finished
+2022-08-31 12-06-54 DEBUG [http-nio-8080-exec-14] Command starts CustomerPagesCommand
+2022-08-31 12-06-54 DEBUG [http-nio-8080-exec-14] 35 count of customers
+2022-08-31 12-06-54 DEBUG [http-nio-8080-exec-14] 7 pagesAll
+2022-08-31 12-06-54 DEBUG [http-nio-8080-exec-14] 7 pagesAll
+2022-08-31 12-06-54 DEBUG [http-nio-8080-exec-14] Command end
+2022-08-31 12-06-56 DEBUG [http-nio-8080-exec-11] Command starts RequestPagesCommand
+2022-08-31 12-06-56 DEBUG [http-nio-8080-exec-11] 5 count of customers
+2022-08-31 12-06-56 DEBUG [http-nio-8080-exec-11] 1 pagesAll
+2022-08-31 12-06-56 DEBUG [http-nio-8080-exec-11] 1 pagesAll
+2022-08-31 12-06-56 DEBUG [http-nio-8080-exec-11] Command end
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-7] Command starts
+2022-08-31 12-11-49 INFO  [http-nio-8080-exec-7] Customer com.my.db.entity.Customer@3e7e504d logged as admin
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-7] Command finished
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-8] Command starts CustomerPagesCommand
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-8] 35 count of customers
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-8] 7 pagesAll
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-8] 7 pagesAll
+2022-08-31 12-11-49 DEBUG [http-nio-8080-exec-8] Command end
+2022-08-31 12-11-52 DEBUG [http-nio-8080-exec-9] Command starts RequestPagesCommand
+2022-08-31 12-11-52 DEBUG [http-nio-8080-exec-9] 5 count of requests
+2022-08-31 12-11-52 DEBUG [http-nio-8080-exec-9] 1 pagesAll
+2022-08-31 12-11-52 DEBUG [http-nio-8080-exec-9] 1 pagesAll
+2022-08-31 12-11-52 DEBUG [http-nio-8080-exec-9] Command end
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-2] Command starts
+2022-08-31 12-13-50 INFO  [http-nio-8080-exec-2] Customer com.my.db.entity.Customer@5c9a6bec logged as admin
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-2] Command finished
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-11] Command starts CustomerPagesCommand
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-11] 35 count of customers
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-11] 7 pagesAll
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-11] 7 pagesAll
+2022-08-31 12-13-50 DEBUG [http-nio-8080-exec-11] Command end
+2022-08-31 12-13-51 DEBUG [http-nio-8080-exec-3] Command starts RequestPagesCommand
+2022-08-31 12-13-51 DEBUG [http-nio-8080-exec-3] 5 count of requests
+2022-08-31 12-13-51 DEBUG [http-nio-8080-exec-3] 1 pagesAll
+2022-08-31 12-13-51 DEBUG [http-nio-8080-exec-3] 1 pagesAll
+2022-08-31 12-13-51 DEBUG [http-nio-8080-exec-3] Command end
+2022-08-31 12-14-29 DEBUG [http-nio-8080-exec-12] Command starts
+2022-08-31 12-14-30 INFO  [http-nio-8080-exec-12] Customer com.my.db.entity.Customer@1fbf8a64 logged as admin
+2022-08-31 12-14-30 DEBUG [http-nio-8080-exec-12] Command finished
+2022-08-31 12-14-30 DEBUG [http-nio-8080-exec-14] Command starts CustomerPagesCommand
+2022-08-31 12-14-30 DEBUG [http-nio-8080-exec-14] 35 count of customers
+2022-08-31 12-14-30 DEBUG [http-nio-8080-exec-14] 7 pagesAll
+2022-08-31 12-14-30 DEBUG [http-nio-8080-exec-14] 7 pagesAll
+2022-08-31 12-14-30 DEBUG [http-nio-8080-exec-14] Command end
+2022-08-31 12-14-31 DEBUG [http-nio-8080-exec-7] Command starts RequestPagesCommand
+2022-08-31 12-14-31 DEBUG [http-nio-8080-exec-7] 5 count of requests
+2022-08-31 12-14-31 DEBUG [http-nio-8080-exec-7] 1 pagesAll
+2022-08-31 12-14-31 DEBUG [http-nio-8080-exec-7] 1 pagesAll
+2022-08-31 12-14-31 DEBUG [http-nio-8080-exec-7] Command end
+2022-08-31 12-15-31 DEBUG [http-nio-8080-exec-18] Command starts
+2022-08-31 12-15-32 INFO  [http-nio-8080-exec-18] Customer com.my.db.entity.Customer@62654a4a logged as admin
+2022-08-31 12-15-32 DEBUG [http-nio-8080-exec-18] Command finished
+2022-08-31 12-15-32 DEBUG [http-nio-8080-exec-15] Command starts CustomerPagesCommand
+2022-08-31 12-15-32 DEBUG [http-nio-8080-exec-15] 35 count of customers
+2022-08-31 12-15-32 DEBUG [http-nio-8080-exec-15] 7 pagesAll
+2022-08-31 12-15-32 DEBUG [http-nio-8080-exec-15] 7 pagesAll
+2022-08-31 12-15-32 DEBUG [http-nio-8080-exec-15] Command end
+2022-08-31 12-15-34 DEBUG [http-nio-8080-exec-14] Command starts RequestPagesCommand
+2022-08-31 12-15-34 DEBUG [http-nio-8080-exec-14] 5 count of requests
+2022-08-31 12-15-34 DEBUG [http-nio-8080-exec-14] 1 pagesAll
+2022-08-31 12-15-34 DEBUG [http-nio-8080-exec-14] 1 pagesAll
+2022-08-31 12-15-34 DEBUG [http-nio-8080-exec-14] Command end
+2022-08-31 12-20-18 DEBUG [http-nio-8080-exec-26] LogoutCommand starts
+2022-08-31 12-20-18 DEBUG [http-nio-8080-exec-26] LogoutCommand finished
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-20] Command starts
+2022-08-31 12-20-20 INFO  [http-nio-8080-exec-20] Customer com.my.db.entity.Customer@e4bbe37 logged as admin
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-20] Command finished
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-21] Command starts CustomerPagesCommand
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-21] 35 count of customers
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-21] 7 pagesAll
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-21] 7 pagesAll
+2022-08-31 12-20-20 DEBUG [http-nio-8080-exec-21] Command end
+2022-08-31 12-20-22 DEBUG [http-nio-8080-exec-23] Command starts RequestPagesCommand
+2022-08-31 12-20-22 DEBUG [http-nio-8080-exec-23] 5 count of requests
+2022-08-31 12-20-22 DEBUG [http-nio-8080-exec-23] 1 pagesAll
+2022-08-31 12-20-22 DEBUG [http-nio-8080-exec-23] 1 pagesAll
+2022-08-31 12-20-22 DEBUG [http-nio-8080-exec-23] Command end

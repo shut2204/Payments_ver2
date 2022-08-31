@@ -26,6 +26,7 @@
 
 
 <section>
+    <h1 style="color: lime; text-align: center">user cards with login: ${requestScope.get("login")}</h1>
     <div class="parent">
         <c:if test="${requestScope.get('cardsUser') != null }">
             <c:forEach var="card" items="${requestScope.get('cardsUser')}">
@@ -38,6 +39,10 @@
                                     <input type="submit" class="blockCard" value="BLOCK">
                                 </c:if>
                             </form>
+
+                            <c:if test="${card.getStatus() == 'block'}">
+                                <h1 class="blockedCard">BLOCKED</h1>
+                            </c:if>
 
                             <h3 class="bank">Payments</h3>
                             <img src="img/chip.png" class="chip" />

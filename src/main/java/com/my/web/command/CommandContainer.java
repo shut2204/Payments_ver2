@@ -26,6 +26,7 @@ public class CommandContainer {
         commands.put("sendRequest", new requestCardCommand());
         commands.put("pagesOfCustomers", new PagesOfCustomers());
         commands.put("showCardsOfCustomer", new showCardsUser());
+        commands.put("pagesOfRequests", new PagesOfRequsts());
     }
 
     public static Command get(String commandName) {

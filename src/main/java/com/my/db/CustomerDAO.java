@@ -64,17 +64,6 @@ public class CustomerDAO {
         return customer;
     }
 
-    private Customer extractUser(ResultSet rs) throws SQLException {
-        Customer user = new Customer();
-        user.setIdcustomer(rs.getInt("idcustomer"));
-        user.setLogin(rs.getString("login"));
-        user.setPassword_customer(rs.getString("password_customer"));
-        user.setFirst_name(rs.getString("first_name"));
-        user.setLast_name(rs.getString("last_name"));
-        user.setRole(rs.getString("role"));
-        return user;
-    }
-
     public boolean addCustomer(Customer customer) throws DBException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -238,5 +227,16 @@ public class CustomerDAO {
             DBManager.getInstance().close(con, pstmt, rs);
         }
         return count;
+    }
+
+    private Customer extractUser(ResultSet rs) throws SQLException {
+        Customer user = new Customer();
+        user.setIdcustomer(rs.getInt("idcustomer"));
+        user.setLogin(rs.getString("login"));
+        user.setPassword_customer(rs.getString("password_customer"));
+        user.setFirst_name(rs.getString("first_name"));
+        user.setLast_name(rs.getString("last_name"));
+        user.setRole(rs.getString("role"));
+        return user;
     }
 }
