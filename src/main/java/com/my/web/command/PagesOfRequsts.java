@@ -1,9 +1,7 @@
 package com.my.web.command;
 
 import com.my.PATH;
-import com.my.db.CustomerDAO;
 import com.my.db.RequestDAO;
-import com.my.db.entity.Customer;
 import com.my.db.entity.Request;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
@@ -33,7 +31,6 @@ public class PagesOfRequsts extends Command{
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
 
         LOG.debug("Command starts RequestPagesCommand");
-
         HttpSession session = request.getSession();
 
         session.setAttribute("errorRequests", "");

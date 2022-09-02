@@ -231,4 +231,38 @@ public class CardDAO {
 
         return flag;
     }
+
+    public boolean unlockCard(String idCard) throws DBException {
+        boolean flag = false;
+
+        PreparedStatement pstmt = null;
+        PreparedStatement pstmt1 = null;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            LOG.debug(idCard);
+
+            pstmt = con.prepareStatement("UPDATE Cards SET Status = 'unlock' WHERE idcard = ? ");
+            pstmt.setString(1, idCard);
+            int i = pstmt.executeUpdate();
+
+            pstmt1 = con.prepareStatement("delete from requests where idcard = ? ");
+            pstmt1.setString(1, idCard);
+
+
+            int i1 = pstmt1.executeUpdate();
+            LOG.debug(i);
+            con.commit();
+            flag = true;
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_BLOCK_CARD, ex);
+        } finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return flag;
     }
+
+}

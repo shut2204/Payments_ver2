@@ -24,9 +24,20 @@
 <%@ include file="/jspf/navAdmin.jspf"%>
 
 <section>
+    <h1 style="color: lime; text-align: center">${infoShow}</h1>
+
     <h1 style="color: red; text-align: center">${errorShow}</h1>
     <div class="wrapTable">
         <table class="table">
+            <tr>
+                <th>
+                    <form action="controller" method="get">
+                        <input type="hidden" name="command" value="pagesOfCustomers">
+                        <input class="search" type="text" name="search" placeholder="Search by login">
+                        <button class="button-29">Go</button>
+                    </form>
+                </th>
+            </tr>
             <tr>
                 <th>Id Customer</th>
                 <th>First name</th>
@@ -41,7 +52,15 @@
                     <td>${customer.getFirst_name()}</td>
                     <td>${customer.getLast_name()}</td>
                     <td>${customer.getLogin()}</td>
-                    <td></td>
+                    <form method="post" action="controller">
+                        <input type="hidden" name="command" value="blockUser">
+                        <input type="hidden" name="login" value="${customer.getLogin()}">
+                        <td>
+                            <c:if test="${customer.getStatus().equals('unlock')}">
+                                <button class="button-29">Block</button>
+                            </c:if>
+                        </td>
+                    </form>
                     <form method="get" action="controller">
                         <input type="hidden" name="command" value="showCardsOfCustomer">
                         <input type="hidden" name="login" value="${customer.getLogin()}">

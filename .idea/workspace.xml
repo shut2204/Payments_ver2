@@ -9,18 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.0 - admin panel">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/db/RequestDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfRequsts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/PagesOfRequests.jsp" afterDir="false" />
+    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.1 - admin panel request">
+      <change afterPath="$PROJECT_DIR$/db.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockUserCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/unlockCardCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/exception/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/exception/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/tags/emptyTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/tags/emptyTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCardCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfCustomers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfRequsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfRequsts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CabinetAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CabinetAdmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/PagesOfRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PagesOfRequests.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,28 +73,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/shut2204/IdeaProjects/Payments_ver2/src/main/webapp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "last_opened_file_path": "/home/shut2204/IdeaProjects/Payments_ver2/src/main/webapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.editor"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -196,7 +209,9 @@
       <workItem from="1661511380656" duration="41955000" />
       <workItem from="1661708647264" duration="29824000" />
       <workItem from="1661873490615" duration="8698000" />
-      <workItem from="1661933707251" duration="3546000" />
+      <workItem from="1661933707251" duration="5455000" />
+      <workItem from="1662025610568" duration="9482000" />
+      <workItem from="1662050249465" duration="26126000" />
     </task>
     <task id="LOCAL-00001" summary="new start">
       <created>1660456863478</created>
@@ -275,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661881824062</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="release 2.1 - admin panel request">
+      <created>1661970509817</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661970509817</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +325,11 @@
     <MESSAGE value="release 1.0" />
     <MESSAGE value="release 1.0 - pagination ver1" />
     <MESSAGE value="release 2.0 - admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="release 2.0 - admin panel" />
+    <MESSAGE value="release 2.1 - admin panel request" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 2.1 - admin panel request" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

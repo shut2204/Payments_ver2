@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class PreparePaymentCommand extends Command{
-    private static final Logger LOG = Logger.getLogger(LoginCommand.class);
+    private static final Logger LOG = Logger.getLogger(PreparePaymentCommand.class);
 
     private static PaymentDAO paymentDAO;
     private static CardDAO cardDAO;
@@ -44,6 +44,7 @@ public class PreparePaymentCommand extends Command{
         if (!money.matches("\\d+") || !request.getParameter("numberCard2").matches("\\d+")||
                 request.getParameter("type1").equals(request.getParameter("numberCard2"))
                 || !request.getParameter("numberCard2").matches("\\d{16}")){
+            session.setAttribute("infoPrepare", "");
             session.setAttribute("errorPrepare", "Incorrectly input data");
             return forward;
         }
@@ -56,6 +57,7 @@ public class PreparePaymentCommand extends Command{
         }
 
         if (card1.getStatus().equals("block") || card2.getStatus().equals("block")){
+            session.setAttribute("infoPrepare", "");
             session.setAttribute("errorPrepare", "Sorry but one of the card is blocked");
             return forward;
         }
@@ -77,9 +79,9 @@ public class PreparePaymentCommand extends Command{
             session.setAttribute("infoPrepare", "Your payment was successful prepare");
             LOG.debug("payment was prepare successful");
         }else {
-            LOG.error(Messages.ERR_CANNOT_TRANSFER_MONEY);
             session.setAttribute("infoPrepare", "");
             session.setAttribute("errorPrepare", "Error prepare your payment, try again");
+            LOG.error(Messages.ERR_CANNOT_TRANSFER_MONEY);
         }
 
         LOG.debug("Command end");

@@ -14,13 +14,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-public class BlockCommand extends Command{
+public class BlockCardCommand extends Command{
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
     private static CardDAO cardDAO;
 
-    public BlockCommand() {
+    public BlockCardCommand() {
         try {
             cardDAO = new CardDAO();
         } catch (DBException e) {

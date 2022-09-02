@@ -20,13 +20,15 @@ public class CommandContainer {
         commands.put("addNewCard", new AddCardCommand());
         commands.put("addMoneyOnCard" , new AddMoneyOnCard());
         commands.put("transferMoney", new TransferMoneyCommand());
-        commands.put("blockCard", new BlockCommand());
+        commands.put("blockCard", new BlockCardCommand());
         commands.put("prepare", new PreparePaymentCommand());
         commands.put("pagesOfPayments", new PagesOfPayments());
         commands.put("sendRequest", new requestCardCommand());
         commands.put("pagesOfCustomers", new PagesOfCustomers());
         commands.put("showCardsOfCustomer", new showCardsUser());
         commands.put("pagesOfRequests", new PagesOfRequsts());
+        commands.put("unlockCard", new unlockCardCommand());
+        commands.put("blockUser", new BlockUserCommand());
     }
 
     public static Command get(String commandName) {

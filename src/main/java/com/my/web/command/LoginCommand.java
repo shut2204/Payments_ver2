@@ -63,6 +63,11 @@ public class LoginCommand extends Command{
             return forward;
         }
 
+        if (customer.getStatus().equals("block")){
+            session.setAttribute("errorLogin", "Sorry user was blocked");
+            return forward;
+        }
+
         if (customer.getRole().equals("user")){
             forward = PATH.PAGE_CABINET_USER;
             CardDAO cardDAO = new CardDAO();

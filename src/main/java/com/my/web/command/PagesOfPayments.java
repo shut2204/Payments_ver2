@@ -53,16 +53,21 @@ public class PagesOfPayments extends Command{
         Customer customer = ((Customer) session.getAttribute("customer"));
 
         int idCustomer = customer.getIdcustomer();
+        int sort;
 
-
+        if (request.getParameter("type") == null){
+            sort = 0;
+        }else {
+            sort = Integer.parseInt(request.getParameter("type"));
+        }
         int count;
 
         List<Payment> payments;
         if (customer.getRole().equals("user")) {
-            payments = paymentDAO.getAllById(String.valueOf(idCustomer), currentPage);
+            payments = paymentDAO.getAllById(String.valueOf(idCustomer), currentPage, (sort != 0) ? sort : 1);
             count = paymentDAO.countOfPaymentsById(String.valueOf(idCustomer));
         }else {
-            payments = paymentDAO.getAll(currentPage);
+            payments = paymentDAO.getAll(currentPage, (sort != 0) ? sort : 1);
             count = paymentDAO.countOfPayments();
         }
 
@@ -73,6 +78,7 @@ public class PagesOfPayments extends Command{
         if (pages > 0) {pagesAll++;}
         LOG.debug(pagesAll + " pagesAll");
 
+        session.setAttribute("sort", sort);
         session.setAttribute("pagesAll", pagesAll);
         session.setAttribute("payments", payments);
 

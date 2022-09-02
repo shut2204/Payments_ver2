@@ -46,17 +46,24 @@ public class PagesOfCustomers extends Command{
             currentPage = (Integer.parseInt(request.getParameter("page"))-1) * 5;
         }
 
-
-        int count;
-
+        int count = 0;
+        int pagesAll = 0;
         List<Customer> customers;
+
+        if (request.getParameter("search") != null && !request.getParameter("search").isEmpty()){
+            customers = customerDAO.search(request.getParameter("search"));
+            session.setAttribute("infoShow","");
+            session.setAttribute("pagesAll", pagesAll);
+            session.setAttribute("customers", customers);
+            return forward;
+        }
 
         customers = customerDAO.getAll(currentPage);
         count = customerDAO.countAll();
 
 
         LOG.debug(count + " count of customers");
-        int pagesAll = count / 5;
+        pagesAll = count / 5;
         int pages = count % 5;
         LOG.debug(pagesAll + " pagesAll");
         if (pages > 0) {pagesAll++;}

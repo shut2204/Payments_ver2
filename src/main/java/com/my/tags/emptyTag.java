@@ -14,11 +14,6 @@ import java.util.Optional;
 public class emptyTag extends TagSupport {
     @Override
     public int doStartTag() throws JspException {
-        List<Card> cards = new ArrayList<>();
-
-        Optional<Card> first = cards.stream().filter(x -> x.getIdcard() == 1).findFirst();
-        first.orElse(null);
-
         JspWriter out = pageContext.getOut();
 
         try {

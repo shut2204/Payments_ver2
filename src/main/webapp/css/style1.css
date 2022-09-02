@@ -136,11 +136,27 @@ section{
     transition: all 0.8s ease 0s;
 }
 
+.search{
+    border-radius: 17px;
+    width: 50%;
+    height: 40px;
+    color: white;
+    outline: none;
+    background-color: deeppink;
+    font-size: large;
+    padding-left: 4px;
+}
+
+.search::placeholder{
+    color: white;
+}
+
 .wrapTable{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
+    flex-direction: column;
 }
 
 .tablePages{

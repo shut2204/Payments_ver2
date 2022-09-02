@@ -1,0 +1,68 @@
+create table Customers
+(
+    idcustomer        int auto_increment
+        primary key,
+    phone_number      varchar(30)                 not null,
+    first_name        varchar(30)                 not null,
+    last_name         varchar(30)                 not null,
+    login             varchar(30)                 not null,
+    password_customer varchar(100)                not null,
+    role              varchar(30)                 not null,
+    status            varchar(6) default 'unlock' not null,
+    constraint login
+        unique (login)
+);
+
+create table Cards
+(
+    idcard     bigint auto_increment
+        primary key,
+    idcustomer int                          null,
+    balance    int                          null,
+    name_card  varchar(30)                  not null,
+    Status     varchar(30) default 'unlock' not null,
+    constraint Cards_ibfk_1
+        foreign key (idcustomer) references Customers (idcustomer)
+);
+
+create index idcustomer
+    on Cards (idcustomer);
+
+create definer = root@localhost trigger standart_card_customer
+    after insert
+    on Customers
+    for each row
+    insert into Cards(idcustomer, balance, name_card) values(NEW.idcustomer, 0, "Standart");
+
+create table Payments_customer
+(
+    id_payment      int auto_increment
+        primary key,
+    id_card         bigint                                 null,
+    date_of_payment timestamp  default current_timestamp() not null,
+    amount          int                                    not null,
+    status          varchar(7) default 'prepare'           not null,
+    to_card         varchar(16)                            not null,
+    idcustomer      int                                    not null,
+    idcustomer2     int                                    not null,
+    constraint Payments_customer_Cards_idcard_fk
+        foreign key (id_card) references Cards (idcard),
+    constraint Payments_customer_Customers_idcustomer_fk
+        foreign key (idcustomer) references Customers (idcustomer)
+            on update cascade,
+    constraint Payments_customer_Customers_idcustomer_fk_2
+        foreign key (idcustomer2) references Customers (idcustomer)
+);
+
+create table requests
+(
+    idcustomer int    not null,
+    idcard     bigint not null,
+    constraint request_idcard_uindex
+        unique (idcard),
+    constraint request_Cards_idcard_fk
+        foreign key (idcard) references Cards (idcard),
+    constraint request_Customers_idcustomer_fk
+        foreign key (idcustomer) references Customers (idcustomer)
+);
+

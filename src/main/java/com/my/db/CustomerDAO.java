@@ -1,6 +1,7 @@
 package com.my.db;
 
 import com.my.db.entity.Customer;
+import com.my.db.entity.Payment;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
 import org.apache.log4j.Logger;
@@ -237,6 +238,63 @@ public class CustomerDAO {
         user.setFirst_name(rs.getString("first_name"));
         user.setLast_name(rs.getString("last_name"));
         user.setRole(rs.getString("role"));
+        user.setStatus(rs.getString("status"));
         return user;
+    }
+
+    public boolean blockUser(String login) throws DBException {
+        boolean flag = false;
+
+        PreparedStatement pstmt = null;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            LOG.debug(login);
+            pstmt = con.prepareStatement("UPDATE Customers SET Status = 'block' WHERE login = ? ");
+            pstmt.setString(1, login);
+
+            int i = pstmt.executeUpdate();
+            LOG.debug(i);
+            con.commit();
+            flag = true;
+        } catch (SQLException ex) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_BLOCK_CARD, ex);
+        } finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return flag;
+    }
+
+    public List<Customer> search(String search) throws DBException {
+        ArrayList<Customer> customers = new ArrayList<>();
+        PreparedStatement pstmt = null;
+        ResultSet rs;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("SELECT * FROM Customers where login = ?;");
+
+            pstmt.setString(1, search);
+
+            rs = pstmt.executeQuery();
+
+            while (rs.next()){
+                Customer customer = extractUser(rs);
+
+                customers.add(customer);
+            }
+            con.commit();
+        } catch (SQLException e) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+        }finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return customers;
     }
 }

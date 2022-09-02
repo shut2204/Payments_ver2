@@ -30,9 +30,23 @@
     <section>
         <h1 style="text-align: center; color: red">${sessionScope.get("errorTransfer")}</h1>
         <h1 style="text-align: center; color: lime">${sessionScope.get("infoTransfer")}</h1>
-
         <div class="wrapTable">
             <table class="table">
+                    <tr>
+                        <th>
+                            <div><h1>Sort by...</h1></div>
+                            <form method="get" action="controller">
+                                <input type="hidden" name="command" value="pagesOfPayments">
+                                <select class="sel" name="type" required="required">
+                                    <option value="">Choose...</option>
+                                    <option value="1">Number</option>
+                                    <option value="2">Date from old to new</option>
+                                    <option value="3">Date from new to old</option>
+                                </select>
+                                <button class="button-29">Sort</button>
+                            </form>
+                        </th>
+                    </tr>
                     <tr>
                         <th>Id Payment</th>
                         <th>Date</th>
@@ -53,16 +67,18 @@
                         <td>${payment.getTo_card()}</td>
                         <td>${payment.getStatus()}</td>
                         <c:if test="${sessionScope.get('customer').getRole().equals('user')}">
-
-                            <c:if test="${sessionScope.get('cards').stream().filter(x -> x.getIdcard() == payment.getId_card()).findFirst().orElse(null) != null    }">
-                                <c:if test="${payment.getStatus() != 'sent'}">
+                            <c:if test="${sessionScope.get('cards').stream().filter(x -> x.getIdcard() == payment.getId_card()).findFirst().orElse(null) != null}">
+                                <c:if test="${!payment.getStatus().equals('sent')}">
                                     <form method="post" action="controller">
-                                        <input type="hidden" name="command" value="transferMoney">
-                                        <input type="hidden" name="idpayment" value="${payment.getId_payment()}">
-                                        <input type="hidden" name="type1" value="${payment.getId_card()}">
-                                        <input type="hidden" name="numberCard2" value="${payment.getTo_card()}">
-                                        <input type="hidden" name="howmany" value="${payment.getAmount()}">
+
+                                        <input type="hidden"    name="command"     value="transferMoney">
+                                        <input type="hidden"    name="idpayment"   value="${payment.getId_payment()}">
+                                        <input type="hidden"    name="type1"       value="${payment.getId_card()}">
+                                        <input type="hidden"    name="numberCard2" value="${payment.getTo_card()}">
+                                        <input type="hidden"    name="howmany"     value="${payment.getAmount()}">
+
                                         <td><button class="button-29">Try sent</button></td>
+
                                     </form>
                                 </c:if>
                             </c:if>
@@ -70,13 +86,13 @@
                     </tr>
                 </c:forEach>
             </table>
-        </div>
-        <div class="tablePages">
-            <h3>|||</h3>
-            <c:forEach begin="1" end="${sessionScope.get('pagesAll')}" var="number">
-                <a href="controller?command=pagesOfPayments&page=${number}">${number}</a>
-            </c:forEach>
-            <h3>|||</h3>
+            <div class="tablePages">
+                <h3>|||</h3>
+                <c:forEach begin="1" end="${sessionScope.get('pagesAll')}" var="number">
+                    <a href="controller?command=pagesOfPayments&page=${number}&type=${sort}">${number}</a>
+                </c:forEach>
+                <h3>|||</h3>
+            </div>
         </div>
     </section>
 </body>

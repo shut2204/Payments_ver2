@@ -25,6 +25,10 @@
 <%@ include file="/jspf/navAdmin.jspf"%>
 
 <section>
+    <h1 style="text-align: center; color: lime">${sessionScope.get("infoUnlock")}</h1>
+
+    <h1 style="text-align: center; color: red">${sessionScope.get("errorUnlock")}</h1>
+
     <div class="wrapTable">
         <table class="table">
             <tr>

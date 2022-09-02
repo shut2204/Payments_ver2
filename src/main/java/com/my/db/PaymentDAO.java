@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class PaymentDAO {
@@ -53,19 +54,29 @@ public class PaymentDAO {
         return flag;
     }
 
-    public List<Payment> getAllById(String id, int page) throws DBException {
-        ArrayList<Payment> payments = new ArrayList<>();
+    public List<Payment> getAllById(String id, int page, int sort) throws DBException {
+        LinkedList<Payment> payments = new LinkedList<>();
         PreparedStatement pstmt = null;
         ResultSet rs;
         Connection con = null;
 
         try {
             con = DBManager.getInstance().getConnection();
-            pstmt = con.prepareStatement("SELECT * FROM Payments_customer where idcustomer = ? or idcustomer2 = ? limit ?, 5;");
-
+            switch (sort){
+                case 1:{
+                    pstmt = con.prepareStatement("SELECT * FROM Payments_customer where idcustomer = ? or idcustomer2 = ? order by id_card asc limit ?, 5;");
+                }break;
+                case 2:{
+                    pstmt = con.prepareStatement("SELECT * FROM Payments_customer where idcustomer = ? or idcustomer2 = ? order by date_of_payment asc limit ?, 5;");
+                }break;
+                case 3:{
+                    pstmt = con.prepareStatement("SELECT * FROM Payments_customer where idcustomer = ? or idcustomer2 = ? order by date_of_payment desc limit ?, 5;");
+                }break;
+            }
             pstmt.setString(1, id);
             pstmt.setString(2, id);
-            pstmt.setInt(3, page);
+            //pstmt.setString(3, strings[0]);
+            pstmt.setInt(3,page);
             rs = pstmt.executeQuery();
 
             while (rs.next()){
@@ -93,7 +104,7 @@ public class PaymentDAO {
         return payments;
     }
 
-    public List<Payment> getAll(int page) throws DBException {
+    public List<Payment> getAll(int page, int sort) throws DBException {
         ArrayList<Payment> payments = new ArrayList<>();
         PreparedStatement pstmt = null;
         ResultSet rs;
@@ -101,7 +112,17 @@ public class PaymentDAO {
 
         try {
             con = DBManager.getInstance().getConnection();
-            pstmt = con.prepareStatement("SELECT * FROM Payments_customer limit ?, 5;");
+            switch (sort){
+                case 1:{
+                    pstmt = con.prepareStatement("SELECT * FROM Payments_customer order by id_card asc limit ?, 5;");
+                }break;
+                case 2:{
+                    pstmt = con.prepareStatement("SELECT * FROM Payments_customer  order by date_of_payment asc limit ?, 5;");
+                }break;
+                case 3:{
+                    pstmt = con.prepareStatement("SELECT * FROM Payments_customer  order by date_of_payment desc limit ?, 5;");
+                }break;
+            }
 
             pstmt.setInt(1, page);
             rs = pstmt.executeQuery();
@@ -186,4 +207,35 @@ public class PaymentDAO {
     }
 
 
+
+    public int countOfPaymentsByIdAndSearch(String id, String search) throws DBException{
+        int count = 0;
+        PreparedStatement pstmt = null;
+        ResultSet rs;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            pstmt = con.prepareStatement("SELECT count(*) FROM Payments_customer where (idcustomer = ? or idcustomer2 = ?)" +
+                    " and (id_card = ?) ;");
+
+            pstmt.setString(1, id);
+            pstmt.setString(2, id);
+            pstmt.setString(3, search);
+
+            rs = pstmt.executeQuery();
+
+            while (rs.next()){
+                count = rs.getInt(1);
+            }
+            con.commit();
+        } catch (SQLException e) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+        }finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return count;
+    }
 }
