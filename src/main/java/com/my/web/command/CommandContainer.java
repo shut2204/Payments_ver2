@@ -29,6 +29,7 @@ public class CommandContainer {
         commands.put("pagesOfRequests", new PagesOfRequsts());
         commands.put("unlockCard", new unlockCardCommand());
         commands.put("blockUser", new BlockUserCommand());
+        commands.put("pagesOfCards", new getCardsCommand());
     }
 
     public static Command get(String commandName) {

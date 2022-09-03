@@ -26,9 +26,22 @@
 
 
 <section>
-    <h1 style="color: red; text-align: center">${error}<p/>
-    <h1 style="color: lime; text-align: center">${infoRequest}<p/>
-    <h1 style="color: red; text-align: center">${errorRequest}<p/>
+    <h1 style="color: red; text-align: center">${error}</h1>
+    <h1 style="color: lime; text-align: center">${infoRequest}</h1>
+    <h1 style="color: red; text-align: center">${errorRequest}</h1>
+        <div class="cabinetWrap">
+            <h1>Sort by...</h1>
+            <form method="get" action="controller">
+                <input type="hidden" name="command" value="pagesOfCards">
+                <select class="sel" name="type" required="required">
+                    <option value="">Choose...</option>
+                    <option value="1">Number</option>
+                    <option value="2">Type</option>
+                    <option value="3">Balance</option>
+                </select>
+                <button class="button-29">Sort</button>
+            </form>
+        </div>
     <div class="parent">
         <c:if test="${sessionScope.get('cards') != null }">
             <c:set var="num" scope="session" value="${sessionScope.get('cards').size()}"/>

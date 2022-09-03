@@ -3,6 +3,7 @@ package com.my.web.command;
 import com.my.PATH;
 import com.my.db.CardDAO;
 import com.my.db.entity.Card;
+import com.my.db.entity.Customer;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
@@ -13,13 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-public class showCardsUser extends Command{
-
-    private static final Logger LOG = Logger.getLogger(showCardsUser.class);
+public class getCardsCommand extends Command{
+    private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
     private static CardDAO cardDAO;
 
-    public showCardsUser() {
+    public getCardsCommand() {
         try {
             cardDAO = new CardDAO();
         } catch (DBException e) {
@@ -32,26 +32,24 @@ public class showCardsUser extends Command{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
 
-        LOG.debug("Command starts showCardUser");
+        LOG.debug("Command starts getCardsCommand");
 
         HttpSession session = request.getSession();
 
-        String forward = PATH.PAGE_ADMIN;
+        String forward = PATH.PAGE_CABINET_USER;
 
-        List<Card> cardsUser = cardDAO.getAllByLogin(request.getParameter("login"));
+        Customer customer = (Customer) session.getAttribute("customer");
 
-        session.setAttribute("login" , request.getParameter("login"));
-        LOG.debug("cards size -> " + cardsUser.size());
-        if (!cardsUser.isEmpty()){
+        if (customer.getRole().equals("admin")){
             LOG.debug(session.getAttribute("login"));
-            LOG.debug("show cards successful");
-            request.setAttribute("cardsUser", cardsUser);
+            List<Card> cards = cardDAO.getAllByLoginSort(String.valueOf(session.getAttribute("login")), Integer.parseInt(request.getParameter("type")));
             forward = PATH.PAGE_CARDS_USER;
+            request.setAttribute("cardsUser", cards);
+            LOG.debug(cards);
         }else {
-            LOG.error(Messages.ERR_CANNOT_BLOCK_CARD);
-            session.setAttribute("errorShow", "Please try again");
+            List<Card> cards = cardDAO.getAllByLoginSort((String) session.getAttribute("login"), Integer.parseInt(request.getParameter("type")));
+            session.setAttribute("cards", cards);
         }
-
         LOG.debug("Command end");
 
         return forward;

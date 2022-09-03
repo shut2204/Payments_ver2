@@ -94,6 +94,51 @@ public class CardDAO {
         return cards;
     }
 
+    public List<Card> getAllByLoginSort(String login, int sort) throws DBException {
+        ArrayList<Card> cards = new ArrayList<>();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+            switch (sort){
+                case 1: {
+                    pstmt = con.prepareStatement("SELECT * FROM Cards INNER JOIN Customers ON Cards.idcustomer = Customers.idcustomer WHERE login = ? order by idcard;");
+                }break;
+                case 2:{
+                    pstmt = con.prepareStatement("SELECT * FROM Cards INNER JOIN Customers ON Cards.idcustomer = Customers.idcustomer WHERE login = ? order by name_card;");
+                }break;
+                case 3:{
+                    pstmt = con.prepareStatement("SELECT * FROM Cards INNER JOIN Customers ON Cards.idcustomer = Customers.idcustomer WHERE login = ? order by balance;");
+                }break;
+            }
+
+            pstmt.setString(1, login);
+            rs = pstmt.executeQuery();
+
+            while (rs.next()){
+                Card card = new Card();
+
+                card.setIdcard(rs.getLong("idcard"));
+                card.setIdcustomer(rs.getInt("idcustomer"));
+                card.setBalance(rs.getInt("balance"));
+                card.setName_card(rs.getString("name_card"));
+                card.setStatus(rs.getString("status"));
+
+                cards.add(card);
+            }
+            con.commit();
+        } catch (SQLException e) {
+            DBManager.getInstance().rollback(con);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+        }finally {
+            DBManager.getInstance().close(con, pstmt, null);
+        }
+
+        return cards;
+    }
+
     public boolean add(Card card) throws DBException {
         boolean flag = false;
 

@@ -147,6 +147,12 @@ section{
     padding-left: 4px;
 }
 
+.cabinetWrap{
+    margin-bottom: -3%;
+    margin-left: 15%;
+    color: chartreuse;
+}
+
 .search::placeholder{
     color: white;
 }

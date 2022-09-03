@@ -1,21 +1,16 @@
 package com.my.web.command;
 
 import com.my.PATH;
-import com.my.db.CardDAO;
-import com.my.db.CustomerDAO;
 import com.my.db.PaymentDAO;
-import com.my.db.entity.Card;
 import com.my.db.entity.Customer;
 import com.my.db.entity.Payment;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
-import com.my.exception.Messages;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
 import java.util.List;
 
 public class PagesOfPayments extends Command{
