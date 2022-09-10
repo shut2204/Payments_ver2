@@ -1,4 +1,4 @@
-package com.my.web.command;
+package com.my.web.command.UserCommand;
 
 import com.my.PATH;
 import com.my.db.CardDAO;
@@ -8,13 +8,14 @@ import com.my.db.entity.Payment;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
+import com.my.web.command.Command;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class PreparePaymentCommand extends Command{
+public class PreparePaymentCommand extends Command {
     private static final Logger LOG = Logger.getLogger(PreparePaymentCommand.class);
 
     private static PaymentDAO paymentDAO;
@@ -42,8 +43,9 @@ public class PreparePaymentCommand extends Command{
         String money = request.getParameter("howmany");
 
         if (!money.matches("\\d+") || !request.getParameter("numberCard2").matches("\\d+")||
-                request.getParameter("type1").equals(request.getParameter("numberCard2"))
-                || !request.getParameter("numberCard2").matches("\\d{16}")){
+           request.getParameter("type1").equals(request.getParameter("numberCard2"))
+           || !request.getParameter("numberCard2").matches("\\d{16}")){
+
             session.setAttribute("infoPrepare", "");
             session.setAttribute("errorPrepare", "Incorrectly input data");
             return forward;

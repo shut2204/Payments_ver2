@@ -1,21 +1,19 @@
-package com.my.web.command;
+package com.my.web.command.AdminCommand;
 
 import com.my.PATH;
-import com.my.db.CardDAO;
 import com.my.db.CustomerDAO;
-import com.my.db.entity.Card;
-import com.my.db.entity.Customer;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
+import com.my.web.command.Command;
+import com.my.web.command.InOutSite.LoginCommand;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.util.List;
 
-public class BlockUserCommand extends Command{
+public class BlockUserCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 

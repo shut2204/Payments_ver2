@@ -10,6 +10,16 @@ public class Messages {
 
     public static final String ERR_CANNOT_UNLOCK_CARD = "Cannot unlock card";
     public static final String ERR_CANNOT_ADD_PAYMENT = "Cannot add payment to db";
+    public static final String ERR_CANNOT_GET_CARD_BY_ID = "Cannot get card by id from database";
+    public static final String ERR_CANNOT_ADD_MONEY_ON_CARD = "Cannot add money on the card";
+    public static final String ERR_CANNOT_SENT_REQUEST = "Cannot sent request";
+    public static final String ERR_CANNOT_FIND_REQUEST = "Cannot find request with this card";
+    public static final String ERR_CANNOT_FIND_USERS = "Cannot find users";
+    public static final String ERR_CANNOT_BLOCK_USER = "Cannot block user";
+    public static final String ERR_CANNOT_SEARCH_USER = "Cannot search user";
+    public static final String ERR_CANNOT_GET_ALL_PAYMENTS = "Cannot get all payments";
+    public static final String ERR_CANNOT_COUNT_PAYMENTS = "Cannot count payments";
+    public static final String ERR_CANNOT_GET_ALL_REQUESTS = "Cannot get all requests";
 
     private Messages(){
         //no op
@@ -25,6 +35,8 @@ public class Messages {
     public static final String ERR_INCORECT_PASS_OR_LOGIN = "Incorret password/login";
 
     public static final String ERR_CANNOT_GET_ALL_CARDS = "Cannot get all cards by this login";
+
+    public static final String ERR_CANNOT_GET_ALL_CARDS_WITH_SORT = "Cannot get all cards by this login with sort";
 
     public static final String ERR_PLEASE_LOGIN = "Please login again!";
 

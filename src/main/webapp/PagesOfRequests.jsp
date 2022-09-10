@@ -32,9 +32,9 @@
     <div class="wrapTable">
         <table class="table">
             <tr>
-                <th>Id Customer</th>
-                <th>Id Card</th>
-                <th>Action</th>
+                <th>Id <fmt:message key="label.customer"/></th>
+                <th>Id <fmt:message key="label.card"/></th>
+                <th><fmt:message key="label.action"/></th>
             </tr>
             <c:forEach var="request" items="${sessionScope.get('requests')}">
                 <tr>
@@ -43,7 +43,7 @@
                     <form method="post" action="controller">
                         <input type="hidden" name="idCard" value="${request.getIdCard()}">
                         <input type="hidden" name="command" value="unlockCard">
-                        <td><button class="button-29">Unlock</button></td>
+                        <td><button class="button-29"><fmt:message key="label.unlock"/></button></td>
                     </form>
                 </tr>
             </c:forEach>

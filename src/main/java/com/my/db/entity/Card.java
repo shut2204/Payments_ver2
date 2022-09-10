@@ -1,6 +1,11 @@
 package com.my.db.entity;
 
-public class Card {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Card implements Serializable {
+
+    private static final long serialVersionUID = 231242342341234L;
 
     private long idcard;
     private int idcustomer;
@@ -57,5 +62,29 @@ public class Card {
 
     public void setName_card(String name_card) {
         this.name_card = name_card;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Card card = (Card) o;
+        return idcard == card.idcard && status.equals(card.status);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(idcard, status);
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "idcard=" + idcard +
+                ", idcustomer=" + idcustomer +
+                ", balance=" + balance +
+                ", name_card='" + name_card + '\'' +
+                ", status='" + status + '\'' +
+                '}';
     }
 }

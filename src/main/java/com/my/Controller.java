@@ -1,5 +1,6 @@
 package com.my;
 
+import com.my.exception.AppException;
 import com.my.web.command.Command;
 import com.my.web.command.CommandContainer;
 
@@ -9,15 +10,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
 
 
-@WebServlet(value = "/controller")
+@WebServlet(name = "Controller",  value = "/controller")
 public class Controller extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher(process(req,resp)).forward(req,resp);
-
     }
 
     @Override
@@ -25,7 +26,7 @@ public class Controller extends HttpServlet {
         resp.sendRedirect(process(req,resp));
     }
 
-    private String process(HttpServletRequest request, HttpServletResponse response) {
+    private String process(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
 
         // extract command name from the request
@@ -38,8 +39,8 @@ public class Controller extends HttpServlet {
         String forward = PATH.PAGE_ERROR_PAGE;
         try {
             forward = command.execute(request, response);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (AppException e) {
+            response.sendError(500, "Cant process command");
         }
         // go to forward
         return forward;

@@ -43,8 +43,8 @@ public class RequestDAO {
             con.commit();
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            ex.printStackTrace();
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_REQUESTS, ex);
+            throw new DBException(Messages.ERR_CANNOT_GET_ALL_REQUESTS,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
@@ -67,8 +67,8 @@ public class RequestDAO {
             con.commit();
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            ex.printStackTrace();
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_REQUESTS, ex);
+            throw new DBException(Messages.ERR_CANNOT_GET_ALL_REQUESTS,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }

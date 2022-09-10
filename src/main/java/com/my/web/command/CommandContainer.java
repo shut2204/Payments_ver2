@@ -1,5 +1,11 @@
 package com.my.web.command;
 
+import com.my.web.command.AdminCommand.*;
+import com.my.web.command.InOutSite.LoginCommand;
+import com.my.web.command.InOutSite.LogoutCommand;
+import com.my.web.command.InOutSite.RegistrationCommand;
+import com.my.web.command.UserCommand.*;
+
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -30,6 +36,7 @@ public class CommandContainer {
         commands.put("unlockCard", new unlockCardCommand());
         commands.put("blockUser", new BlockUserCommand());
         commands.put("pagesOfCards", new getCardsCommand());
+        commands.put("updateLocale", new UpadateLocaleCommand());
     }
 
     public static Command get(String commandName) {

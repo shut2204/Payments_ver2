@@ -34,28 +34,28 @@
             <table class="table">
                     <tr>
                         <th>
-                            <div><h1>Sort by...</h1></div>
+                            <div><h1><fmt:message key="label.sortby"/>...</h1></div>
                             <form method="get" action="controller">
                                 <input type="hidden" name="command" value="pagesOfPayments">
                                 <select class="sel" name="type" required="required">
-                                    <option value="">Choose...</option>
-                                    <option value="1">Number</option>
-                                    <option value="2">Date from old to new</option>
-                                    <option value="3">Date from new to old</option>
+                                    <option value=""><fmt:message key="label.choose"/>...</option>
+                                    <option value="1"><fmt:message key="label.number"/></option>
+                                    <option value="2"><fmt:message key="label.oldtonew"/></option>
+                                    <option value="3"><fmt:message key="label.newtoold"/></option>
                                 </select>
-                                <button class="button-29">Sort</button>
+                                <button class="button-29"><fmt:message key="label.sort"/></button>
                             </form>
                         </th>
                     </tr>
                     <tr>
-                        <th>Id Payment</th>
-                        <th>Date</th>
-                        <th>Amount</th>
-                        <th>From card</th>
-                        <th>To card</th>
-                        <th>Status</th>
+                        <th>Id <fmt:message key="label.payment"/></th>
+                        <th><fmt:message key="label.date"/></th>
+                        <th><fmt:message key="label.amount"/></th>
+                        <th><fmt:message key="label.fromcard"/></th>
+                        <th><fmt:message key="label.tocard"/></th>
+                        <th><fmt:message key="label.status"/></th>
                         <c:if test="${sessionScope.get('customer').getRole().equals('user')}">
-                            <th>Action</th>
+                            <th><fmt:message key="label.action"/></th>
                         </c:if>
                     </tr>
                 <c:forEach var="payment" items="${sessionScope.get('payments')}">
@@ -77,7 +77,7 @@
                                         <input type="hidden"    name="numberCard2" value="${payment.getTo_card()}">
                                         <input type="hidden"    name="howmany"     value="${payment.getAmount()}">
 
-                                        <td><button class="button-29">Try sent</button></td>
+                                        <td><button class="button-29"><fmt:message key="label.trysent"/></button></td>
 
                                     </form>
                                 </c:if>

@@ -1,13 +1,18 @@
 package com.my.db.entity;
 
-public class Customer {
+import java.io.Serializable;
+import java.util.Objects;
 
+public class Customer implements Serializable {
+
+    private static final long serialVersionUID = 9889379837429L;
     private int idcustomer;
     private String phone_number;
     private String first_name;
     private String last_name;
     private String login;
     private String password_customer;
+
     private String role;
 
     private String status;
@@ -74,5 +79,32 @@ public class Customer {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return login.equals(customer.login) && role.equals(customer.role) && status.equals(customer.status);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(login, role, status);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "idcustomer=" + idcustomer +
+                ", phone_number='" + phone_number + '\'' +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", login='" + login + '\'' +
+                ", password_customer='" + password_customer + '\'' +
+                ", role='" + role + '\'' +
+                ", status='" + status + '\'' +
+                '}';
     }
 }

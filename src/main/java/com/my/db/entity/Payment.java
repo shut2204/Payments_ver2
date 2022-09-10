@@ -1,7 +1,11 @@
 package com.my.db.entity;
 
-public class Payment {
+import java.io.Serializable;
+import java.util.Objects;
 
+public class Payment implements Serializable {
+
+    private static final long serialVersionUID = 65675768372648127L;
     private int idcustomer;
 
     private int idcustomer2;
@@ -75,5 +79,32 @@ public class Payment {
 
     public void setDate_of_payment(String date_of_payment) {
         this.date_of_payment = date_of_payment;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Payment payment = (Payment) o;
+        return id_payment == payment.id_payment && status.equals(payment.status);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id_payment, status);
+    }
+
+    @Override
+    public String toString() {
+        return "Payment{" +
+                "idcustomer=" + idcustomer +
+                ", idcustomer2=" + idcustomer2 +
+                ", id_payment=" + id_payment +
+                ", id_card='" + id_card + '\'' +
+                ", amount=" + amount +
+                ", status='" + status + '\'' +
+                ", to_card='" + to_card + '\'' +
+                ", date_of_payment='" + date_of_payment + '\'' +
+                '}';
     }
 }

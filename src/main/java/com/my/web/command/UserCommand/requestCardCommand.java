@@ -1,4 +1,4 @@
-package com.my.web.command;
+package com.my.web.command.UserCommand;
 
 import com.my.PATH;
 import com.my.db.CustomerDAO;
@@ -6,13 +6,14 @@ import com.my.db.entity.Customer;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
+import com.my.web.command.Command;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class requestCardCommand extends Command{
+public class requestCardCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(requestCardCommand.class);
 

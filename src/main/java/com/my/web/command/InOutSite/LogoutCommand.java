@@ -1,14 +1,15 @@
-package com.my.web.command;
+package com.my.web.command.InOutSite;
 
 import com.my.PATH;
 import com.my.exception.AppException;
+import com.my.web.command.Command;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class LogoutCommand extends Command{
+public class LogoutCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 

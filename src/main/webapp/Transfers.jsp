@@ -33,7 +33,7 @@
                     <img src="img/contactless-indicator.png" class="indicator" />
 
                     <select class="sel1" name="type1" required="required">
-                        <option class="option" value="">Choose your card...</option>
+                        <option class="option" value=""><fmt:message key="label.choose"/>...</option>
                         <c:forEach var="card" items="${sessionScope.get('cards')}">
                             <option value="${card.getIdcard()}">${card.getNumber_card()}</option>
                         </c:forEach>
@@ -48,10 +48,10 @@
                         <input type="hidden" name="command" value="prepare">
                         <input class="numberCard2" required name="numberCard2">
                         <h5 class="card-holder">
-                            <span style="font-size: large">How many</span><br />
+                            <span style="font-size: large"><fmt:message key="label.howmany"/></span><br />
                             <input class="howmuch" required type="text" name="howmany">
                         </h5>
-                    <button class="button-29">Prepare</button>
+                    <button class="button-29"><fmt:message key="label.prepare"/></button>
 
                     <img src="img/visa.png" class="logo1" />
                 </div>

@@ -13,4 +13,5 @@ public class PATH {
     public static final String PAGE_CABINET_ADMIN = "CabinetAdmin.jsp";
     public static final String PAGE_CARDS_USER = "CardsUser.jsp";
     public static final String PAGE_REQUESTS = "PagesOfRequests.jsp";
+    public static final String PAGE_INDEX = "index.jsp";
 }

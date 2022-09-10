@@ -16,10 +16,8 @@ public class CardDAO {
 
     private static final Logger LOG = Logger.getLogger(CardDAO.class);
 
-    private final DBManager dbManager;
-
     public CardDAO() throws DBException {
-        this.dbManager = DBManager.getInstance();
+
     }
 
     public Card cardById(String id) throws DBException {
@@ -47,16 +45,13 @@ public class CardDAO {
             con.commit();
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_ADD_CARD, ex);
+            LOG.error(Messages.ERR_CANNOT_GET_CARD_BY_ID, ex);
+            throw new DBException(Messages.ERR_CANNOT_GET_CARD_BY_ID, ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
 
         return card;
-    }
-
-    public CardDAO(DBManager dbManager) {
-        this.dbManager = dbManager;
     }
 
     public List<Card> getAllByLogin(String login) throws DBException {
@@ -87,6 +82,7 @@ public class CardDAO {
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            throw new DBException(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -131,7 +127,8 @@ public class CardDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS_WITH_SORT, e);
+            throw new DBException(Messages.ERR_CANNOT_GET_ALL_CARDS_WITH_SORT,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -159,6 +156,7 @@ public class CardDAO {
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_ADD_CARD, ex);
+            throw new DBException(Messages.ERR_CANNOT_ADD_CARD,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -185,7 +183,8 @@ public class CardDAO {
             flag = true;
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_ADD_CARD, ex);
+            LOG.error(Messages.ERR_CANNOT_ADD_MONEY_ON_CARD, ex);
+            throw new DBException(Messages.ERR_CANNOT_ADD_MONEY_ON_CARD, ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -239,6 +238,7 @@ public class CardDAO {
             } catch (SQLException e1) {
                 System.out.println("SQLException in rollback"+e.getMessage());
             }
+            throw new DBException(Messages.ERR_CANNOT_TRANSFER_MONEY,e);
         } finally {
             try {
                 if (con != null)
@@ -270,6 +270,7 @@ public class CardDAO {
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_BLOCK_CARD, ex);
+            throw new DBException(Messages.ERR_CANNOT_BLOCK_CARD,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -302,7 +303,8 @@ public class CardDAO {
             flag = true;
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_BLOCK_CARD, ex);
+            LOG.error(Messages.ERR_CANNOT_UNLOCK_CARD, ex);
+            throw new DBException(Messages.ERR_CANNOT_UNLOCK_CARD,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }

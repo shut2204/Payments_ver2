@@ -147,6 +147,21 @@ section{
     padding-left: 4px;
 }
 
+.home{
+    margin-left: 40%;
+    margin-top: 5%;
+    font-size: xx-large;
+    color: currentcolor;
+}
+
+.errror{
+    font-size: xxx-large;
+    color: cyan;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
 .cabinetWrap{
     margin-bottom: -3%;
     margin-left: 15%;
@@ -197,6 +212,15 @@ td{
 }
 
 .blockedCard{
+    position: absolute;
+    color: red;
+    transform: rotate(-28deg);
+    font-size: 83px;
+    bottom: 127px;
+    left: -22px;
+}
+
+.blockedCard2{
     position: absolute;
     color: red;
     transform: rotate(-35deg);

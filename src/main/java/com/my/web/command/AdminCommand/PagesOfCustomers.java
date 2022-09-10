@@ -1,12 +1,11 @@
-package com.my.web.command;
+package com.my.web.command.AdminCommand;
 
 import com.my.PATH;
 import com.my.db.CustomerDAO;
-import com.my.db.PaymentDAO;
 import com.my.db.entity.Customer;
-import com.my.db.entity.Payment;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
+import com.my.web.command.Command;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-public class PagesOfCustomers extends Command{
+public class PagesOfCustomers extends Command {
     private static final Logger LOG = Logger.getLogger(PagesOfCustomers.class);
 
     private static CustomerDAO customerDAO;

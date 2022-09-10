@@ -30,8 +30,8 @@
     <c:forEach var="card" items="${sessionScope.get('cards')}">
 
     ${num = num+1}
-    fon${num} = document.getElementById('obertka${num}'),
-        popup${num} = document.getElementById('mypopup${num}'),
+    fon${num} = document.getElementById('obertka${num}');
+        popup${num} = document.getElementById('mypopup${num}');
         popupToggle${num} = document.getElementById('myBtn${num}');
     popupClose${num} = document.getElementById('close${num}');
 
@@ -55,7 +55,9 @@
                 child.style.display = "none";
             });
             Array.prototype.forEach.call(alladdmaoney, child => {
-                child.style.display = "block";
+                if (child.style.color !== "red") {
+                    child.style.display = "block";
+                }
             });
 
             console.log("begin fun")

@@ -8,6 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<fmt:setLocale value="${locale}"/>
+<fmt:setBundle basename="messages"/>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -30,16 +34,16 @@
     <h1 style="color: lime; text-align: center">${infoRequest}</h1>
     <h1 style="color: red; text-align: center">${errorRequest}</h1>
         <div class="cabinetWrap">
-            <h1>Sort by...</h1>
+            <h1><fmt:message key="label.sortby"/>...</h1>
             <form method="get" action="controller">
                 <input type="hidden" name="command" value="pagesOfCards">
                 <select class="sel" name="type" required="required">
-                    <option value="">Choose...</option>
-                    <option value="1">Number</option>
-                    <option value="2">Type</option>
-                    <option value="3">Balance</option>
+                    <option value=""><fmt:message key="label.choose"/></option>
+                    <option value="1"><fmt:message key="label.number"/></option>
+                    <option value="2"><fmt:message key="label.type"/></option>
+                    <option value="3"><fmt:message key="label.bybalance"/></option>
                 </select>
-                <button class="button-29">Sort</button>
+                <button class="button-29"><fmt:message key="label.sort"/></button>
             </form>
         </div>
     <div class="parent">
@@ -52,14 +56,14 @@
                                 <c:if test="${card.getStatus() == 'unlock'}">
                                     <input type="hidden" name="command" value="blockCard">
                                     <input type="hidden" name="idCard" value=${card.getIdcard()}>
-                                    <input type="submit" class="blockCard" value="BLOCK">
+                                    <input type="submit" class="blockCard" value="<fmt:message key="label.block"/>">
                                 </c:if>
 
                                 <c:if test="${card.getStatus() == 'block'}">
-                                    <h1 class="blockedCard">BLOCKED</h1>
+                                    <h1 class="blockedCard2">BLOCKED</h1>
                                     <input type="hidden" name="command" value="sendRequest">
                                     <input type="hidden" name="idCard" value=${card.getIdcard()}>
-                                    <input type="submit" class="requestCard" value="REQUEST">
+                                    <input type="submit" class="requestCard" value="<fmt:message key="label.request"/>">
                                 </c:if>
                             </form>
 
@@ -68,13 +72,18 @@
                             <img src="img/contactless-indicator.png" class="indicator" />
                             <h3 class="number">${card.getNumber_card()}</h3>
                             <h5 class="card-holder">
-                                <span>card type</span><br />
+                                <span><fmt:message key="label.card-type"/></span><br />
                                     ${card.getName_card()}
                             </h5>
-                            <h5 class="valid"><span class="balance">Balance</span>
+                            <h5 class="valid"><span class="balance"><fmt:message key="label.balance"/></span>
                                 <c:if test="${card.getStatus() == 'unlock'}">
-                                    <button id="myBtn${num}" class="addMoney">+ Add money</button>
+                                    <button id="myBtn${num}" class="addMoney">+ <fmt:message key="label.addmoney"/></button>
                                 </c:if>
+
+                                <c:if test="${card.getStatus() == 'block'}">
+                                    <button style="color: red; display: none" id="myBtn${num}" class="addMoney">+ <fmt:message key="label.addmoney"/></button>
+                                </c:if>
+
                                 <br />${card.getBalance()}</h5>
                             <img src="img/visa.png" class="logo1" />
                         </div>
@@ -83,12 +92,12 @@
                             <div class="popup-content1">
                                 <span class="close" id="close${num}">&times;</span>
                                 <form class="form" action="controller" method="post">
-                                    <p class="par" >How many</p>
+                                    <p class="par" ><fmt:message key="label.howmany"/></p>
                                     <input name="idCard" value="${card.getIdcard()}" type="hidden">
                                     <input type="text" class="sel" name="money">
                                     <input type="hidden" name="command" value="addMoneyOnCard">
                                     <div class="Button">
-                                        <input class="button-29" role="button" type="submit" value="Submit">
+                                        <input class="button-29" role="button" type="submit" value="<fmt:message key="label.addmoney"/>">
                                     </div>
                                 </form>
                             </div>
@@ -99,20 +108,20 @@
         </c:if>
 
         <div class="card">
-            <button id="myBtn" class="addNewCardClass">+ Add new Card</button>
+            <button id="myBtn" class="addNewCardClass">+ <fmt:message key="label.addcard"/></button>
             <div class="popup" id="mypopup">
                 <div class="popup-content">
                     <span class="close" id="closeOne">&times;</span>
                     <form class="form" action="controller" method="post">
                         <input type="hidden" name="command" value="addNewCard">
-                        <p class="par" >Choose type</p>
+                        <p class="par" ><fmt:message key="label.choosecardtype"/></p>
                         <select class="sel" name="type" required="required">
-                            <option value="">Choose...</option>
-                            <option value="1">Personal</option>
-                            <option value="2">Special</option>
+                            <option value=""><fmt:message key="label.choose"/></option>
+                            <option value="1"><fmt:message key="label.personal"/></option>
+                            <option value="2"><fmt:message key="label.special"/></option>
                         </select>
                         <div class="Button">
-                            <input class="button-29" role="button" type="submit" value="Submit">
+                            <input class="button-29" role="button" type="submit" value="<fmt:message key="label.addcardsub"/>">
                         </div>
                     </form>
                 </div>

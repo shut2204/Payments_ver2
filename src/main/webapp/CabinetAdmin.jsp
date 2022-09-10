@@ -33,18 +33,18 @@
                 <th>
                     <form action="controller" method="get">
                         <input type="hidden" name="command" value="pagesOfCustomers">
-                        <input class="search" type="text" name="search" placeholder="Search by login">
+                        <input class="search" type="text" name="search" placeholder="<fmt:message key="label.searchbylogin"/>">
                         <button class="button-29">Go</button>
                     </form>
                 </th>
             </tr>
             <tr>
-                <th>Id Customer</th>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Login</th>
-                <th>Action</th>
-                <th>Cards</th>
+                <th>Id <fmt:message key="label.customer"/></th>
+                <th><fmt:message key="label.firstname"/></th>
+                <th><fmt:message key="label.lastname1"/></th>
+                <th><fmt:message key="label.login1"/></th>
+                <th><fmt:message key="label.action"/></th>
+                <th><fmt:message key="label.cards"/></th>
             </tr>
             <c:forEach var="customer" items="${sessionScope.get('customers')}">
                 <tr>
@@ -57,14 +57,14 @@
                         <input type="hidden" name="login" value="${customer.getLogin()}">
                         <td>
                             <c:if test="${customer.getStatus().equals('unlock')}">
-                                <button class="button-29">Block</button>
+                                <button class="button-29"><fmt:message key="label.block"/></button>
                             </c:if>
                         </td>
                     </form>
                     <form method="get" action="controller">
                         <input type="hidden" name="command" value="showCardsOfCustomer">
                         <input type="hidden" name="login" value="${customer.getLogin()}">
-                        <td><button class="button-29">To cards</button></td>
+                        <td><button class="button-29"><fmt:message key="label.tocards"/></button></td>
                     </form>
                 </tr>
             </c:forEach>

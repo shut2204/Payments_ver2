@@ -47,6 +47,7 @@ public class PaymentDAO {
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_ADD_PAYMENT, ex);
+            throw new DBException(Messages.ERR_CANNOT_ADD_PAYMENT,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -96,7 +97,8 @@ public class PaymentDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_PAYMENTS, e);
+            throw new DBException(Messages.ERR_CANNOT_GET_ALL_PAYMENTS,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -144,7 +146,8 @@ public class PaymentDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_GET_ALL_PAYMENTS, e);
+            throw new DBException(Messages.ERR_CANNOT_GET_ALL_PAYMENTS,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -172,7 +175,8 @@ public class PaymentDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_COUNT_PAYMENTS, e);
+            throw new DBException(Messages.ERR_CANNOT_COUNT_PAYMENTS,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -198,7 +202,8 @@ public class PaymentDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_COUNT_PAYMENTS, e);
+            throw new DBException(Messages.ERR_CANNOT_COUNT_PAYMENTS,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -231,7 +236,8 @@ public class PaymentDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_COUNT_PAYMENTS, e);
+            throw new DBException(Messages.ERR_CANNOT_COUNT_PAYMENTS,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }

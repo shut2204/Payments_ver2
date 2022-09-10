@@ -26,18 +26,18 @@
 
 
 <section>
-    <h1 style="color: lime; text-align: center">user cards with login: ${sessionScope.get("login")}</h1>
+    <h1 style="color: lime; text-align: center"><fmt:message key="label.uscards"/>: ${sessionScope.get("login")}</h1>
     <div class="cabinetWrap">
-        <h1>Sort by...</h1>
+        <h1><fmt:message key="label.sortby"/>...</h1>
         <form method="get" action="controller">
             <input type="hidden" name="command" value="pagesOfCards">
             <select class="sel" name="type" required="required">
-                <option value="">Choose...</option>
-                <option value="1">Number</option>
-                <option value="2">Type</option>
-                <option value="3">Balance</option>
+                <option value=""><fmt:message key="label.choose"/></option>
+                <option value="1"><fmt:message key="label.number"/></option>
+                <option value="2"><fmt:message key="label.type"/></option>
+                <option value="3"><fmt:message key="label.bybalance"/></option>
             </select>
-            <button class="button-29">Sort</button>
+            <button class="button-29"><fmt:message key="label.sort"/></button>
         </form>
     </div>
     <div class="parent">
@@ -47,9 +47,8 @@
                             <form action="controller" method="post">
                                 <c:if test="${card.getStatus() == 'unlock'}">
                                     <input type="hidden" name="command" value="blockCard">
-                                    <input type="hidden" name="login" value="${requestScope.get("login")}">
                                     <input type="hidden" name="idCard" value=${card.getIdcard()}>
-                                    <input type="submit" class="blockCard" value="BLOCK">
+                                    <input type="submit" class="blockCard" value="<fmt:message key="label.block"/>">
                                 </c:if>
                             </form>
 
@@ -62,10 +61,10 @@
                             <img src="img/contactless-indicator.png" class="indicator" />
                             <h3 class="number">${card.getNumber_card()}</h3>
                             <h5 class="card-holder">
-                                <span>card type</span><br />
+                                <span><fmt:message key="label.card-type"/></span><br />
                                     ${card.getName_card()}
                             </h5>
-                            <h5 class="valid"><span class="balance">Balance</span>
+                            <h5 class="valid"><span class="balance"><fmt:message key="label.balance"/></span>
                                 <br />${card.getBalance()}</h5>
                             <img src="img/visa.png" class="logo1" />
                     </div>

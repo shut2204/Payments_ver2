@@ -1,7 +1,11 @@
 package com.my.db.entity;
 
-public class Request {
+import java.io.Serializable;
+import java.util.Objects;
 
+public class Request implements Serializable {
+
+    private static final long serialVersionUID = 8238127948129L;
     private  int idCustomer;
 
     private String idCard;
@@ -20,5 +24,26 @@ public class Request {
 
     public void setIdCard(String idCard) {
         this.idCard = idCard;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Request request = (Request) o;
+        return idCustomer == request.idCustomer && idCard.equals(request.idCard);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(idCustomer, idCard);
+    }
+
+    @Override
+    public String toString() {
+        return "Request{" +
+                "idCustomer=" + idCustomer +
+                ", idCard='" + idCard + '\'' +
+                '}';
     }
 }

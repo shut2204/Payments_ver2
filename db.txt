@@ -11,7 +11,8 @@ create table Customers
     status            varchar(6) default 'unlock' not null,
     constraint login
         unique (login)
-);
+)
+    charset = utf8;
 
 create table Cards
 (
@@ -23,7 +24,8 @@ create table Cards
     Status     varchar(30) default 'unlock' not null,
     constraint Cards_ibfk_1
         foreign key (idcustomer) references Customers (idcustomer)
-);
+)
+    charset = latin1;
 
 create index idcustomer
     on Cards (idcustomer);
@@ -52,7 +54,8 @@ create table Payments_customer
             on update cascade,
     constraint Payments_customer_Customers_idcustomer_fk_2
         foreign key (idcustomer2) references Customers (idcustomer)
-);
+)
+    charset = latin1;
 
 create table requests
 (
@@ -64,5 +67,6 @@ create table requests
         foreign key (idcard) references Cards (idcard),
     constraint request_Customers_idcustomer_fk
         foreign key (idcustomer) references Customers (idcustomer)
-);
+)
+    charset = latin1;
 

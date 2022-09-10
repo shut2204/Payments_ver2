@@ -1,21 +1,38 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<fmt:setLocale value="${locale}"/>
+<fmt:setBundle basename="messages"/>
+
 <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
     </label>
     <label class="logo">Payments</label>
+    <form action="controller" method="post" style="display: contents">
+        <input type="hidden" name="command" value="updateLocale">
     <ul>
-        <li><a href="index.jsp">Home</a></li>
+            <li>
+                <select name="locale">
+                    <option value="en">EN</option>
+                    <option value="ru">RU</option>
+                </select>
+
+            </li>
+
+            <li>
+                <input type="submit" value="GO">
+            </li>
+        <li><a href="index.jsp"><fmt:message key="label.home"/></a></li>
         <c:if test="${sessionScope.get('login') != null }">
-            <li><a href="controller?command=pagesOfPayments">Payments</a></li>
-            <li><a href="Transfers.jsp">Transfers</a></li>
-            <li><a href="Cabinet.jsp">Cabinet</a></li>
-            <li><a href="controller?command=logout">Logout</a></li>
+            <li><a href="controller?command=pagesOfPayments"><fmt:message key="label.payments"/></a></li>
+            <li><a href="Transfers.jsp"><fmt:message key="label.transfers"/></a></li>
+            <li><a href="Cabinet.jsp"><fmt:message key="label.cabinet"/></a></li>
+            <li><a href="controller?command=logout"><fmt:message key="label.logout"/></a></li>
         </c:if>
         <c:if test="${sessionScope.get('login') == null }">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="login.jsp">Register or login</a></li>
+            <li><a href="login.jsp"><fmt:message key="label.regorlogin"/></a></li>
         </c:if>
     </ul>
+    </form>
+
 </nav>

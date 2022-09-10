@@ -16,20 +16,6 @@ import java.util.List;
 public class CustomerDAO {
 
     private static final Logger LOG = Logger.getLogger(CustomerDAO.class);
-    // //////////////////////////////////////////////////////////
-    // SQL queries
-    // //////////////////////////////////////////////////////////
-    private static final String SQL_CREATE_USER = "INSERT INTO users (id , login , pass, first_name , last_name ,mail, role) VALUES (DEFAULT,?, ?, ? , ? ,?, ?);";
-
-    private static final String SQL_FIND_USER_BY_LOGIN = "SELECT * FROM Customers WHERE login=? ;";
-
-    private static final String SQL_GET_USER_LOGIN = "SELECT * FROM users ;";
-
-    private static final String SQL_FIND_USER_BY_ID = "SELECT * FROM users WHERE id= ? ;";
-
-    private static final String SQL_FIND_USER_ID_BY_ORDER = "SELECT id_user FROM request WHERE id = ? ;";
-
-    private static final String SQL_FIND_USER_ID_BY_OWN_ORDER = "SELECT id_user FROM own_request WHERE id = ? ;";
 
     private final DBManager dbManager;
 
@@ -58,7 +44,7 @@ public class CustomerDAO {
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            ex.printStackTrace();
+            throw new DBException(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
@@ -115,7 +101,7 @@ public class CustomerDAO {
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
             LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            ex.printStackTrace();
+            throw new DBException(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN,ex);
         } finally {
             DBManager.getInstance().close(con, stmt, rs);
         }
@@ -141,7 +127,8 @@ public class CustomerDAO {
             flag = true;
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_CREATE_USER, ex);
+            LOG.error(Messages.ERR_CANNOT_SENT_REQUEST, ex);
+            throw new DBException(Messages.ERR_CANNOT_SENT_REQUEST,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
@@ -153,7 +140,7 @@ public class CustomerDAO {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         Connection con = null;
-        boolean flag = false;
+        boolean flag;
 
         try {
             con = DBManager.getInstance().getConnection();
@@ -168,7 +155,8 @@ public class CustomerDAO {
             flag = rs.next();
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_CREATE_USER, ex);
+            LOG.error(Messages.ERR_CANNOT_FIND_REQUEST, ex);
+            throw new DBException(Messages.ERR_CANNOT_FIND_REQUEST,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
@@ -178,7 +166,7 @@ public class CustomerDAO {
 
     public List<Customer> getAll(int currentPage) throws DBException {
         List<Customer> customers = new ArrayList<>();
-        Customer customer = new Customer();
+        Customer customer;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         Connection con = null;
@@ -197,8 +185,8 @@ public class CustomerDAO {
             con.commit();
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            ex.printStackTrace();
+            LOG.error(Messages.ERR_CANNOT_FIND_USERS, ex);
+            throw new DBException(Messages.ERR_CANNOT_FIND_USERS,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
@@ -222,24 +210,12 @@ public class CustomerDAO {
             con.commit();
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_FIND_USER_BY_LOGIN, ex);
-            ex.printStackTrace();
+            LOG.error(Messages.ERR_CANNOT_FIND_USERS, ex);
+            throw new DBException(Messages.ERR_CANNOT_FIND_USERS,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, rs);
         }
         return count;
-    }
-
-    private Customer extractUser(ResultSet rs) throws SQLException {
-        Customer user = new Customer();
-        user.setIdcustomer(rs.getInt("idcustomer"));
-        user.setLogin(rs.getString("login"));
-        user.setPassword_customer(rs.getString("password_customer"));
-        user.setFirst_name(rs.getString("first_name"));
-        user.setLast_name(rs.getString("last_name"));
-        user.setRole(rs.getString("role"));
-        user.setStatus(rs.getString("status"));
-        return user;
     }
 
     public boolean blockUser(String login) throws DBException {
@@ -260,7 +236,8 @@ public class CustomerDAO {
             flag = true;
         } catch (SQLException ex) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_BLOCK_CARD, ex);
+            LOG.error(Messages.ERR_CANNOT_BLOCK_USER, ex);
+            throw new DBException(Messages.ERR_CANNOT_BLOCK_USER,ex);
         } finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
@@ -290,11 +267,24 @@ public class CustomerDAO {
             con.commit();
         } catch (SQLException e) {
             DBManager.getInstance().rollback(con);
-            LOG.error(Messages.ERR_CANNOT_GET_ALL_CARDS, e);
+            LOG.error(Messages.ERR_CANNOT_SEARCH_USER, e);
+            throw new DBException(Messages.ERR_CANNOT_SEARCH_USER,e);
         }finally {
             DBManager.getInstance().close(con, pstmt, null);
         }
 
         return customers;
+    }
+
+    private Customer extractUser(ResultSet rs) throws SQLException {
+        Customer user = new Customer();
+        user.setIdcustomer(rs.getInt("idcustomer"));
+        user.setLogin(rs.getString("login"));
+        user.setPassword_customer(rs.getString("password_customer"));
+        user.setFirst_name(rs.getString("first_name"));
+        user.setLast_name(rs.getString("last_name"));
+        user.setRole(rs.getString("role"));
+        user.setStatus(rs.getString("status"));
+        return user;
     }
 }
