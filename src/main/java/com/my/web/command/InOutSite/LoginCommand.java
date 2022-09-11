@@ -20,8 +20,8 @@ public class LoginCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
-    private static CustomerDAO customerDAO;
-    private static PaymentDAO paymentDAO;
+    private CustomerDAO customerDAO;
+    private PaymentDAO paymentDAO;
 
     public LoginCommand() {
         try {
@@ -45,10 +45,9 @@ public class LoginCommand extends Command {
         String forward = PATH.PAGE_LOGIN;
 
         String login = request.getParameter("login");
-        LOG.trace("Request parameter: login --> " + login);
+        LOG.debug("Request parameter: login --> " + login);
 
         String password = request.getParameter("password");
-        LOG.trace("Request parametr: password --> " + password);
 
         if (login == null || password == null || login.isEmpty() || password.isEmpty()){
             session.setAttribute("errorLogin", "data entered incorrectly");
@@ -56,7 +55,7 @@ public class LoginCommand extends Command {
         }
 
         Customer customer = customerDAO.findUserByLogin(login);
-        LOG.trace("Found in DB: user --> " + customer);
+        LOG.debug("Found in DB: user --> " + customer);
 
         if (customer == null || !password.equals(customer.getPassword_customer())){
             session.setAttribute("errorLogin", "Password is wrong");

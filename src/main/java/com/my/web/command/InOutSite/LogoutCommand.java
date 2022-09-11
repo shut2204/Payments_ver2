@@ -14,7 +14,7 @@ public class LogoutCommand extends Command {
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
+    public String execute(HttpServletRequest request, HttpServletResponse response) {
         LOG.debug("LogoutCommand starts");
 
         HttpSession session = request.getSession(false);

@@ -9,73 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.3 - sorting cards complete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/filters/CommandAccessFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/filters/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/service/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UpadateLocaleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_ru.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.4 - localization complete">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/InOutSite/LoginCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/InOutSite/LogoutCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/InOutSite/RegistrationCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/PATH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/PaymentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/RequestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/RequestDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/db/entity/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/exception/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/exception/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/AddCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/AddCardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/AddMoneyOnCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/AddMoneyOnCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/BlockUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LogoutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/PagesOfCustomers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfPayments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PagesOfRequsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/PagesOfRequsts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/PreparePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/PreparePaymentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/RegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/TransferMoneyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/TransferMoneyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/getCardsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/getCardsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/requestCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/requestCardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/showCardsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/showCardsUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/unlockCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/unlockCardCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LogoutCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cabinet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CabinetAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CabinetAdmin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CardsUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/PagesOfRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PagesOfRequests.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PaymentsPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Transfers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Transfers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/errorPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/errorPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jspf/nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jspf/nav.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jspf/navAdmin.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jspf/script.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jspf/script.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -112,6 +70,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "org.mockito.Mockito",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "last_opened_file_path": "/home/shut2204/IdeaProjects/Payments_ver2/src/main/webapp",
     "node.js.detected.package.eslint": "true",
@@ -121,8 +81,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.testRunning"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -139,11 +99,17 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.mockito.Mockito" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.my.web.command.InOutSite" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.my.web.command" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.65">
+  <component name="RunManager" selected="JUnit.TestsWithCoverege">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.my.db.Test" />
       <module name="Payments_ver2" />
@@ -153,6 +119,79 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Payments_ver2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.web.command.InOutSite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.web.command.InOutSite" />
+      <option name="MAIN_CLASS_NAME" value="com.my.web.command.InOutSite.LoginCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogoutCommandTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Payments_ver2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="command" />
+      <option name="MAIN_CLASS_NAME" value="command.LogoutCommandTest" />
+      <option name="METHOD_NAME" value="testExecute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Payments_ver2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.web.command.InOutSite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.web.command.InOutSite" />
+      <option name="MAIN_CLASS_NAME" value="com.my.web.command.InOutSite.RegistrationCommandTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationCommandTest.execute2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Payments_ver2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.web.command.InOutSite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.web.command.InOutSite" />
+      <option name="MAIN_CLASS_NAME" value="com.my.web.command.InOutSite.RegistrationCommandTest" />
+      <option name="METHOD_NAME" value="execute2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsWithCoverege" type="JUnit" factoryName="JUnit">
+      <module name="Payments_ver2" />
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,7 +212,40 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="37753" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -210,8 +282,21 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.TestsWithCoverege" />
+      <item itemvalue="JUnit.LoginCommandTest" />
+      <item itemvalue="JUnit.LogoutCommandTest.testExecute" />
+      <item itemvalue="JUnit.RegistrationCommandTest" />
+      <item itemvalue="JUnit.RegistrationCommandTest.execute2" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.65" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationCommandTest.execute2" />
+        <item itemvalue="JUnit.RegistrationCommandTest" />
+        <item itemvalue="JUnit.LoginCommandTest" />
+        <item itemvalue="JUnit.LogoutCommandTest.testExecute" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -247,7 +332,7 @@
       <workItem from="1662050249465" duration="36539000" />
       <workItem from="1662267563279" duration="11395000" />
       <workItem from="1662529861589" duration="3800000" />
-      <workItem from="1662615867862" duration="39474000" />
+      <workItem from="1662615867862" duration="51002000" />
     </task>
     <task id="LOCAL-00001" summary="new start">
       <created>1660456863478</created>
@@ -347,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662182784207</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="release 2.4 - localization complete">
+      <created>1662810275945</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662810275945</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,10 +472,45 @@
     <MESSAGE value="release 2.2 - sorting payments" />
     <MESSAGE value="release 2.2 - sorting cards complete" />
     <MESSAGE value="release 2.3 - sorting cards complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="release 2.3 - sorting cards complete" />
+    <MESSAGE value="release 2.4 - localization complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 2.4 - localization complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/my/db/entity/Customer.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/RegistrationCommand.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/RegistrationCommand.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Payments_ver2$LoginCommandTest.ic" NAME="LoginCommandTest Coverage Results" MODIFIED="1662878849399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.my.web.command.InOutSite.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Payments_ver2$LogoutCommandTest_testExecute.ic" NAME="LogoutCommandTest.testExecute Coverage Results" MODIFIED="1662877823614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>command.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Payments_ver2$Tomcat_9_0_65.ic" NAME="Tomcat 9.0.65 Coverage Results" MODIFIED="1662881348151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Payments_ver2$TestsWithCoverege.ic" NAME="TestsWithCoverege Coverage Results" MODIFIED="1662895199544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Payments_ver2$RegistrationCommandTest.ic" NAME="RegistrationCommandTest Coverage Results" MODIFIED="1662892436500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.my.web.command.InOutSite.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-public class BlockCardCommand extends Command {
+public class    BlockCardCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
