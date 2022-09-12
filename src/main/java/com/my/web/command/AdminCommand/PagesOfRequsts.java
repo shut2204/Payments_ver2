@@ -27,6 +27,10 @@ public class PagesOfRequsts extends Command {
         }
     }
 
+    public PagesOfRequsts(RequestDAO requestDAO) {
+        PagesOfRequsts.requestDAO = requestDAO;
+    }
+
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {

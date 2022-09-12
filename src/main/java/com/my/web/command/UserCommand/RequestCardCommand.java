@@ -2,6 +2,7 @@ package com.my.web.command.UserCommand;
 
 import com.my.PATH;
 import com.my.db.CustomerDAO;
+import com.my.db.RequestDAO;
 import com.my.db.entity.Customer;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
@@ -13,14 +14,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class requestCardCommand extends Command {
+public class RequestCardCommand extends Command {
 
-    private static final Logger LOG = Logger.getLogger(requestCardCommand.class);
+    private static final Logger LOG = Logger.getLogger(RequestCardCommand.class);
 
 
     private static CustomerDAO customerDAO;
 
-    public requestCardCommand() {
+    public RequestCardCommand() {
         try {
             customerDAO = new CustomerDAO();
         } catch (DBException e) {
@@ -28,6 +29,11 @@ public class requestCardCommand extends Command {
             e.printStackTrace();
         }
     }
+
+    public RequestCardCommand(CustomerDAO customerDAO) {
+        RequestCardCommand.customerDAO = customerDAO;
+    }
+
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {

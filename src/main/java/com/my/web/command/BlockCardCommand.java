@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-public class    BlockCardCommand extends Command {
+public class BlockCardCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
@@ -29,6 +29,10 @@ public class    BlockCardCommand extends Command {
             LOG.error(e);
             e.printStackTrace();
         }
+    }
+
+    public BlockCardCommand(CardDAO cardDAO) {
+        BlockCardCommand.cardDAO = cardDAO;
     }
 
 

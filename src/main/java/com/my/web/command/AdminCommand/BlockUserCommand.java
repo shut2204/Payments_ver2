@@ -28,6 +28,10 @@ public class BlockUserCommand extends Command {
         }
     }
 
+    public BlockUserCommand(CustomerDAO customerDAO) {
+        BlockUserCommand.customerDAO = customerDAO;
+    }
+
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {

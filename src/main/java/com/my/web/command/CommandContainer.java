@@ -29,7 +29,7 @@ public class CommandContainer {
         commands.put("blockCard", new BlockCardCommand());
         commands.put("prepare", new PreparePaymentCommand());
         commands.put("pagesOfPayments", new PagesOfPayments());
-        commands.put("sendRequest", new requestCardCommand());
+        commands.put("sendRequest", new RequestCardCommand());
         commands.put("pagesOfCustomers", new PagesOfCustomers());
         commands.put("showCardsOfCustomer", new showCardsUser());
         commands.put("pagesOfRequests", new PagesOfRequsts());

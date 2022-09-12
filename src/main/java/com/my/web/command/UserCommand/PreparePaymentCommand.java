@@ -31,6 +31,11 @@ public class PreparePaymentCommand extends Command {
         }
     }
 
+    public PreparePaymentCommand(PaymentDAO paymentDAO, CardDAO cardDAO) {
+        PreparePaymentCommand.paymentDAO = paymentDAO;
+        PreparePaymentCommand.cardDAO = cardDAO;
+    }
+
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
 

@@ -9,15 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.4 - localization complete">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/InOutSite/LoginCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/InOutSite/LogoutCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/InOutSite/RegistrationCommandTest.java" afterDir="false" />
+    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.4 - tests 50%">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/AdminCommand/BlockUserCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/AdminCommand/PagesOfRequstsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/BlockCardCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/UserCommand/PreparePaymentCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/UserCommand/RequestCardCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/BlockUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/BlockUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/PagesOfRequsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/PagesOfRequsts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/BlockCardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/InOutSite/LogoutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/CommandContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/PreparePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/PreparePaymentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/requestCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/RequestCardCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,32 +68,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "org.mockito.Mockito",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/home/shut2204/IdeaProjects/Payments_ver2/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.testRunning"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;org.mockito.Mockito&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/shut2204/IdeaProjects/Payments_ver2/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.testRunning&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -103,6 +107,9 @@
       <recent name="org.mockito.Mockito" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.my.web.command.UserCommand" />
+      <recent name="com.my.web.command.AdminCommand" />
+      <recent name="com.my.web.command" />
       <recent name="com.my.web.command.InOutSite" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -110,46 +117,48 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestsWithCoverege">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.db.Test" />
+    <configuration name="BlockCardCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Payments_ver2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.my.db.*" />
+          <option name="PATTERN" value="com.my.web.command.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Payments_ver2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.my.web.command.InOutSite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.my.web.command.InOutSite" />
-      <option name="MAIN_CLASS_NAME" value="com.my.web.command.InOutSite.LoginCommandTest" />
+      <option name="PACKAGE_NAME" value="com.my.web.command" />
+      <option name="MAIN_CLASS_NAME" value="com.my.web.command.BlockCardCommandTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutCommandTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BlockCardCommandTest.execute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Payments_ver2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="command.*" />
+          <option name="PATTERN" value="com.my.web.command.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="command" />
-      <option name="MAIN_CLASS_NAME" value="command.LogoutCommandTest" />
-      <option name="METHOD_NAME" value="testExecute" />
+      <option name="PACKAGE_NAME" value="com.my.web.command" />
+      <option name="MAIN_CLASS_NAME" value="com.my.web.command.BlockCardCommandTest" />
+      <option name="METHOD_NAME" value="execute" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlockUserCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Payments_ver2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.web.command.AdminCommand.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.web.command.AdminCommand" />
+      <option name="MAIN_CLASS_NAME" value="com.my.web.command.AdminCommand.BlockUserCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -283,21 +292,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.TestsWithCoverege" />
-      <item itemvalue="JUnit.LoginCommandTest" />
-      <item itemvalue="JUnit.LogoutCommandTest.testExecute" />
+      <item itemvalue="JUnit.BlockCardCommandTest" />
+      <item itemvalue="JUnit.BlockCardCommandTest.execute" />
+      <item itemvalue="JUnit.BlockUserCommandTest" />
       <item itemvalue="JUnit.RegistrationCommandTest" />
       <item itemvalue="JUnit.RegistrationCommandTest.execute2" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.65" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BlockUserCommandTest" />
+        <item itemvalue="JUnit.BlockCardCommandTest" />
+        <item itemvalue="JUnit.BlockCardCommandTest.execute" />
         <item itemvalue="JUnit.RegistrationCommandTest.execute2" />
         <item itemvalue="JUnit.RegistrationCommandTest" />
-        <item itemvalue="JUnit.LoginCommandTest" />
-        <item itemvalue="JUnit.LogoutCommandTest.testExecute" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +341,8 @@
       <workItem from="1662050249465" duration="36539000" />
       <workItem from="1662267563279" duration="11395000" />
       <workItem from="1662529861589" duration="3800000" />
-      <workItem from="1662615867862" duration="51002000" />
+      <workItem from="1662615867862" duration="51039000" />
+      <workItem from="1662959981449" duration="4336000" />
     </task>
     <task id="LOCAL-00001" summary="new start">
       <created>1660456863478</created>
@@ -439,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662810275945</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="release 2.4 - tests 50%">
+      <created>1662915086932</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662915086932</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +490,8 @@
     <MESSAGE value="release 2.2 - sorting cards complete" />
     <MESSAGE value="release 2.3 - sorting cards complete" />
     <MESSAGE value="release 2.4 - localization complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="release 2.4 - localization complete" />
+    <MESSAGE value="release 2.4 - tests 50%" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 2.4 - tests 50%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -508,7 +526,7 @@
       <FILTER>command.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Payments_ver2$Tomcat_9_0_65.ic" NAME="Tomcat 9.0.65 Coverage Results" MODIFIED="1662881348151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Payments_ver2$TestsWithCoverege.ic" NAME="TestsWithCoverege Coverage Results" MODIFIED="1662895199544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Payments_ver2$TestsWithCoverege.ic" NAME="TestsWithCoverege Coverage Results" MODIFIED="1662964158342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Payments_ver2$RegistrationCommandTest.ic" NAME="RegistrationCommandTest Coverage Results" MODIFIED="1662892436500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.my.web.command.InOutSite.*</FILTER>
     </SUITE>
