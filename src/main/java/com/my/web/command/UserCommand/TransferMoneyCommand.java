@@ -30,6 +30,10 @@ public class TransferMoneyCommand extends Command {
         }
     }
 
+    public TransferMoneyCommand(CardDAO cardDAO){
+        TransferMoneyCommand.cardDAO = cardDAO;
+    }
+
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
 

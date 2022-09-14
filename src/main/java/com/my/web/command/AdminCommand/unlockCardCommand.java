@@ -1,6 +1,7 @@
 package com.my.web.command.AdminCommand;
 
 import com.my.db.CardDAO;
+import com.my.db.entity.Card;
 import com.my.exception.AppException;
 import com.my.exception.DBException;
 import com.my.exception.Messages;
@@ -25,6 +26,10 @@ public class unlockCardCommand extends Command {
             LOG.error(e);
             e.printStackTrace();
         }
+    }
+
+    public unlockCardCommand(CardDAO cardDAO){
+        unlockCardCommand.cardDAO = cardDAO;
     }
 
 

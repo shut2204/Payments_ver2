@@ -32,6 +32,12 @@ public class AddCardCommand extends Command {
         }
     }
 
+    public AddCardCommand(CardDAO cardDAO, CustomerDAO customerDAO){
+        AddCardCommand.cardDAO = cardDAO;
+        AddCardCommand.customerDAO = customerDAO;
+
+    }
+
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
         LOG.debug("Command starts");
@@ -58,11 +64,10 @@ public class AddCardCommand extends Command {
 
         if (!cardDAO.add(card)) {
             session.setAttribute("error", "Something went wrong, please try again");
+        }else {
+            session.setAttribute("error", "");
+            session.setAttribute("cards", cardDAO.getAllByLogin(login));
         }
-
-        session.setAttribute("error", "");
-        session.setAttribute("cards",cardDAO.getAllByLogin(login));
-
         return forward;
     }
 }
