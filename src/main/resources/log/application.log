@@ -19871,3 +19871,256 @@ javax.naming.NoInitialContextException: Need to specify class name in environmen
 2022-09-14 20-58-20 DEBUG [main] Command starts RegistrationCommand
 2022-09-14 21-45-06 DEBUG [RMI TCP Connection(2)-127.0.0.1] Filter initialization starts
 2022-09-14 21-45-06 DEBUG [RMI TCP Connection(2)-127.0.0.1] Filter initialization finished
+2022-09-14 22-20-59 DEBUG [http-nio-8080-exec-6] Filter starts
+2022-09-14 22-20-59 DEBUG [http-nio-8080-exec-6] updateLocale
+2022-09-14 22-20-59 DEBUG [http-nio-8080-exec-6] Filter finished
+2022-09-14 22-21-00 DEBUG [http-nio-8080-exec-6] UpdateLocaleCommand starts
+2022-09-14 22-21-00 DEBUG [http-nio-8080-exec-6] UpdateLocaleCommand finished
+2022-09-14 22-21-00 DEBUG [http-nio-8080-exec-6] /Payments_ver2_war_exploded/controller
+2022-09-14 22-21-04 DEBUG [http-nio-8080-exec-9] Filter starts
+2022-09-14 22-21-04 DEBUG [http-nio-8080-exec-9] updateLocale
+2022-09-14 22-21-04 DEBUG [http-nio-8080-exec-9] Filter finished
+2022-09-14 22-21-04 DEBUG [http-nio-8080-exec-9] UpdateLocaleCommand starts
+2022-09-14 22-21-04 DEBUG [http-nio-8080-exec-9] UpdateLocaleCommand finished
+2022-09-14 22-21-04 DEBUG [http-nio-8080-exec-9] /Payments_ver2_war_exploded/controller
+2022-09-14 22-21-12 DEBUG [http-nio-8080-exec-1] Filter starts
+2022-09-14 22-21-12 DEBUG [http-nio-8080-exec-1] login
+2022-09-14 22-21-12 DEBUG [http-nio-8080-exec-1] Filter finished
+2022-09-14 22-21-12 DEBUG [http-nio-8080-exec-1] Command starts
+2022-09-14 22-21-12 DEBUG [http-nio-8080-exec-1] Request parameter: login --> user4
+2022-09-14 22-21-14 DEBUG [http-nio-8080-exec-1] Found in DB: user --> Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'}
+2022-09-14 22-21-14 INFO  [http-nio-8080-exec-1] Get cards and set user Cards -> [Card{idcard=1234567890123504, idcustomer=50, balance=125, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='block'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=12, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-14 22-21-14 INFO  [http-nio-8080-exec-1] Customer Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'} logged as user
+2022-09-14 22-21-14 DEBUG [http-nio-8080-exec-1] Command finished
+2022-09-14 22-21-20 DEBUG [http-nio-8080-exec-4] Filter starts
+2022-09-14 22-21-20 DEBUG [http-nio-8080-exec-4] pagesOfCards
+2022-09-14 22-21-20 DEBUG [http-nio-8080-exec-4] Filter finished
+2022-09-14 22-21-20 DEBUG [http-nio-8080-exec-4] Command starts getCardsCommand
+2022-09-14 22-21-20 DEBUG [http-nio-8080-exec-4] Command end
+2022-09-14 22-21-23 DEBUG [http-nio-8080-exec-5] Filter starts
+2022-09-14 22-21-23 DEBUG [http-nio-8080-exec-5] pagesOfCards
+2022-09-14 22-21-23 DEBUG [http-nio-8080-exec-5] Filter finished
+2022-09-14 22-21-23 DEBUG [http-nio-8080-exec-5] Command starts getCardsCommand
+2022-09-14 22-21-23 DEBUG [http-nio-8080-exec-5] Command end
+2022-09-14 22-21-28 DEBUG [http-nio-8080-exec-6] Filter starts
+2022-09-14 22-21-28 DEBUG [http-nio-8080-exec-6] pagesOfCards
+2022-09-14 22-21-28 DEBUG [http-nio-8080-exec-6] Filter finished
+2022-09-14 22-21-28 DEBUG [http-nio-8080-exec-6] Command starts getCardsCommand
+2022-09-14 22-21-28 DEBUG [http-nio-8080-exec-6] Command end
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] Filter starts
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] pagesOfPayments
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] Filter finished
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] Command starts PaymentPagesCommand
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] 10 count of payments
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] 2 pagesAll
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] 2 pagesAll
+2022-09-14 22-21-31 DEBUG [http-nio-8080-exec-8] Command end
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] Filter starts
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] pagesOfPayments
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] Filter finished
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] Command starts PaymentPagesCommand
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] 10 count of payments
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] 2 pagesAll
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] 2 pagesAll
+2022-09-14 22-21-36 DEBUG [http-nio-8080-exec-9] Command end
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] Filter starts
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] pagesOfPayments
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] Filter finished
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] Command starts PaymentPagesCommand
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] 10 count of payments
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] 2 pagesAll
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] 2 pagesAll
+2022-09-14 22-21-38 DEBUG [http-nio-8080-exec-7] Command end
+2022-09-14 22-21-42 DEBUG [http-nio-8080-exec-1] Filter starts
+2022-09-14 22-21-42 DEBUG [http-nio-8080-exec-1] logout
+2022-09-14 22-21-42 DEBUG [http-nio-8080-exec-1] Filter finished
+2022-09-14 22-21-42 DEBUG [http-nio-8080-exec-1] LogoutCommand starts
+2022-09-14 22-21-42 DEBUG [http-nio-8080-exec-1] LogoutCommand finished
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] Filter starts
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] login
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] Filter finished
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] Command starts
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] Request parameter: login --> admin
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] Found in DB: user --> Customer{idcustomer=46, phone_number='null', first_name='admin', last_name='admin', login='admin', password_customer='admin', role='admin', status='unlock'}
+2022-09-14 22-21-45 INFO  [http-nio-8080-exec-2] Customer Customer{idcustomer=46, phone_number='null', first_name='admin', last_name='admin', login='admin', password_customer='admin', role='admin', status='unlock'} logged as admin
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-2] Command finished
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] Filter starts
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] pagesOfCustomers
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] Filter finished
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] Command starts CustomerPagesCommand
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] 41 count of customers
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] 8 pagesAll
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] 9 pagesAll
+2022-09-14 22-21-45 DEBUG [http-nio-8080-exec-3] Command end
+2022-09-14 22-21-54 DEBUG [http-nio-8080-exec-4] Filter starts
+2022-09-14 22-21-54 DEBUG [http-nio-8080-exec-4] pagesOfCustomers
+2022-09-14 22-21-54 DEBUG [http-nio-8080-exec-4] Filter finished
+2022-09-14 22-21-54 DEBUG [http-nio-8080-exec-4] Command starts CustomerPagesCommand
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] Filter starts
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] showCardsOfCustomer
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] Filter finished
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] Command starts showCardUser
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] cards size -> 5
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] user4
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] show cards successful
+2022-09-14 22-21-59 DEBUG [http-nio-8080-exec-5] Command end
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] Filter starts
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] pagesOfCards
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] Filter finished
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] Command starts getCardsCommand
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] user4
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] [Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=12, name_card='Personal', status='unlock'}, Card{idcard=1234567890123504, idcustomer=50, balance=125, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='block'}]
+2022-09-14 22-22-03 DEBUG [http-nio-8080-exec-6] Command end
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] Filter starts
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] pagesOfCards
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] Filter finished
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] Command starts getCardsCommand
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] user4
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] [Card{idcard=1234567890123504, idcustomer=50, balance=125, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='block'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=12, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-14 22-22-06 DEBUG [http-nio-8080-exec-9] Command end
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] Filter starts
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] pagesOfPayments
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] Filter finished
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] Command starts PaymentPagesCommand
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] 40 count of payments
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] 8 pagesAll
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] 8 pagesAll
+2022-09-14 22-22-07 DEBUG [http-nio-8080-exec-7] Command end
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] Filter starts
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] pagesOfCustomers
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] Filter finished
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] Command starts CustomerPagesCommand
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] 41 count of customers
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] 8 pagesAll
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] 9 pagesAll
+2022-09-14 22-22-12 DEBUG [http-nio-8080-exec-10] Command end
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] Filter starts
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] pagesOfRequests
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] Filter finished
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] Command starts RequestPagesCommand
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] 4 count of requests
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] 0 pagesAll
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] 1 pagesAll
+2022-09-14 22-22-13 DEBUG [http-nio-8080-exec-1] Command end
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] Filter starts
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] unlockCard
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] Filter finished
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] Command starts unlockCardCommand
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] 1234567890123505
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] 1
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] true
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] unlock card successful
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-2] Command end
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] Filter starts
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] pagesOfRequests
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] Filter finished
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] Command starts RequestPagesCommand
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] 3 count of requests
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] 0 pagesAll
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] 1 pagesAll
+2022-09-14 22-22-26 DEBUG [http-nio-8080-exec-3] Command end
+2022-09-14 22-22-46 DEBUG [http-nio-8080-exec-5] Filter starts
+2022-09-14 22-22-46 DEBUG [http-nio-8080-exec-5] logout
+2022-09-14 22-22-46 DEBUG [http-nio-8080-exec-5] Filter finished
+2022-09-14 22-22-46 DEBUG [http-nio-8080-exec-5] LogoutCommand starts
+2022-09-14 22-22-46 DEBUG [http-nio-8080-exec-5] LogoutCommand finished
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] Filter starts
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] login
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] Filter finished
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] Command starts
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] Request parameter: login --> user4
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] Found in DB: user --> Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'}
+2022-09-14 22-22-51 INFO  [http-nio-8080-exec-6] Get cards and set user Cards -> [Card{idcard=1234567890123504, idcustomer=50, balance=125, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='unlock'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=12, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-14 22-22-51 INFO  [http-nio-8080-exec-6] Customer Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'} logged as user
+2022-09-14 22-22-51 DEBUG [http-nio-8080-exec-6] Command finished
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] Filter starts
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] prepare
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] Filter finished
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] Command starts Prepare
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] true
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] payment was prepare successful
+2022-09-14 22-23-25 DEBUG [http-nio-8080-exec-1] Command end
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] Filter starts
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] pagesOfPayments
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] Filter finished
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] Command starts PaymentPagesCommand
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] 11 count of payments
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] 2 pagesAll
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] 3 pagesAll
+2022-09-14 22-23-28 DEBUG [http-nio-8080-exec-3] Command end
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] Filter starts
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] pagesOfPayments
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] Filter finished
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] Command starts PaymentPagesCommand
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] 11 count of payments
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] 2 pagesAll
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] 3 pagesAll
+2022-09-14 22-23-35 DEBUG [http-nio-8080-exec-4] Command end
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] Filter starts
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] transferMoney
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] Filter finished
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] Command starts Transfer
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] 1pstmt
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] 1234567890123504
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] 1pstmt1
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] 1pstmt2
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] use ok with transfer
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] true
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] transfer was successful
+2022-09-14 22-23-46 INFO  [http-nio-8080-exec-6] Get cards and set user Cards -> [Card{idcard=1234567890123504, idcustomer=50, balance=25, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='unlock'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=112, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-6] Command end
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] Filter starts
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] pagesOfPayments
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] Filter finished
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] Command starts PaymentPagesCommand
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] 11 count of payments
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] 2 pagesAll
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] 3 pagesAll
+2022-09-14 22-23-46 DEBUG [http-nio-8080-exec-8] Command end
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] Filter starts
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] pagesOfPayments
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] Filter finished
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] Command starts PaymentPagesCommand
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] 11 count of payments
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] 2 pagesAll
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] 3 pagesAll
+2022-09-14 22-23-50 DEBUG [http-nio-8080-exec-9] Command end
+2022-09-14 22-24-35 DEBUG [main] Command starts Prepare
+2022-09-14 22-24-35 DEBUG [main] false
+2022-09-14 22-24-35 ERROR [main] Cant transfer money
+2022-09-14 22-24-35 DEBUG [main] Command end
+2022-09-14 22-24-35 DEBUG [main] Command starts
+2022-09-14 22-24-35 DEBUG [main] Request parameter: login --> login
+2022-09-14 22-24-35 DEBUG [main] Found in DB: user --> Mock for Customer, hashCode: 232726781
+2022-09-14 22-24-35 DEBUG [main] UpdateLocaleCommand starts
+2022-09-14 22-24-35 DEBUG [main] UpdateLocaleCommand finished
+2022-09-14 22-24-35 DEBUG [main] 
+2022-09-14 22-24-35 DEBUG [main] Command starts
+2022-09-14 22-24-35 DEBUG [main] false
+2022-09-14 22-24-35 ERROR [main] Sorry but cannot up balance
+2022-09-14 22-24-35 DEBUG [main] Command end
+2022-09-14 22-24-35 DEBUG [main] Command starts Transfer
+2022-09-14 22-24-35 DEBUG [main] Command starts requestCardCommand
+2022-09-14 22-24-35 DEBUG [main] Request add successful
+2022-09-14 22-24-35 DEBUG [main] Command request end
+2022-09-14 22-24-35 DEBUG [main] Command starts unlockCardCommand
+2022-09-14 22-24-35 DEBUG [main] true
+2022-09-14 22-24-35 DEBUG [main] unlock card successful
+2022-09-14 22-24-35 DEBUG [main] Command end
+2022-09-14 22-24-35 DEBUG [main] Command starts
+2022-09-14 22-24-36 DEBUG [main] Command starts RequestPagesCommand
+2022-09-14 22-24-36 DEBUG [main] 5 count of requests
+2022-09-14 22-24-36 DEBUG [main] 1 pagesAll
+2022-09-14 22-24-36 DEBUG [main] 1 pagesAll
+2022-09-14 22-24-36 DEBUG [main] Command end
+2022-09-14 22-24-36 DEBUG [main] Command starts BlockCommand
+2022-09-14 22-24-36 DEBUG [main] false
+2022-09-14 22-24-36 ERROR [main] Cannot block card by this id
+2022-09-14 22-24-36 DEBUG [main] Command end
+2022-09-14 22-24-36 DEBUG [main] LogoutCommand starts
+2022-09-14 22-24-36 DEBUG [main] LogoutCommand finished
+2022-09-14 22-24-36 DEBUG [main] Command starts BlockUserCommand
+2022-09-14 22-24-36 DEBUG [main] true
+2022-09-14 22-24-36 DEBUG [main] block user successful
+2022-09-14 22-24-36 DEBUG [main] Command end
+2022-09-14 22-24-36 DEBUG [main] Command starts RegistrationCommand

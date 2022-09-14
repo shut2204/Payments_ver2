@@ -9,19 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.4 - tests 45% COMPLETE">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/AdminCommand/UnlockCardCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/UpadateLocaleCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/UserCommand/AddCardCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/UserCommand/AddMoneyOnCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/my/web/command/UserCommand/TransferMoneyCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/unlockCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/AdminCommand/unlockCardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/AddCardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/AddCardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/AddMoneyOnCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/AddMoneyOnCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/TransferMoneyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/web/command/UserCommand/TransferMoneyCommand.java" afterDir="false" />
+    <list default="true" id="23b5f42f-c9ae-4c89-9de8-30e3f36cfe55" name="Changes" comment="release 2.4 - tests 36% COMPLETE">
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +104,7 @@
       <recent name="com.my.web.command" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.65">
+  <component name="RunManager" selected="JUnit.All in Payments_ver2">
     <configuration name="AddCardCommandTest.execute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Payments_ver2" />
       <extension name="coverage">
@@ -336,7 +325,7 @@
       <workItem from="1662615867862" duration="51039000" />
       <workItem from="1662959981449" duration="4431000" />
       <workItem from="1662994817342" duration="1598000" />
-      <workItem from="1663168459674" duration="9863000" />
+      <workItem from="1663168459674" duration="10322000" />
     </task>
     <task id="LOCAL-00001" summary="new start">
       <created>1660456863478</created>
@@ -457,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662964385945</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="release 2.4 - tests 36% COMPLETE">
+      <created>1663183021921</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663183021921</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +489,8 @@
     <MESSAGE value="release 2.4 - localization complete" />
     <MESSAGE value="release 2.4 - tests 50%" />
     <MESSAGE value="release 2.4 - tests 45% COMPLETE" />
-    <option name="LAST_COMMIT_MESSAGE" value="release 2.4 - tests 45% COMPLETE" />
+    <MESSAGE value="release 2.4 - tests 36% COMPLETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 2.4 - tests 36% COMPLETE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
