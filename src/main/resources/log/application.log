@@ -20124,3 +20124,337 @@ javax.naming.NoInitialContextException: Need to specify class name in environmen
 2022-09-14 22-24-36 DEBUG [main] block user successful
 2022-09-14 22-24-36 DEBUG [main] Command end
 2022-09-14 22-24-36 DEBUG [main] Command starts RegistrationCommand
+2022-09-20 08-43-00 DEBUG [RMI TCP Connection(2)-127.0.0.1] Filter initialization starts
+2022-09-20 08-43-00 DEBUG [RMI TCP Connection(2)-127.0.0.1] Filter initialization finished
+2022-09-20 08-43-16 DEBUG [http-nio-8080-exec-9] Filter starts
+2022-09-20 08-43-16 DEBUG [http-nio-8080-exec-9] login
+2022-09-20 08-43-16 DEBUG [http-nio-8080-exec-9] Filter finished
+2022-09-20 08-43-16 DEBUG [http-nio-8080-exec-9] Command starts
+2022-09-20 08-43-16 DEBUG [http-nio-8080-exec-9] Request parameter: login --> user4
+2022-09-20 08-43-17 DEBUG [http-nio-8080-exec-9] Found in DB: user --> Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'}
+2022-09-20 08-43-17 INFO  [http-nio-8080-exec-9] Get cards and set user Cards -> [Card{idcard=1234567890123504, idcustomer=50, balance=25, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='unlock'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=112, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-20 08-43-17 INFO  [http-nio-8080-exec-9] Customer Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'} logged as user
+2022-09-20 08-43-17 DEBUG [http-nio-8080-exec-9] Command finished
+2022-09-20 08-43-26 DEBUG [http-nio-8080-exec-4] Filter starts
+2022-09-20 08-43-26 DEBUG [http-nio-8080-exec-4] updateLocale
+2022-09-20 08-43-26 DEBUG [http-nio-8080-exec-4] Filter finished
+2022-09-20 08-43-26 DEBUG [http-nio-8080-exec-4] UpdateLocaleCommand starts
+2022-09-20 08-43-26 DEBUG [http-nio-8080-exec-4] UpdateLocaleCommand finished
+2022-09-20 08-43-26 DEBUG [http-nio-8080-exec-4] /Payments_ver2_war_exploded/controller
+2022-09-20 08-43-29 DEBUG [http-nio-8080-exec-6] Filter starts
+2022-09-20 08-43-29 DEBUG [http-nio-8080-exec-6] updateLocale
+2022-09-20 08-43-29 DEBUG [http-nio-8080-exec-6] Filter finished
+2022-09-20 08-43-29 DEBUG [http-nio-8080-exec-6] UpdateLocaleCommand starts
+2022-09-20 08-43-29 DEBUG [http-nio-8080-exec-6] UpdateLocaleCommand finished
+2022-09-20 08-43-29 DEBUG [http-nio-8080-exec-6] /Payments_ver2_war_exploded/controller
+2022-09-20 08-43-33 DEBUG [http-nio-8080-exec-7] Filter starts
+2022-09-20 08-43-33 DEBUG [http-nio-8080-exec-7] updateLocale
+2022-09-20 08-43-33 DEBUG [http-nio-8080-exec-7] Filter finished
+2022-09-20 08-43-33 DEBUG [http-nio-8080-exec-7] UpdateLocaleCommand starts
+2022-09-20 08-43-33 DEBUG [http-nio-8080-exec-7] UpdateLocaleCommand finished
+2022-09-20 08-43-33 DEBUG [http-nio-8080-exec-7] /Payments_ver2_war_exploded/controller
+2022-09-20 08-43-50 DEBUG [http-nio-8080-exec-1] Filter starts
+2022-09-20 08-43-50 DEBUG [http-nio-8080-exec-1] pagesOfCards
+2022-09-20 08-43-50 DEBUG [http-nio-8080-exec-1] Filter finished
+2022-09-20 08-43-50 DEBUG [http-nio-8080-exec-1] Command starts getCardsCommand
+2022-09-20 08-43-50 DEBUG [http-nio-8080-exec-1] Command end
+2022-09-20 08-43-54 DEBUG [http-nio-8080-exec-4] Filter starts
+2022-09-20 08-43-54 DEBUG [http-nio-8080-exec-4] pagesOfCards
+2022-09-20 08-43-54 DEBUG [http-nio-8080-exec-4] Filter finished
+2022-09-20 08-43-54 DEBUG [http-nio-8080-exec-4] Command starts getCardsCommand
+2022-09-20 08-43-54 DEBUG [http-nio-8080-exec-4] Command end
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] Filter starts
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] addMoneyOnCard
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] Filter finished
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] Command starts
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] 1234567890123504
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] 1
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] true
+2022-09-20 08-44-02 INFO  [http-nio-8080-exec-5] balance up successful
+2022-09-20 08-44-02 INFO  [http-nio-8080-exec-5] Get cards and set user Cards -> [Card{idcard=1234567890123504, idcustomer=50, balance=26, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='unlock'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=112, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-20 08-44-02 DEBUG [http-nio-8080-exec-5] Command end
+2022-09-20 08-59-14 DEBUG [RMI TCP Connection(5)-127.0.0.1] Filter initialization starts
+2022-09-20 08-59-14 DEBUG [RMI TCP Connection(5)-127.0.0.1] Filter initialization finished
+2022-09-20 09-00-08 DEBUG [RMI TCP Connection(8)-127.0.0.1] Filter initialization starts
+2022-09-20 09-00-08 DEBUG [RMI TCP Connection(8)-127.0.0.1] Filter initialization finished
+2022-09-20 09-03-56 DEBUG [RMI TCP Connection(13)-127.0.0.1] Filter initialization starts
+2022-09-20 09-03-56 DEBUG [RMI TCP Connection(13)-127.0.0.1] Filter initialization finished
+2022-09-20 09-04-41 DEBUG [http-nio-8080-exec-17] Filter starts
+2022-09-20 09-04-41 DEBUG [http-nio-8080-exec-17] updateLocale
+2022-09-20 09-04-41 DEBUG [http-nio-8080-exec-17] Filter finished
+2022-09-20 09-04-41 DEBUG [http-nio-8080-exec-17] UpdateLocaleCommand starts
+2022-09-20 09-04-41 DEBUG [http-nio-8080-exec-17] UpdateLocaleCommand finished
+2022-09-20 09-04-41 DEBUG [http-nio-8080-exec-17] /Payments_ver2_war_exploded/controller
+2022-09-20 09-04-43 DEBUG [http-nio-8080-exec-20] Filter starts
+2022-09-20 09-04-43 DEBUG [http-nio-8080-exec-20] updateLocale
+2022-09-20 09-04-43 DEBUG [http-nio-8080-exec-20] Filter finished
+2022-09-20 09-04-43 DEBUG [http-nio-8080-exec-20] UpdateLocaleCommand starts
+2022-09-20 09-04-43 DEBUG [http-nio-8080-exec-20] UpdateLocaleCommand finished
+2022-09-20 09-04-43 DEBUG [http-nio-8080-exec-20] /Payments_ver2_war_exploded/controller
+2022-09-20 09-05-40 DEBUG [RMI TCP Connection(16)-127.0.0.1] Filter initialization starts
+2022-09-20 09-05-40 DEBUG [RMI TCP Connection(16)-127.0.0.1] Filter initialization finished
+2022-09-20 09-07-15 DEBUG [RMI TCP Connection(19)-127.0.0.1] Filter initialization starts
+2022-09-20 09-07-15 DEBUG [RMI TCP Connection(19)-127.0.0.1] Filter initialization finished
+2022-09-20 09-08-16 DEBUG [RMI TCP Connection(22)-127.0.0.1] Filter initialization starts
+2022-09-20 09-08-16 DEBUG [RMI TCP Connection(22)-127.0.0.1] Filter initialization finished
+2022-09-20 09-12-11 DEBUG [RMI TCP Connection(25)-127.0.0.1] Filter initialization starts
+2022-09-20 09-12-11 DEBUG [RMI TCP Connection(25)-127.0.0.1] Filter initialization finished
+2022-09-20 09-12-47 DEBUG [http-nio-8080-exec-40] Filter starts
+2022-09-20 09-12-47 DEBUG [http-nio-8080-exec-40] updateLocale
+2022-09-20 09-12-47 DEBUG [http-nio-8080-exec-40] Filter finished
+2022-09-20 09-12-47 DEBUG [http-nio-8080-exec-40] UpdateLocaleCommand starts
+2022-09-20 09-12-47 DEBUG [http-nio-8080-exec-40] UpdateLocaleCommand finished
+2022-09-20 09-12-47 DEBUG [http-nio-8080-exec-40] /Payments_ver2_war_exploded/controller
+2022-09-20 09-12-50 DEBUG [http-nio-8080-exec-39] Filter starts
+2022-09-20 09-12-50 DEBUG [http-nio-8080-exec-39] updateLocale
+2022-09-20 09-12-50 DEBUG [http-nio-8080-exec-39] Filter finished
+2022-09-20 09-12-50 DEBUG [http-nio-8080-exec-39] UpdateLocaleCommand starts
+2022-09-20 09-12-50 DEBUG [http-nio-8080-exec-39] UpdateLocaleCommand finished
+2022-09-20 09-12-50 DEBUG [http-nio-8080-exec-39] /Payments_ver2_war_exploded/controller
+2022-09-20 09-13-10 DEBUG [RMI TCP Connection(28)-127.0.0.1] Filter initialization starts
+2022-09-20 09-13-10 DEBUG [RMI TCP Connection(28)-127.0.0.1] Filter initialization finished
+2022-09-20 09-14-39 DEBUG [RMI TCP Connection(31)-127.0.0.1] Filter initialization starts
+2022-09-20 09-14-39 DEBUG [RMI TCP Connection(31)-127.0.0.1] Filter initialization finished
+2022-09-20 09-14-48 DEBUG [http-nio-8080-exec-55] Filter starts
+2022-09-20 09-14-48 DEBUG [http-nio-8080-exec-55] updateLocale
+2022-09-20 09-14-48 DEBUG [http-nio-8080-exec-55] Filter finished
+2022-09-20 09-14-48 DEBUG [http-nio-8080-exec-55] UpdateLocaleCommand starts
+2022-09-20 09-14-48 DEBUG [http-nio-8080-exec-55] UpdateLocaleCommand finished
+2022-09-20 09-14-48 DEBUG [http-nio-8080-exec-55] /Payments_ver2_war_exploded/controller
+2022-09-20 09-14-49 DEBUG [http-nio-8080-exec-50] Filter starts
+2022-09-20 09-14-49 DEBUG [http-nio-8080-exec-50] updateLocale
+2022-09-20 09-14-49 DEBUG [http-nio-8080-exec-50] Filter finished
+2022-09-20 09-14-49 DEBUG [http-nio-8080-exec-50] UpdateLocaleCommand starts
+2022-09-20 09-14-49 DEBUG [http-nio-8080-exec-50] UpdateLocaleCommand finished
+2022-09-20 09-14-49 DEBUG [http-nio-8080-exec-50] /Payments_ver2_war_exploded/controller
+2022-09-20 09-14-50 DEBUG [http-nio-8080-exec-48] Filter starts
+2022-09-20 09-14-50 DEBUG [http-nio-8080-exec-48] updateLocale
+2022-09-20 09-14-50 DEBUG [http-nio-8080-exec-48] Filter finished
+2022-09-20 09-14-50 DEBUG [http-nio-8080-exec-48] UpdateLocaleCommand starts
+2022-09-20 09-14-50 DEBUG [http-nio-8080-exec-48] UpdateLocaleCommand finished
+2022-09-20 09-14-50 DEBUG [http-nio-8080-exec-48] /Payments_ver2_war_exploded/controller
+2022-09-20 09-14-51 DEBUG [http-nio-8080-exec-52] Filter starts
+2022-09-20 09-14-51 DEBUG [http-nio-8080-exec-52] updateLocale
+2022-09-20 09-14-51 DEBUG [http-nio-8080-exec-52] Filter finished
+2022-09-20 09-14-51 DEBUG [http-nio-8080-exec-52] UpdateLocaleCommand starts
+2022-09-20 09-14-51 DEBUG [http-nio-8080-exec-52] UpdateLocaleCommand finished
+2022-09-20 09-14-51 DEBUG [http-nio-8080-exec-52] /Payments_ver2_war_exploded/controller
+2022-09-20 09-15-06 DEBUG [RMI TCP Connection(33)-127.0.0.1] Filter initialization starts
+2022-09-20 09-15-06 DEBUG [RMI TCP Connection(33)-127.0.0.1] Filter initialization finished
+2022-09-20 09-16-25 DEBUG [RMI TCP Connection(36)-127.0.0.1] Filter initialization starts
+2022-09-20 09-16-25 DEBUG [RMI TCP Connection(36)-127.0.0.1] Filter initialization finished
+2022-09-20 09-17-06 DEBUG [RMI TCP Connection(39)-127.0.0.1] Filter initialization starts
+2022-09-20 09-17-06 DEBUG [RMI TCP Connection(39)-127.0.0.1] Filter initialization finished
+2022-09-20 09-17-28 DEBUG [RMI TCP Connection(41)-127.0.0.1] Filter initialization starts
+2022-09-20 09-17-28 DEBUG [RMI TCP Connection(41)-127.0.0.1] Filter initialization finished
+2022-09-20 09-17-59 DEBUG [RMI TCP Connection(44)-127.0.0.1] Filter initialization starts
+2022-09-20 09-17-59 DEBUG [RMI TCP Connection(44)-127.0.0.1] Filter initialization finished
+2022-09-20 09-18-30 DEBUG [RMI TCP Connection(47)-127.0.0.1] Filter initialization starts
+2022-09-20 09-18-30 DEBUG [RMI TCP Connection(47)-127.0.0.1] Filter initialization finished
+2022-09-20 09-18-50 DEBUG [RMI TCP Connection(49)-127.0.0.1] Filter initialization starts
+2022-09-20 09-18-50 DEBUG [RMI TCP Connection(49)-127.0.0.1] Filter initialization finished
+2022-09-20 09-18-59 DEBUG [http-nio-8080-exec-30] Filter starts
+2022-09-20 09-18-59 DEBUG [http-nio-8080-exec-30] updateLocale
+2022-09-20 09-18-59 DEBUG [http-nio-8080-exec-30] Filter finished
+2022-09-20 09-18-59 DEBUG [http-nio-8080-exec-30] UpdateLocaleCommand starts
+2022-09-20 09-18-59 DEBUG [http-nio-8080-exec-30] UpdateLocaleCommand finished
+2022-09-20 09-18-59 DEBUG [http-nio-8080-exec-30] /Payments_ver2_war_exploded/controller
+2022-09-20 09-20-25 DEBUG [http-nio-8080-exec-75] Filter starts
+2022-09-20 09-20-25 DEBUG [http-nio-8080-exec-75] updateLocale
+2022-09-20 09-20-25 DEBUG [http-nio-8080-exec-75] Filter finished
+2022-09-20 09-20-25 DEBUG [http-nio-8080-exec-75] UpdateLocaleCommand starts
+2022-09-20 09-20-25 DEBUG [http-nio-8080-exec-75] UpdateLocaleCommand finished
+2022-09-20 09-20-25 DEBUG [http-nio-8080-exec-75] /Payments_ver2_war_exploded/controller
+2022-09-20 09-22-11 DEBUG [RMI TCP Connection(52)-127.0.0.1] Filter initialization starts
+2022-09-20 09-22-11 DEBUG [RMI TCP Connection(52)-127.0.0.1] Filter initialization finished
+2022-09-20 09-24-15 DEBUG [RMI TCP Connection(55)-127.0.0.1] Filter initialization starts
+2022-09-20 09-24-15 DEBUG [RMI TCP Connection(55)-127.0.0.1] Filter initialization finished
+2022-09-20 09-24-55 DEBUG [RMI TCP Connection(58)-127.0.0.1] Filter initialization starts
+2022-09-20 09-24-55 DEBUG [RMI TCP Connection(58)-127.0.0.1] Filter initialization finished
+2022-09-20 09-25-01 DEBUG [http-nio-8080-exec-78] Filter starts
+2022-09-20 09-25-01 DEBUG [http-nio-8080-exec-78] updateLocale
+2022-09-20 09-25-01 DEBUG [http-nio-8080-exec-78] Filter finished
+2022-09-20 09-25-01 DEBUG [http-nio-8080-exec-78] UpdateLocaleCommand starts
+2022-09-20 09-25-01 DEBUG [http-nio-8080-exec-78] UpdateLocaleCommand finished
+2022-09-20 09-25-01 DEBUG [http-nio-8080-exec-78] /Payments_ver2_war_exploded/controller
+2022-09-20 09-25-02 DEBUG [http-nio-8080-exec-89] Filter starts
+2022-09-20 09-25-02 DEBUG [http-nio-8080-exec-89] updateLocale
+2022-09-20 09-25-02 DEBUG [http-nio-8080-exec-89] Filter finished
+2022-09-20 09-25-02 DEBUG [http-nio-8080-exec-89] UpdateLocaleCommand starts
+2022-09-20 09-25-02 DEBUG [http-nio-8080-exec-89] UpdateLocaleCommand finished
+2022-09-20 09-25-02 DEBUG [http-nio-8080-exec-89] /Payments_ver2_war_exploded/controller
+2022-09-20 09-27-15 DEBUG [RMI TCP Connection(61)-127.0.0.1] Filter initialization starts
+2022-09-20 09-27-15 DEBUG [RMI TCP Connection(61)-127.0.0.1] Filter initialization finished
+2022-09-20 09-27-24 DEBUG [http-nio-8080-exec-96] Filter starts
+2022-09-20 09-27-24 DEBUG [http-nio-8080-exec-96] updateLocale
+2022-09-20 09-27-24 DEBUG [http-nio-8080-exec-96] Filter finished
+2022-09-20 09-27-24 DEBUG [http-nio-8080-exec-96] UpdateLocaleCommand starts
+2022-09-20 09-28-04 DEBUG [RMI TCP Connection(65)-127.0.0.1] Filter initialization starts
+2022-09-20 09-28-04 DEBUG [RMI TCP Connection(65)-127.0.0.1] Filter initialization finished
+2022-09-20 09-28-12 DEBUG [http-nio-8080-exec-87] Filter starts
+2022-09-20 09-28-12 DEBUG [http-nio-8080-exec-87] updateLocale
+2022-09-20 09-28-12 DEBUG [http-nio-8080-exec-87] Filter finished
+2022-09-20 09-28-12 DEBUG [http-nio-8080-exec-87] UpdateLocaleCommand starts
+2022-09-20 09-28-12 DEBUG [http-nio-8080-exec-87] 
+2022-09-20 09-29-22 DEBUG [http-nio-8080-exec-102] Filter starts
+2022-09-20 09-29-22 DEBUG [http-nio-8080-exec-102] updateLocale
+2022-09-20 09-29-22 DEBUG [http-nio-8080-exec-102] Filter finished
+2022-09-20 09-29-22 DEBUG [http-nio-8080-exec-102] UpdateLocaleCommand starts
+2022-09-20 09-29-22 DEBUG [http-nio-8080-exec-102] 
+2022-09-20 09-31-20 DEBUG [RMI TCP Connection(68)-127.0.0.1] Filter initialization starts
+2022-09-20 09-31-20 DEBUG [RMI TCP Connection(68)-127.0.0.1] Filter initialization finished
+2022-09-20 09-31-25 DEBUG [http-nio-8080-exec-99] Filter starts
+2022-09-20 09-31-25 DEBUG [http-nio-8080-exec-99] updateLocale
+2022-09-20 09-31-25 DEBUG [http-nio-8080-exec-99] Filter finished
+2022-09-20 09-31-25 DEBUG [http-nio-8080-exec-99] UpdateLocaleCommand starts
+2022-09-20 09-31-25 DEBUG [http-nio-8080-exec-99] 
+2022-09-20 09-35-58 DEBUG [RMI TCP Connection(71)-127.0.0.1] Filter initialization starts
+2022-09-20 09-35-58 DEBUG [RMI TCP Connection(71)-127.0.0.1] Filter initialization finished
+2022-09-20 09-36-14 DEBUG [http-nio-8080-exec-109] Filter starts
+2022-09-20 09-36-14 DEBUG [http-nio-8080-exec-109] updateLocale
+2022-09-20 09-36-14 DEBUG [http-nio-8080-exec-109] Filter finished
+2022-09-20 09-36-14 DEBUG [http-nio-8080-exec-109] UpdateLocaleCommand starts
+2022-09-20 09-36-14 DEBUG [http-nio-8080-exec-109] UpdateLocaleCommand finished
+2022-09-20 09-36-14 DEBUG [http-nio-8080-exec-109] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-16 DEBUG [http-nio-8080-exec-114] Filter starts
+2022-09-20 09-36-16 DEBUG [http-nio-8080-exec-114] updateLocale
+2022-09-20 09-36-16 DEBUG [http-nio-8080-exec-114] Filter finished
+2022-09-20 09-36-16 DEBUG [http-nio-8080-exec-114] UpdateLocaleCommand starts
+2022-09-20 09-36-16 DEBUG [http-nio-8080-exec-114] UpdateLocaleCommand finished
+2022-09-20 09-36-16 DEBUG [http-nio-8080-exec-114] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-18 DEBUG [http-nio-8080-exec-115] Filter starts
+2022-09-20 09-36-18 DEBUG [http-nio-8080-exec-115] updateLocale
+2022-09-20 09-36-18 DEBUG [http-nio-8080-exec-115] Filter finished
+2022-09-20 09-36-18 DEBUG [http-nio-8080-exec-115] UpdateLocaleCommand starts
+2022-09-20 09-36-18 DEBUG [http-nio-8080-exec-115] UpdateLocaleCommand finished
+2022-09-20 09-36-18 DEBUG [http-nio-8080-exec-115] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-19 DEBUG [http-nio-8080-exec-112] Filter starts
+2022-09-20 09-36-19 DEBUG [http-nio-8080-exec-112] updateLocale
+2022-09-20 09-36-19 DEBUG [http-nio-8080-exec-112] Filter finished
+2022-09-20 09-36-19 DEBUG [http-nio-8080-exec-112] UpdateLocaleCommand starts
+2022-09-20 09-36-19 DEBUG [http-nio-8080-exec-112] UpdateLocaleCommand finished
+2022-09-20 09-36-19 DEBUG [http-nio-8080-exec-112] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-39 DEBUG [http-nio-8080-exec-119] Filter starts
+2022-09-20 09-36-39 DEBUG [http-nio-8080-exec-119] updateLocale
+2022-09-20 09-36-39 DEBUG [http-nio-8080-exec-119] Filter finished
+2022-09-20 09-36-39 DEBUG [http-nio-8080-exec-119] UpdateLocaleCommand starts
+2022-09-20 09-36-39 DEBUG [http-nio-8080-exec-119] UpdateLocaleCommand finished
+2022-09-20 09-36-39 DEBUG [http-nio-8080-exec-119] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-41 DEBUG [http-nio-8080-exec-120] Filter starts
+2022-09-20 09-36-41 DEBUG [http-nio-8080-exec-120] updateLocale
+2022-09-20 09-36-41 DEBUG [http-nio-8080-exec-120] Filter finished
+2022-09-20 09-36-41 DEBUG [http-nio-8080-exec-120] UpdateLocaleCommand starts
+2022-09-20 09-36-41 DEBUG [http-nio-8080-exec-120] UpdateLocaleCommand finished
+2022-09-20 09-36-41 DEBUG [http-nio-8080-exec-120] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-42 DEBUG [http-nio-8080-exec-121] Filter starts
+2022-09-20 09-36-42 DEBUG [http-nio-8080-exec-121] updateLocale
+2022-09-20 09-36-42 DEBUG [http-nio-8080-exec-121] Filter finished
+2022-09-20 09-36-42 DEBUG [http-nio-8080-exec-121] UpdateLocaleCommand starts
+2022-09-20 09-36-42 DEBUG [http-nio-8080-exec-121] UpdateLocaleCommand finished
+2022-09-20 09-36-42 DEBUG [http-nio-8080-exec-121] /Payments_ver2_war_exploded/controller
+2022-09-20 09-36-44 DEBUG [http-nio-8080-exec-122] Filter starts
+2022-09-20 09-36-44 DEBUG [http-nio-8080-exec-122] updateLocale
+2022-09-20 09-36-44 DEBUG [http-nio-8080-exec-122] Filter finished
+2022-09-20 09-36-44 DEBUG [http-nio-8080-exec-122] UpdateLocaleCommand starts
+2022-09-20 09-36-44 DEBUG [http-nio-8080-exec-122] UpdateLocaleCommand finished
+2022-09-20 09-36-44 DEBUG [http-nio-8080-exec-122] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-41 DEBUG [http-nio-8080-exec-119] Filter starts
+2022-09-20 09-41-41 DEBUG [http-nio-8080-exec-119] updateLocale
+2022-09-20 09-41-41 DEBUG [http-nio-8080-exec-119] Filter finished
+2022-09-20 09-41-41 DEBUG [http-nio-8080-exec-119] UpdateLocaleCommand starts
+2022-09-20 09-41-41 DEBUG [http-nio-8080-exec-119] UpdateLocaleCommand finished
+2022-09-20 09-41-41 DEBUG [http-nio-8080-exec-119] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-42 DEBUG [http-nio-8080-exec-121] Filter starts
+2022-09-20 09-41-42 DEBUG [http-nio-8080-exec-121] updateLocale
+2022-09-20 09-41-42 DEBUG [http-nio-8080-exec-121] Filter finished
+2022-09-20 09-41-42 DEBUG [http-nio-8080-exec-121] UpdateLocaleCommand starts
+2022-09-20 09-41-42 DEBUG [http-nio-8080-exec-121] UpdateLocaleCommand finished
+2022-09-20 09-41-42 DEBUG [http-nio-8080-exec-121] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-122] Filter starts
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-122] updateLocale
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-122] Filter finished
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-122] UpdateLocaleCommand starts
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-122] UpdateLocaleCommand finished
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-122] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-118] Filter starts
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-118] updateLocale
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-118] Filter finished
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-118] UpdateLocaleCommand starts
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-118] UpdateLocaleCommand finished
+2022-09-20 09-41-43 DEBUG [http-nio-8080-exec-118] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-44 DEBUG [http-nio-8080-exec-127] Filter starts
+2022-09-20 09-41-44 DEBUG [http-nio-8080-exec-127] updateLocale
+2022-09-20 09-41-44 DEBUG [http-nio-8080-exec-127] Filter finished
+2022-09-20 09-41-44 DEBUG [http-nio-8080-exec-127] UpdateLocaleCommand starts
+2022-09-20 09-41-44 DEBUG [http-nio-8080-exec-127] UpdateLocaleCommand finished
+2022-09-20 09-41-44 DEBUG [http-nio-8080-exec-127] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-45 DEBUG [http-nio-8080-exec-120] Filter starts
+2022-09-20 09-41-45 DEBUG [http-nio-8080-exec-120] updateLocale
+2022-09-20 09-41-45 DEBUG [http-nio-8080-exec-120] Filter finished
+2022-09-20 09-41-45 DEBUG [http-nio-8080-exec-120] UpdateLocaleCommand starts
+2022-09-20 09-41-45 DEBUG [http-nio-8080-exec-120] UpdateLocaleCommand finished
+2022-09-20 09-41-45 DEBUG [http-nio-8080-exec-120] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-46 DEBUG [http-nio-8080-exec-121] Filter starts
+2022-09-20 09-41-46 DEBUG [http-nio-8080-exec-121] updateLocale
+2022-09-20 09-41-46 DEBUG [http-nio-8080-exec-121] Filter finished
+2022-09-20 09-41-46 DEBUG [http-nio-8080-exec-121] UpdateLocaleCommand starts
+2022-09-20 09-41-46 DEBUG [http-nio-8080-exec-121] UpdateLocaleCommand finished
+2022-09-20 09-41-46 DEBUG [http-nio-8080-exec-121] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-47 DEBUG [http-nio-8080-exec-122] Filter starts
+2022-09-20 09-41-47 DEBUG [http-nio-8080-exec-122] updateLocale
+2022-09-20 09-41-47 DEBUG [http-nio-8080-exec-122] Filter finished
+2022-09-20 09-41-47 DEBUG [http-nio-8080-exec-122] UpdateLocaleCommand starts
+2022-09-20 09-41-47 DEBUG [http-nio-8080-exec-122] UpdateLocaleCommand finished
+2022-09-20 09-41-47 DEBUG [http-nio-8080-exec-122] /Payments_ver2_war_exploded/controller
+2022-09-20 09-41-48 DEBUG [http-nio-8080-exec-118] Filter starts
+2022-09-20 09-41-48 DEBUG [http-nio-8080-exec-118] updateLocale
+2022-09-20 09-41-48 DEBUG [http-nio-8080-exec-118] Filter finished
+2022-09-20 09-41-48 DEBUG [http-nio-8080-exec-118] UpdateLocaleCommand starts
+2022-09-20 09-41-48 DEBUG [http-nio-8080-exec-118] UpdateLocaleCommand finished
+2022-09-20 09-41-48 DEBUG [http-nio-8080-exec-118] /Payments_ver2_war_exploded/controller
+2022-09-20 09-43-26 DEBUG [RMI TCP Connection(74)-127.0.0.1] Filter initialization starts
+2022-09-20 09-43-26 DEBUG [RMI TCP Connection(74)-127.0.0.1] Filter initialization finished
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] Filter starts
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] updateLocale
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] Filter finished
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] UpdateLocaleCommand starts
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] http://localhost:8080/Payments_ver2_war_exploded/controller
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] UpdateLocaleCommand finished
+2022-09-20 09-43-36 DEBUG [http-nio-8080-exec-125] /Payments_ver2_war_exploded/controller
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] Filter starts
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] updateLocale
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] Filter finished
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] UpdateLocaleCommand starts
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] http://localhost:8080/Payments_ver2_war_exploded/controller
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] UpdateLocaleCommand finished
+2022-09-20 09-43-37 DEBUG [http-nio-8080-exec-118] /Payments_ver2_war_exploded/controller
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] Filter starts
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] updateLocale
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] Filter finished
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] UpdateLocaleCommand starts
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] http://localhost:8080/Payments_ver2_war_exploded/controller
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] UpdateLocaleCommand finished
+2022-09-20 09-43-46 DEBUG [http-nio-8080-exec-123] /Payments_ver2_war_exploded/controller
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] Filter starts
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] updateLocale
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] Filter finished
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] UpdateLocaleCommand starts
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] http://localhost:8080/Payments_ver2_war_exploded/controller
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] UpdateLocaleCommand finished
+2022-09-20 09-43-52 DEBUG [http-nio-8080-exec-124] /Payments_ver2_war_exploded/controller
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] Filter starts
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] login
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] Filter finished
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] Command starts
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] Request parameter: login --> user4
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] Found in DB: user --> Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'}
+2022-09-20 09-43-59 INFO  [http-nio-8080-exec-122] Get cards and set user Cards -> [Card{idcard=1234567890123504, idcustomer=50, balance=26, name_card='Standart', status='unlock'}, Card{idcard=1234567890123505, idcustomer=50, balance=141, name_card='Special', status='unlock'}, Card{idcard=1234567890123509, idcustomer=50, balance=2, name_card='Personal', status='block'}, Card{idcard=1234567890123515, idcustomer=50, balance=112, name_card='Personal', status='unlock'}, Card{idcard=1234567890123516, idcustomer=50, balance=0, name_card='Special', status='block'}]
+2022-09-20 09-43-59 INFO  [http-nio-8080-exec-122] Customer Customer{idcustomer=50, phone_number='null', first_name='dsfsd', last_name='fsedfs', login='user4', password_customer='user', role='user', status='unlock'} logged as user
+2022-09-20 09-43-59 DEBUG [http-nio-8080-exec-122] Command finished
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] Filter starts
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] updateLocale
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] Filter finished
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] UpdateLocaleCommand starts
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] http://localhost:8080/Payments_ver2_war_exploded/controller
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] UpdateLocaleCommand finished
+2022-09-20 09-44-05 DEBUG [http-nio-8080-exec-120] /Payments_ver2_war_exploded/controller

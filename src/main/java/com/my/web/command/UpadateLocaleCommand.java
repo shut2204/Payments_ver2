@@ -20,13 +20,15 @@ public class UpadateLocaleCommand extends Command{
 
         LOG.debug("UpdateLocaleCommand starts");
 
-        String forward = null;
-
         HttpSession session = request.getSession();
 
-        String locale = request.getParameter("locale");
+        String locale = (String) session.getAttribute("locale");
 
-        session.setAttribute("locale", locale);
+        String url = request.getRequestURL().toString();
+        LOG.debug(url);
+
+        if (locale == null || locale.equals("ru")) session.setAttribute("locale", "en");
+        else session.setAttribute("locale", "ru");
 
         LOG.debug("UpdateLocaleCommand finished");
         LOG.debug(request.getRequestURI());

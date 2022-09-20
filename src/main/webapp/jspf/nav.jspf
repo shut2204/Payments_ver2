@@ -12,15 +12,7 @@
         <input type="hidden" name="command" value="updateLocale">
     <ul>
             <li>
-                <select name="locale">
-                    <option value="en">EN</option>
-                    <option value="ru">RU</option>
-                </select>
-
-            </li>
-
-            <li>
-                <input type="submit" value="GO">
+                <button type="submit" style="display: contents"><img style="margin-bottom: -13px; width: 40px; height: 40px" src="img/icons8.png"> </button>
             </li>
         <li><a href="index.jsp"><fmt:message key="label.home"/></a></li>
         <c:if test="${sessionScope.get('login') != null }">
